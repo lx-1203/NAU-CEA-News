@@ -1,0 +1,4 @@
+{
+  "source": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json",
+  "note": "The default public channel needs no local override. Copy to updates.local.json only when intentionally selecting another trusted publisher."
+}

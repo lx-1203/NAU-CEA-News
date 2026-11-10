@@ -1,0 +1,127 @@
+"""Reusable sentence performance and source-media planning; no GPU required."""
+import math
+import re
+from datetime import datetime
+from pathlib import Path
+from urllib.parse import urlsplit
+from .core import ROOT, read_json, sha256, validate_edition
+from .workbench import edition_lines
+from .date_guard import validate_date_proof
+from .layout import validate_framing, key_facts
+
+
+def expression_assets():
+    """Use the studio's existing whole-character art as the single asset map."""
+    text = (ROOT/'script.js').read_text(encoding='utf8')
+    result = {}
+    for anchor in ['xiaoXu', 'xiaoHe']:
+        body = re.search(r'\b'+anchor+r':\s*\{([^}]+)\}', text).group(1)
+        result[anchor] = {key: ROOT/'assets/characters'/value for key,value in
+                          re.findall(r"(\w+):\s*'([^']+)'", body)}
+    return result
+
+
+def performance_events(line, duration, intervals, override=None):
+    """Semantic pose cue, then bind to measured speech (approximate, not word alignment)."""
+    override = override or {}
+    if not math.isfinite(duration) or duration <= 0 or not intervals:
+        raise ValueError('表演时间线需要实际发声时长')
+    anchor, text = line['anchor'], line['text']
+    base = 'normal' if anchor == 'xiaoXu' else 'happy'
+    action = 'nod'
+    if any(t in text for t in ['再见', '大家好', '欢迎', '我是']):
+        focus = 'happy' if anchor == 'xiaoXu' else 'wave'
+        action = 'greet'
+    elif any(t in text for t in ['关注', '安排', '计划', '继续']):
+        focus = 'thinking' if anchor == 'xiaoXu' else 'normal'
+    else:
+        focus = 'presenting' if anchor == 'xiaoXu' else 'encourage'
+    focus = override.get('expression', focus)
+    action = override.get('action', action)
+    ratio = override.get('focus_ratio', .38)
+    if focus not in expression_assets()[anchor] or focus == base:
+        raise ValueError(f'无效或无变化的表情: {anchor}/{focus}')
+    if action not in {'nod','greet','hold'} or not isinstance(ratio,(int,float)) or not 0 < ratio < 1:
+        raise ValueError('表演动作或句中触发比例无效')
+    first, last = intervals[0][0], intervals[-1][1]
+    if not 0 <= first < last <= duration+.001: raise ValueError('发声区间超出句子时长')
+    remaining = sum(b-a for a,b in intervals)*ratio
+    middle = first
+    for a,b in intervals:
+        if remaining < b-a:
+            middle = a+remaining
+            break
+        remaining -= b-a
+    settle = min(duration, last+.02)
+    return [dict(at=0.0, expression=base, action='hold'),
+            dict(at=round(middle,6), expression=focus, action=action),
+            dict(at=round(settle,6), expression=base, action='hold')]
+
+
+def media_for_shot(selected, cache):
+    """Share a local copy, while retaining each shot's trim and editorial metadata."""
+    if not selected: return None
+    return dict(cache[selected['path']], **{k:v for k,v in selected.items() if k != 'path'})
+
+
+def resolve_media(item, edition_dir):
+    kind, role = item.get('kind'), item.get('role')
+    origin = urlsplit(item.get('source_url',''))
+    if (str(item.get('asset_url','')).startswith('editorial://') or
+            item.get('is_programmatic_editorial_art') is True or
+            item.get('production_method') in {'svg','canvas','pillow','programmatic'} or
+            any(t in item.get('caption','') for t in ['编辑流程示意图','编辑示意图','编辑事实图'])):
+        raise ValueError('禁止以自行绘制的程序图替代图片素材；请补充原始素材或图像工具输出')
+    if kind not in {'image','video'} or role not in {'current','archive','source_capture'}:
+        raise ValueError('素材类型或画面用途无效')
+    if role=='source_capture':raise ValueError('文字核验截图仅留存证，不得作为入画素材')
+    if origin.scheme not in {'http','https'} or not origin.netloc or not item.get('caption'):
+        raise ValueError('素材缺少可回溯原始来源或画面说明')
+    if item.get('published_at') is None:
+        if not (role=='archive' and item.get('media_date_precision')=='unknown' and
+                item.get('original_asset_first_publication_unknown') is True and
+                str(item.get('media_date_note','')).strip()):
+            raise ValueError('素材首发未知只可作明确说明的资料画面，不能伪造日期')
+    else:
+        try:published = datetime.fromisoformat(item['published_at'])
+        except (TypeError,ValueError):raise ValueError('素材发布日期无效')
+        if published.tzinfo is None: raise ValueError('素材发布日期需要时区')
+    if role == 'archive' and '资料' not in item['caption']: raise ValueError('历史资料画面必须在画面上标注资料')
+    path = (Path(edition_dir)/item['path']).resolve()
+    if not path.is_file() or sha256(path) != item.get('sha256'): raise ValueError(f'素材不存在或哈希不符: {path}')
+    offset = item.get('offset',0)
+    if not isinstance(offset,(int,float)) or not math.isfinite(offset) or offset < 0: raise ValueError('素材起点无效')
+    framing = validate_framing(item.get('framing'))
+    if kind == 'video' and framing['crop'] != [0,0,1,1]:
+        raise ValueError('原视频必须保留完整比例及水印')
+    return dict(item, path=str(path), offset=offset, framing=framing)
+
+
+def production_plan(edition_path, require_media=None):
+    edition_path = Path(edition_path).resolve()
+    edition = validate_edition(read_json(edition_path))
+    if not edition.get('archive_production'):
+        validate_date_proof(edition,edition_path.parent)
+    config = read_json(ROOT/'config/pipeline.json')
+    if require_media is None: require_media = config.get('media_policy',{}).get('require_source_media',False)
+    media = {}
+    for i, story in enumerate(edition['stories']):
+        key_facts(story)
+        media[i] = [resolve_media(item, edition_path.parent) for item in story.get('media',[])]
+        if require_media and not media[i]: raise ValueError(f'{story["id"]} 缺少已回源的新闻素材')
+    positions, shots = {}, []
+    overrides = edition.get('performance',{})
+    for index, line in enumerate(edition_lines(edition)):
+        scene = line['scene']
+        position = positions.get(scene,0)
+        choices = media.get(scene,[])
+        chosen = choices[position % len(choices)] if choices else None
+        # Validate defaults/overrides before any speech generation; actual times bind later.
+        override = overrides.get(str(index),{})
+        preview = performance_events(line,1.0,[(.1,.9)],override)
+        shots.append(dict(cue=index, **line, media=chosen, performance=override,
+                          preview_events=preview, timing='按实际发声区间绑定；句内触发为比例近似'))
+        positions[scene] = position+1
+    return dict(date=edition['date'], edition=str(edition_path), shots=shots,
+                speech_provider=config.get('speech',{}).get('provider'),
+                voices=config.get('speech',{}).get('workbench',{}).get('voices',{}))

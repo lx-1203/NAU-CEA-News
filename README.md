@@ -1,30 +1,27 @@
-# NAU CEA 每日校园科技新闻稿
+# NJAU-CEA 新闻联播
 
-按北京时间刊期归档，回顾前一天完整自然日的科技资讯。
+南京农业大学计算机爱好者协会（Computer Enthusiasts Association）校园科技每日新闻项目。节目品牌与LOGO为大写NJAU-CEA；开场首先说明“这里是南京农业大学计算机爱好者协会。”
 
-## 每期结构
+这是可迁移的源码与工作流程，下载复用请使用完整版本包，保留目录结构。首次双击 first_run.bat，日常 start.bat，下一期 next_episode.bat。全新电脑会下载固定版本的Python、依赖与IndexTTS2模型；不是预装模型的离线包。
 
-头条新闻、科技要闻、AI落地、科研成果、GitHub昨日开源有趣项目、产业观察，各3条，目标18条。先选头条，整期按事件去重；缺额先扩源，仍不足须说明。GitHub栏目核对首次公开开源日期，热榜或旧项目版本更新不代替首发。
+## 从这里开始
 
-## 新闻稿
+[下载公共架构与skill包](https://github.com/lx-1203/NAU-CEA-News/releases/latest)。公共包不包含生产媒体；已有授权本地素材包可搭配使用。
 
-- [2026-11-09：既有8条试运行稿归档](news/2026/11/2026-11-09.md)。这是历史试运行版本，不代表已完成新版18条目标。
-- 后续文件：`news/YYYY/MM/YYYY-MM-DD.md`。
+- [快速开始](QUICK_START.md)：安装、启动、下一期。
+- [架构与目录](docs/ARCHITECTURE.md)：日期分类、任务分类、架构/skill使用前更新。
+- [复用说明](docs/REUSE_GUIDE.md)：新电脑、配置、分发范围与验证边界。
+- [编辑规范](docs/EDITORIAL_POLICY.md)与[素材规范](docs/VISUAL_MATERIAL_POLICY.md)：日期、事实和原始媒体准入。
+- [当前待办](docs/TODO.md)：仅保留尚未关闭事项。
 
-每篇保留事实摘要、口播和原始来源。稿件需通过事实、日期、去重和文字审查；相同内容跳过提交，修改保留Git历史。自动上传只针对新闻稿，视频仍保留待发布。
+程序为pipeline/scripts，配置为config，共享角色/声音/演播室/LOGO/转场为assets。每期数据默认在data/issues/YYYY/YYYY-MM-DD，分editorial、media、audio、production、deliverables、review、tasks。另用数据盘时配置config/storage.local.json，不改源码；环境和个人配置不进入复用包。
 
-## 制作与复用
+唯一配套skill：skills/nau-cea-daily-video。全局安装使用python scripts/install_agent_skill.py --home <助手主目录>，安装前保留旧版，后续每次调用自检并同步项目版。
 
-流程为采集→回源核实→六栏选题与写稿→审查→新闻稿归档→固定双主播配音→同棚素材编排→字幕与章节→终检。完整Windows复用包由维护者提供，包含一键安装/启动/下一期入口、固定声音参考、合格资产清单与制作代码。
+架构和skill版本见architecture/release.json。默认在线源是 https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json ，每次使用都会实际检查，下载固定版本更新包并核验后备份安装。网络失败或本地冲突会停止，不回退到本地基线。已有Python可运行 `python scripts/check_updates.py --apply`；没有Python可双击check_updates.bat，它只准备更新所需环境，不下载语音模型。
 
-配音组件的公开来源：
+GitHub公开发布的是架构、skill和配置模板；没有新闻图片、音乐、音色或人物/LOGO位图。完整生产需提供合法共享素材；公共框架包可独立更新和安装skill，full setup在素材缺失时会明确停止。解压既有完整本地素材包的用户也可直接升级代码，数据和素材不被覆盖。
 
-- [IndexTTS2基础工作台](https://github.com/lfandrh/indextts2-studio)
-- [长篇台本与时间轴扩展](https://github.com/Mars-1438/indextts2-longform-workbench)
-- [IndexTTS-2模型](https://huggingface.co/IndexTeam/IndexTTS-2)
+新闻稿归档保留在[news目录](news/)，不因架构发布删除。
 
-新电脑在自己的机器启动本地工作台，不能直接使用制作机的localhost链接。
-
-## 素材范围
-
-本库不托管新闻原图/原视频、模型、音色参考、校徽、私有日志或凭据。报道保留原始来源，原始材料与各类资产的使用许可分别处理。
+本项目不会因复制复用包获得第三方新闻图片、音乐、校徽、人物或声音的公开再分发许可。视频保持待发布，GitHub归档功能仅处理已审核新闻稿，默认不配置他人的仓库。

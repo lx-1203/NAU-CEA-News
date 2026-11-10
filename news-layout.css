@@ -1,0 +1,25 @@
+/* Approved 2026-11-09: news camera layout in the same studio. */
+.is-news .anchor-desk{display:none}
+.is-news .news-scene h1{left:4%;top:17.5%;max-width:71.5%;font-size:2.916667cqw!important;line-height:1.25;color:#173f4b;font-weight:600;letter-spacing:0}
+.is-news .news-material-caption{left:4%;top:24.2%;width:71.5%;font-size:1.25cqw!important;color:#47646a;line-height:1.2}
+.is-news .news-material-caption p{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.is-news .material-kind{font-size:1.25cqw;line-height:1.2}
+.is-news .material-origin{display:none}
+.is-news .news-media-window{left:4%;top:27.5%;width:71.5%;height:53%;padding:.35cqw;border:.3cqw solid #8e9faa;outline:.15cqw solid #edf1ef;box-shadow:0 .35cqw 0 #617782;display:flex;align-items:center;justify-content:center;background:linear-gradient(120deg,#194a85,#2585c7 65%,#45cbd1)}
+.is-news .news-media-window img,.is-news .news-media-window video{object-fit:contain;background:transparent}
+.is-news .news-side-label{left:76%;right:auto;top:24.5%;width:22%;height:auto;border:.2cqw solid #70878b;box-shadow:0 .25cqw 0 #617782;background:#f7faf6}
+.is-news .news-side-label>b{font-size:1.2cqw;line-height:1.2;padding:.5cqw .65cqw;color:#f8faf5;background:#346450}
+.is-news .news-key-facts{padding:.5cqw .5cqw;margin:0;list-style:none;display:grid;gap:.5cqw}
+.is-news .news-key-facts li{font-size:1.666667cqw;line-height:1.25;padding-left:.45cqw;font-weight:500;color:#24494b;position:relative}
+.is-news .news-key-facts li::before{content:"";position:absolute;left:0;top:.5em;width:.2cqw;height:.2cqw;background:#84a655}
+.is-news .character{left:75.8%;top:48.7%;width:23%;height:31.8%}
+.is-news .character::after{content:"";position:absolute;left:20%;right:20%;bottom:0;height:.45cqw;border-radius:50%;background:#34535c25;z-index:-1}
+.is-news .topic-bar{gap:.8cqw;font-size:1.354167cqw;line-height:1.1;color:#365d5a}
+.is-news .topic-bar>span:first-child{font-size:1.25cqw;color:#527569;letter-spacing:.05cqw;padding-right:.8cqw}
+.is-news .topic-bar>span:nth-child(2){white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Same-image blurred underlay fills spare screen area; original stays complete. */
+.is-news .news-media-window{isolation:isolate}
+.is-news .news-media-window::before{content:"";position:absolute;inset:-2cqw;background-image:var(--news-backdrop-image);background-size:cover;background-position:center;filter:blur(1.25cqw) brightness(.6) saturate(.7);z-index:0;pointer-events:none}
+.is-news .news-media-window::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#10343c22,#10343c05,#10343c22);z-index:0;pointer-events:none}
+.is-news .news-media-window img,.is-news .news-media-window video{position:relative;z-index:1}

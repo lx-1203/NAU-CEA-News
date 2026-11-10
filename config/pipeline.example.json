@@ -1,0 +1,293 @@
+{
+  "timezone": "Asia/Shanghai",
+  "schedule": "每天 08:00",
+  "sources": [
+    {
+      "name": "36氪",
+      "url": "https://www.36kr.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "量子位",
+      "url": "https://www.qbitai.com/feed",
+      "kind": "rss"
+    },
+    {
+      "name": "Google News",
+      "url": "https://news.google.com/rss/search?q=AI&hl=zh-CN&gl=CN&ceid=CN:zh-Hans",
+      "kind": "rss"
+    },
+    {
+      "name": "Hacker News",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?tags=story&query=AI&hitsPerPage=100",
+      "kind": "hn"
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/api/daily_papers?limit=30",
+      "kind": "hf"
+    },
+    {
+      "name": "arXiv",
+      "url": "https://export.arxiv.org/api/query?search_query=cat%3Acs.AI+OR+cat%3Acs.RO+OR+cat%3Acs.LG&sortBy=submittedDate&max_results=100",
+      "kind": "rss"
+    },
+    {
+      "name": "Hacker News 热榜",
+      "url": "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=15",
+      "kind": "hn"
+    },
+    {
+      "name": "权威政务·AI治理",
+      "url": "https://news.google.com/rss/search?q=site%3Acac.gov.cn+%28AI+OR+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "kind": "rss",
+      "role": "discovery_only",
+      "topic": "governance",
+      "verification_required": "必须读取下游原始页面；RSS时间不能代替首发日期；企业稿标明发布主体。"
+    },
+    {
+      "name": "新华社·AI与产业应用",
+      "url": "https://news.google.com/rss/search?q=site%3Anews.cn+%28%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+OR+%E6%9C%BA%E5%99%A8%E4%BA%BA+OR+OPC%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "kind": "rss",
+      "role": "discovery_only",
+      "topic": "industry",
+      "verification_required": "必须读取下游原始页面；RSS时间不能代替首发日期；企业稿标明发布主体。"
+    },
+    {
+      "name": "人民网·AI产业实践",
+      "url": "https://news.google.com/rss/search?q=site%3Apeople.com.cn+%28AI+OR+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%29+%28%E5%B7%A5%E5%8E%82+OR+%E7%A7%91%E7%A0%94+OR+%E4%BA%A7%E4%B8%9A%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "kind": "rss",
+      "role": "discovery_only",
+      "topic": "industry",
+      "verification_required": "必须读取下游原始页面；RSS时间不能代替首发日期；企业稿标明发布主体。"
+    },
+    {
+      "name": "上观·机器人与科研",
+      "url": "https://news.google.com/rss/search?q=%28site%3Ashobserver.com+OR+site%3Ajfdaily.com%29+%28%E6%9C%BA%E5%99%A8%E4%BA%BA+OR+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "kind": "rss",
+      "role": "discovery_only",
+      "topic": "robotics",
+      "verification_required": "必须读取下游原始页面；RSS时间不能代替首发日期；企业稿标明发布主体。"
+    },
+    {
+      "name": "华为·农业科研官方动态",
+      "url": "https://news.google.com/rss/search?q=site%3Ahuawei.com%2Fcn%2Fnews+%28%E5%86%9C%E4%B8%9A+OR+%E7%A7%91%E7%A0%94+OR+%E6%99%BA%E8%83%BD%E4%BD%93%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "kind": "rss",
+      "role": "discovery_only",
+      "topic": "corporate-official",
+      "verification_required": "必须读取下游原始页面；RSS时间不能代替首发日期；企业稿标明发布主体。"
+    },
+    {
+      "name": "美通社·AI企业发布",
+      "url": "https://news.google.com/rss/search?q=site%3Aprnasia.com+%28%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+OR+AI%29+%28%E6%8A%95%E8%B5%84+OR+%E8%9E%8D%E8%B5%84+OR+%E7%A7%91%E7%A0%94%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "kind": "rss",
+      "role": "discovery_only",
+      "topic": "corporate-release",
+      "verification_required": "必须读取下游原始页面；RSS时间不能代替首发日期；企业稿标明发布主体。"
+    },
+    {
+      "name": "科创板日报·AI与芯片融资",
+      "url": "https://news.google.com/rss/search?q=site%3Acls.cn+%28%E7%A1%85%E5%85%89+OR+%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD+OR+%E6%9C%BA%E5%99%A8%E4%BA%BA%29+%28%E8%9E%8D%E8%B5%84+OR+%E6%8A%95%E8%B5%84%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "kind": "rss",
+      "role": "discovery_only",
+      "topic": "funding",
+      "verification_required": "必须读取下游原始页面；RSS时间不能代替首发日期；企业稿标明发布主体。"
+    },
+    {
+      "name": "东方网·OPC与城市实践",
+      "url": "https://news.google.com/rss/search?q=site%3Aeastday.com+%28OPC+OR+%E8%B6%85%E7%BA%A7%E5%88%9B%E4%B8%9A%E8%80%85+OR+%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8%29&hl=zh-CN&gl=CN&ceid=CN%3Azh-Hans",
+      "kind": "rss",
+      "role": "discovery_only",
+      "topic": "opc",
+      "verification_required": "必须读取下游原始页面；RSS时间不能代替首发日期；企业稿标明发布主体。"
+    }
+  ],
+  "speech_shell": "powershell.exe",
+  "voices": {
+    "xiaoXu": "Microsoft Kangkang",
+    "xiaoHe": "Microsoft Huihui Desktop"
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "max_stories": 18,
+  "publish": false,
+  "speech": {
+    "provider": "indextts2",
+    "workbench": {
+      "project_dir": ".\\runtime\\IndexTTS2-Studio",
+      "state_file": ".\\runtime\\IndexTTS2-Studio\\logs\\workbench-service.json",
+      "start_script": ".\\scripts\\start_workbench.ps1",
+      "client": ".\\runtime\\IndexTTS2-Studio\\skills\\indextts2-tts\\scripts\\tts_client.py",
+      "client_config_dir": ".\\runtime\\client-config",
+      "output_root": ".\\outputs\\speech",
+      "parameters": {
+        "emo_mode": 2,
+        "emo_vector": "0,0,0,0,0,0,0,0.65",
+        "emo_weight": 0.65,
+        "seg_tokens": 80
+      },
+      "voices": {
+        "xiaoXu": {
+          "name": "小序·自然男童声 v2",
+          "reference": ".\\assets\\voices\\xiaoXu\\reference.wav",
+          "sha256": "f95b7a143073d09ae5f261be8d2f2342853a16e19f56f2da480770f7e433e899",
+          "source": "Microsoft zh-CN-YunxiaNeural synthetic reference (Cute/Cartoon); generated once and frozen locally",
+          "preset": "NAU-CEA-xiaoXu-boy-v2",
+          "rate": 1.0
+        },
+        "xiaoHe": {
+          "name": "小禾·自然女童声方向 v2",
+          "reference": ".\\assets\\voices\\xiaoHe\\reference.wav",
+          "sha256": "9d60fef25bb169cfd6f07ea74f741a1971bfd8e8c451984cb2a3c730dd125bf6",
+          "source": "Existing frozen Microsoft zh-CN-XiaoyiNeural reference; Female/Lively/Cartoon; reassigned to xiaoHe per explicit child-voice request",
+          "preset": "NAU-CEA-xiaoHe-girl-v2",
+          "rate": 1.0
+        }
+      },
+      "low_memory_load": true
+    },
+    "pacing": {
+      "enabled": true,
+      "min_cpm": 280,
+      "max_cpm": 300,
+      "normal_cpm": 295,
+      "sensitive_cpm": 285,
+      "min_tempo": 0.75,
+      "max_tempo": 1.6,
+      "threshold_db": -45,
+      "terms": [
+        "人工智能",
+        "核动力",
+        "月球车",
+        "文字识别",
+        "语音识别",
+        "专家缓存",
+        "预发布",
+        "大模型",
+        "模型接口",
+        "工具调用",
+        "代码压缩",
+        "客户端",
+        "AI",
+        "CPU",
+        "GPU",
+        "PDF",
+        "MCP",
+        "Open WebUI",
+        "Docling",
+        "llama.cpp",
+        "Repomix",
+        "LiteLLM"
+      ]
+    }
+  },
+  "media_policy": {
+    "require_source_media": true,
+    "prefer": [
+      "original_video",
+      "original_photo",
+      "original_visual_diagram",
+      "verified_fact_based_diagram"
+    ],
+    "ai_generated_news_media": "avoid; original diagrams only when needed and based on verified facts",
+    "text_screenshots_allowed": false,
+    "text_screenshot_scope": [
+      "reference_images",
+      "preview_images",
+      "news_images",
+      "video_screen",
+      "blurred_backdrop"
+    ],
+    "text_screenshot_evidence_only": true,
+    "visual_policy": "docs/VISUAL_MATERIAL_POLICY.md"
+  },
+  "editorial_policy": {
+    "target_stories": 18,
+    "normal_min_stories": 18,
+    "max_stories": 18,
+    "sections": [
+      {
+        "id": "headlines",
+        "name": "头条新闻",
+        "count": 3
+      },
+      {
+        "id": "technology",
+        "name": "科技要闻",
+        "count": 3
+      },
+      {
+        "id": "applications",
+        "name": "AI落地",
+        "count": 3
+      },
+      {
+        "id": "research",
+        "name": "科研成果",
+        "count": 3
+      },
+      {
+        "id": "github",
+        "name": "GitHub昨日开源有趣项目",
+        "count": 3
+      },
+      {
+        "id": "industry",
+        "name": "产业观察",
+        "count": 3
+      }
+    ],
+    "candidate_goal": 90,
+    "source_family_goal": 6,
+    "underfill_action": "expand collection and verify before documenting a reduced edition",
+    "minimum_is_editorial_policy": true,
+    "source_reference": "assets/references/editorial/HANDOFF.md",
+    "contract": "docs/EDITORIAL_POLICY.md",
+    "section_schema_version": 1,
+    "deduplication": "one event_id per edition; headlines selected first; independent manual semantic review required",
+    "github_rule": "first publicly open-sourced during previous Asia/Shanghai calendar day; ranking, discovery and old-project updates do not qualify"
+  },
+  "source_catalog": "config/source-catalog.json",
+  "source_policy": {
+    "primary_first": true,
+    "aggregators_discovery_only": true,
+    "original_date_required": true,
+    "corporate_claims_attributed": true,
+    "tutorials_are_not_news": true
+  },
+  "navigation": {
+    "enabled": true,
+    "timing_source": "timeline.json",
+    "interactive_player": "watch.html",
+    "embed_mp4_chapters": true,
+    "chapter_outputs": [
+      "chapters.json",
+      "chapters.vtt",
+      "chapters.ffmetadata"
+    ]
+  },
+  "github_archive": {
+    "enabled": true,
+    "config": "config/github.json",
+    "queue": "outputs/publication-pending",
+    "scope": "reviewed_daily_manuscript_only"
+  },
+  "opening": {
+    "enabled": false,
+    "approval": ".\\assets\\opening\\APPROVED.json"
+  },
+  "programme": {
+    "brand": "NJAU-CEA 新闻联播",
+    "overview_minimum_seconds": 6.5,
+    "category_transition": "independent_silent_interlude",
+    "transition_sweep_seconds": 2.8,
+    "lead_seconds": 0.3,
+    "tail_seconds": 0.3
+  },
+  "browser_channel": null,
+  "portable_profile": true,
+  "asset_setup": "Supply your legally authorized shared assets before full production. Public framework does not redistribute image/music/voice assets."
+}

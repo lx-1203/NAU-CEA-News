@@ -1,0 +1,5 @@
+{
+  "source": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json",
+  "channel_kind": "github_https",
+  "note": "Always checks the live GitHub channel. Network failures stop the check; no silent fallback to a bundled baseline."
+}

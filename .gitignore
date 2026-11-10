@@ -1,0 +1,17 @@
+/.venv/
+/.tools/
+/runtime/
+/outputs/
+/dist/
+/data/
+/skills/**/project-link.local.json
+/architecture/update-history/
+/architecture/releases/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.token
+*.local.json
+/config/github.json
+/config/pipeline.json

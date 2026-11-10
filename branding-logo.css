@@ -1,0 +1,22 @@
+/* Approved logo replacement: rear screen and lower-left programme mark only. */
+.branding-screen{background:#f7f4e9}
+.branding-screen>.branding-screen-loop{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:fill;background:#f7f4e9}
+.branding-screen>.screen-grid{opacity:.2;pointer-events:none}
+.branding-screen>.screen-content,.branding-screen>.screen-corner{visibility:hidden;pointer-events:none}
+.branding-screen>.studio-logo-lockup{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:0;box-sizing:border-box;background:#f7f4e9;z-index:2}
+.studio-logo-lockup>img{display:block;width:96%;height:auto;max-height:96%;object-fit:contain}
+.program-block>.branding-program-mark{display:flex;align-items:center;justify-content:center;flex:1;min-height:0;margin:.35cqw .45cqw;padding:.2cqw .35cqw;border-radius:.25cqw;background:#f7f4e9;transform:none;text-shadow:none;overflow:hidden}
+.branding-program-mark>img{display:block;width:100%;height:auto;max-height:100%;object-fit:contain}
+/* Keep the studio rundown above the character boxes, including static exports. */
+.tv-frame:not(.is-news) .news-board{display:grid!important;top:10.5%;right:2.4%;width:24%;height:11%;grid-template-rows:1.1fr repeat(3,1fr);background:#f7f4e9;border:.1cqw solid #719286;border-radius:.3cqw;box-shadow:none;overflow:hidden}
+.tv-frame:not(.is-news) .news-board h2{display:flex;align-items:center;justify-content:space-between;min-height:0;padding:0 .7cqw;background:#28564b;font-size:1.05cqw;line-height:1;color:#f7f4e9}
+.tv-frame:not(.is-news) .news-board h2 span{float:none;padding:0;font-size:.55cqw;color:#d7e2cd}
+.tv-frame:not(.is-news) .news-board>div{display:grid;grid-template-columns:1.5cqw minmax(0,1fr);align-items:center;gap:.55cqw;min-height:0;padding:0 .7cqw;border-bottom:1px solid #dce3d5}
+.tv-frame:not(.is-news) .news-board>div:last-of-type{border-bottom:0}
+.tv-frame:not(.is-news) .news-board b{font-size:1.05cqw;line-height:1;color:#416b50;font-variant-numeric:tabular-nums}
+.tv-frame:not(.is-news) .news-board div span{display:block;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:1.02cqw;line-height:1.1;color:#183e35}
+.tv-frame:not(.is-news) .news-board small,.tv-frame:not(.is-news) .news-board>p{display:none}
+@media(prefers-reduced-motion:reduce){
+  .branding-screen>.studio-logo-lockup{animation:none}
+  .branding-screen>.branding-screen-loop{display:none}
+}

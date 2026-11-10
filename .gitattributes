@@ -1,0 +1,2 @@
+# Preserve exact bytes used by architecture/release.json hashes on all platforms.
+* -text

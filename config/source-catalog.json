@@ -1,0 +1,88 @@
+{
+  "updated_at": "2026-11-09",
+  "policy": "原始论文、政府通报、原始采访与企业公告优先；二手聚合和AI只提供线索。",
+  "discovery_config": "config/pipeline.json",
+  "primary_targets": [
+    {
+      "name": "arXiv／Apple机器学习研究",
+      "role": "论文、机器人实验口径",
+      "urls": [
+        "https://arxiv.org/",
+        "https://machinelearning.apple.com/research",
+        "https://apple-aiml-research.github.io/ml-halo/"
+      ],
+      "note": "首发看v1；项目视频、代码与数据是否实际可下载分别验证。"
+    },
+    {
+      "name": "中国网信网",
+      "role": "AI治理原始通报",
+      "urls": [
+        "https://www.cac.gov.cn/"
+      ],
+      "note": "优先监管机构正文；不从媒体转述扩展法律结论。"
+    },
+    {
+      "name": "新华网／人民网湖南／中新网",
+      "role": "原创采访、产业应用与科技",
+      "urls": [
+        "https://www.news.cn/tech/",
+        "http://hn.people.com.cn/",
+        "https://www.chinanews.com/"
+      ],
+      "note": "采访中的企业数据标明发言者、实验/经营范围。"
+    },
+    {
+      "name": "上观／新民晚报",
+      "role": "机器人、实验室、城市产业实践",
+      "urls": [
+        "https://www.shobserver.com/",
+        "https://www.jfdaily.com/",
+        "https://paper.xinmin.cn/"
+      ],
+      "note": "同集团不同媒体仍按实际原文署名；不以新刊日期覆盖旧故事。"
+    },
+    {
+      "name": "华为／中国农业科学院",
+      "role": "产业科研官方进展",
+      "urls": [
+        "https://www.huawei.com/cn/news",
+        "https://www.caas.cn/"
+      ],
+      "note": "案例效能是发布主体陈述；方案周期与完整育种周期分开。"
+    },
+    {
+      "name": "科创板日报／美通社",
+      "role": "融资及企业发布",
+      "urls": [
+        "https://www.cls.cn/",
+        "https://www.prnasia.com/"
+      ],
+      "note": "美通社标明实际发稿公司，金额未披露就不估算。"
+    },
+    {
+      "name": "东方网／徐汇区政府／检察机关",
+      "role": "OPC社区与政策",
+      "urls": [
+        "https://www.eastday.com/",
+        "https://www.xuhui.gov.cn/",
+        "https://www.sh.jcy.gov.cn/"
+      ],
+      "note": "规划/建成/启用与适用对象分别查原文；不把历史政策写成当天发布。"
+    },
+    {
+      "name": "即梦／Grok官方说明",
+      "role": "技巧栏目能力核对",
+      "urls": [
+        "https://jimeng.jianying.com/",
+        "https://docs.x.ai/"
+      ],
+      "note": "不是新闻事实源；技巧实测与提示词示例分开。"
+    }
+  ],
+  "unresolved_sources": [
+    {
+      "name": "AI HOT日报",
+      "status": "仅截图名称，缺唯一网址与发布主体，不编造RSS接口"
+    }
+  ]
+}

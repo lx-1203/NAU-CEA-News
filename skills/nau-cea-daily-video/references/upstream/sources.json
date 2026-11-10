@@ -1,0 +1,57 @@
+{
+  "installed_on": "2026-11-09",
+  "policy": "Pinned upstream copies; do not auto-update or execute upstream scripts",
+  "skills": [
+    {
+      "name": "kj-content-creator",
+      "repository": "https://github.com/chengkj99/kj-skills",
+      "commit": "c23fe79cda0aa601343f4251539b9012d0617398",
+      "path": "skills/content-creator",
+      "license": "MIT",
+      "integration": "narration-writing.md; documentation-only, project-scoped",
+      "files": {
+        "agents\\openai.yaml": "5d79d857a2c7f3f70c8f7d94fd87c7014f584b8b542f537832ece98959d8821f",
+        "LICENSE": "3e321ff370121dd8a50522fc2a3afc4f4d504cae98b1c719b6d8f47e08e49d54",
+        "references\\clear-expression.md": "900c9495b090d541d1b72506ed3f7dd1116bfc21cc8978bcb3ad4ac79389355f",
+        "references\\remove-ai-tone-guide.md": "7674cc150293bfddf9adaa624811189310273a972b18bc49779ee215b323ea89",
+        "references\\人设.md": "9465254310b2e762450b2516dcfd4cc67be915b3b176cd5205253d97f93b655b",
+        "references\\小红书指南.md": "cbaec9c92cdd546bd15b7de82b2ad03c4d02e2b142b902941e9c661194fa9d95",
+        "references\\文章结构.md": "2e914b75c6506416257cac455bf6e4ee5a4f0c6347df6ba7a3a25e1d763dcf05",
+        "references\\标题与配图指南.md": "a1e36c1cd17ddeb4e118a814b33afec2a9fd40af4e951125bdce194def7d5e3d",
+        "references\\深度拆解模型.md": "7ffc773fe4a178cf67be455745394a9b8f9a64094ed7d81ebd3459e4d6d5d661",
+        "references\\深度论证框架.md": "aeab6e13c7499c8ce278e0bf35e77fc6be2bfa1a6d4e46533b4a13aacd972e0e",
+        "references\\表达风格.md": "967d52fe3d18aeee010c2a6b08aad1328cf0644a9c1faea24b037cf5f6188e9c",
+        "references\\金句.md": "91e068e901c3a3407c48b276d3ce2643e94e72b6658622a640eaf47fe8ec0ee8",
+        "SKILL.md": "bc7d44c2cf0531cd5c15981e684a87a1159295bd2513efbd7aa9124881964e68"
+      },
+      "local_filename_overrides": {
+        "SKILL.md": "REFERENCE.md"
+      },
+      "discovery": "reference_only_not_an_independent_skill"
+    },
+    {
+      "name": "humanizer-zh",
+      "repository": "https://github.com/op7418/Humanizer-zh",
+      "commit": "f4518a8eab97b8bfebc66a89d34320a89bef6930",
+      "path": ".",
+      "license": "MIT",
+      "integration": "narration-writing.md; documentation-only, project-scoped",
+      "files": {
+        ".gitignore": "60e2fa4bf2647667b82c5351d453847ae233821ff6af15846b19f40a0c1a45d0",
+        "CHANGELOG.md": "254ac282ea3a224237d7778d1704165f5dd51db29839de6431569435561fd0fe",
+        "LICENSE": "aa00e74769e1b9d8e7fa7094dbfcca9b129a0ded6dce1cf4da050b99146d2fa7",
+        "README.md": "c4f42c5f590b2845608c3913754e0339db0783481efb6d5ec90144fb721bd1d4",
+        "SKILL.md": "95627fd4437d886f98032ccc62d79136e6310f1fc04e354bb86431795ff206df",
+        "tests\\check_structure.py": "82ba1f91aab7a70abf039e79009fb1b77c036aa892925e5e3df5c2550d20230a",
+        "tests\\fixtures\\cases.json": "6a62586ee93dd9695976cd45271036f2a92be4f74e1b3b9b6c21a411c8497c0e",
+        "tests\\fixtures\\structure.md": "d2d0c2740d28c44b7aac88e81aed8d50dc6ad90cc08f93a5a00c6ada1d6368e2",
+        "tests\\README.md": "ece3c1f808c4ef2ad8ac7ccb0977138cbc6f842455c725703b5bf780ae3cc36c"
+      },
+      "local_filename_overrides": {
+        "SKILL.md": "REFERENCE.md"
+      },
+      "discovery": "reference_only_not_an_independent_skill"
+    }
+  ],
+  "discovery_policy": "Only ../../SKILL.md is a skill entrypoint; upstream SKILL.md files are preserved byte-for-byte as REFERENCE.md."
+}

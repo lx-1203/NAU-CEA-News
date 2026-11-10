@@ -1,0 +1,4 @@
+{
+  "data_root": "data",
+  "note": "Copy to storage.local.json to override. Relative paths resolve from project root."
+}

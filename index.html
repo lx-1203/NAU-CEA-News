@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NJAU-CEA 新闻联播</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="branding-logo.css">
+    <link rel="stylesheet" href="broadcast-anime.css">
+    <link rel="stylesheet" href="news-layout.css">
+    <link rel="stylesheet" href="news-bubble.css">
+</head>
+<body>
+    <main class="tv-frame" aria-label="NJAU-CEA 新闻演播室">
+        <div class="studio-container">
+            <div class="studio-bg" aria-hidden="true"><div class="ceiling"></div><div class="light-ribbon"></div><div class="wall-panels"></div><div class="floor"></div></div>
+            <header class="channel-logo"><strong aria-label="NJAU-CEA"><span class="logo-nau">NJAU</span><span class="logo-cea">-CEA</span></strong><b>1</b><span>综合</span><span class="live-badge"><span class="live-dot" aria-hidden="true">●</span> LIVE</span></header>
+            <div class="edition"><div>校园科技 · 青年视角 <span>NEWS STUDIO / 01</span></div><img class="university-emblem" src="assets/branding/njau-emblem-official.png" alt="南京农业大学校徽" width="934" height="934"><img class="association-emblem" src="assets/branding/cea-emblem.png" alt="南京农业大学计算机协会 LOGO" width="1254" height="1254"></div>
+            <section class="screen-display branding-screen" aria-label="节目大屏">
+                <div class="screen-grid"></div>
+                <div class="studio-logo-lockup"><img id="studioProgrammeLogo" src="assets/branding/njau-cea-news-raster.png" alt="NJAU-CEA 新闻联播" width="2048" height="684"></div>
+                <div class="screen-content" id="screenContent"><span class="screen-eyebrow">COMPUTER ENTHUSIASTS ASSOCIATION</span><strong>NJAU-CEA 新闻联播</strong><span class="screen-tag">NJAU-CEA <i>校园科技联播</i></span></div>
+                <div class="screen-corner">ON AIR <span>●</span></div>
+            </section>
+            <aside class="news-board" aria-label="本期导视"><h2>本期导视 <span>RUNDOWN</span></h2><div><b>01</b><span>协会动态<small>CEA NEWS</small></span></div><div><b>02</b><span>技术分享<small>TECH TALK</small></span></div><div><b>03</b><span>校园观察<small>CAMPUS LIFE</small></span></div><p>让技术更有温度</p></aside>
+            <section class="news-scene" aria-label="资讯播放场景" hidden>
+                <div class="news-section-label">NJAU-CEA / NEWSROOM <span>校园资讯 · 素材播报</span></div>
+                <h1 id="newsTitle">协会 IP 形象介绍</h1>
+                <div class="news-media-window">
+                    <img id="newsImage" alt="当前新闻图片" hidden>
+                    <video id="newsVideo" controls playsinline preload="metadata" hidden></video>
+                    <div id="newsEmpty"><strong>新闻素材展示区</strong><span>在画面下方选择新闻图片或视频</span><small>图片 / 视频 · 保持原始比例</small></div>
+                </div>
+                <div class="news-material-caption"><span>新闻素材</span><p id="newsMaterialCaption">请选择图片或视频</p><b id="newsCounter">00 / 00</b></div>
+                <aside class="news-side-label" aria-label="本条新闻关键事实"><b>本条要点</b><ul class="news-key-facts"><li>选择资讯后展示已核实的关键事实</li></ul></aside>
+                <div class="news-presenter-name" id="newsPresenterName">秾小序 <small>为你播报</small></div>
+            </section>
+            <div class="characters-layer">
+                <div class="character character-boy" id="xiaoXu"><img src="assets/characters/anchors/generated/xiaoxu-normal.png" alt="主播秾小序：光标发饰、四键口袋" class="character-sprite" data-expression="normal"></div>
+                <div class="character character-girl" id="xiaoHe"><img src="assets/characters/anchors/generated/xiaohe-normal.png" alt="主播楠小禾：方括号发夹、深绿披肩" class="character-sprite" data-expression="normal"></div>
+            </div>
+            <div class="anchor-desk" aria-label="前景主播台"><div class="desk-top"></div><div class="desk-front"><span class="anchor-name">秾小序 <small>主播 / XIAOXU</small></span><strong>NAU <span>CEA</span></strong><span class="anchor-name">楠小禾 <small>主播 / XIAOHE</small></span></div></div>
+        </div>
+        <section class="news-package" aria-label="新闻字幕">
+            <div class="program-block"><small>NJAU-CEA 综合</small><strong class="branding-program-mark"><img src="assets/branding/njau-cea-news-raster.png" alt="NJAU-CEA 新闻联播" width="2048" height="684"></strong><time id="subtitleDate"></time></div>
+            <div class="headline-stack"><div class="topic-bar"><span>校园科技联播</span><span>本期主题 · 让技术更有温度</span></div><div class="subtitle-bar"><span class="speaker-tag" id="speakerName">小序</span><div class="subtitle-text" id="subtitleText">欢迎收看 NJAU-CEA 校园科技联播</div></div><div class="ticker" data-duration="198.633333"><b>快讯</b><div><span>【机器人】据新京报11月8日报道，启元宣布第1万台个人机器人下线。企业称，从5000台增至1万台用时14天；这一数字为生产下线量，不等同实际销量。　　◆　　【开源工具】Open WebUI发布v0.13.1，新增Tether桌面伴侣，可连接个人电脑，并在终端支持时接入编码代理；同日补丁修复普通HTTP加载问题，具体访问权限仍需配置。　　◆　　【医药应用】11月8日，第八届连云港医药技术大会开幕，人工智能＋医药公共服务平台正式上线，医药人工智能产业研究院同步揭牌。消息由连云港经开区发布，新华网江苏频道刊载。　　◆　　【航天计划】NASA公布月球基地运输与技术任务安排，推进核动力月球车PROMISE，目标于2028年末发射，计划执行18个月任务。目前为未来任务安排，尚未执行。　　◆　　【文档处理】Docling发布v2.149.0，新增可选择启用的PDF内嵌图片提取，增加MiniCPM-OCR预设及mlx-audio语音识别支持，并修正文档输出中的若干细节。　　◆　　【本地模型】llama.cpp推出b12191预发布，调整混合专家模型缓存，允许CPU分担部分未命中专家计算，并增加本机调参脚本。该版本仍属预发布，实际提速情况取决于设备与配置。　　◆　　【代码整理】Repomix发布v1.19.0，升级MCP服务，代码打包长任务支持进度通知和取消，并修复部分代码压缩准确性问题；进度显示需要客户端支持相应协议。　　◆　　【模型接口】LiteLLM发布v1.108.3长期支持补丁，修复特定接口配置错误、超过1MiB的工具结果流异常，以及模型级回复护栏重复检查。这些是具体修复项，不表示所有接口故障均已解决。</span></div><small>NJAU-CEA</small></div></div>
+        </section>
+    </main>
+
+    <!-- 控制面板（测试用） -->
+    <div class="control-panel">
+        <h3>演播室控制 <span>此区域不属于节目画面</span></h3>
+        <div class="scene-controls">
+            <div class="scene-tabs" aria-label="节目场景"><button id="studioTab" aria-pressed="true" onclick="setNewsScene(false)">演播室</button><button id="newsTab" aria-pressed="false" onclick="setNewsScene(true)">资讯播放</button></div>
+            <label>讲解主播 <select id="newsAnchor"><option value="xiaoXu">秾小序</option><option value="xiaoHe">楠小禾</option></select></label>
+            <label>资讯标题 <input id="newsTitleInput" type="text" value="协会 IP 形象介绍" maxlength="45"></label><button id="updateNewsTitle">更新资讯标题</button>
+        </div>
+        <div class="controls">
+            <div>
+                <label>小序：</label>
+                <button onclick="changeExpression('xiaoXu', 'normal')">正常</button>
+                <button onclick="changeExpression('xiaoXu', 'happy')">开心</button>
+                <button onclick="changeExpression('xiaoXu', 'surprised')">惊讶</button>
+                <button onclick="changeExpression('xiaoXu', 'thinking')">思考</button>
+                <button onclick="changeExpression('xiaoXu', 'serious')">严肃</button>
+                <button onclick="changeExpression('xiaoXu', 'presenting')">讲解</button>
+                <button onclick="changeExpression('xiaoXu', 'thumbsup')">点赞</button>
+            </div>
+            <div>
+                <label>小禾：</label>
+                <button onclick="changeExpression('xiaoHe', 'normal')">正常</button>
+                <button onclick="changeExpression('xiaoHe', 'happy')">开心</button>
+                <button onclick="changeExpression('xiaoHe', 'excited')">兴奋</button>
+                <button onclick="changeExpression('xiaoHe', 'shy')">害羞</button>
+                <button onclick="changeExpression('xiaoHe', 'wink')">眨眼</button>
+                <button onclick="changeExpression('xiaoHe', 'wave')">招手</button>
+                <button onclick="changeExpression('xiaoHe', 'encourage')">鼓劲</button>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="playback-controls"><button id="voiceDemoButton" onclick="playVoiceDemo()" title="无需选文件，直接播放带停顿的配音示例">口播示意</button><button onclick="playDemo()">字幕演示</button><button onclick="toggleBroadcast()">纯净画面（Esc 返回）</button><button onclick="addSticker('star', 48, 24)">星星贴纸</button></div><label for="subtitleInput">新闻字幕：</label>
+            <input type="text" id="subtitleInput" placeholder="输入字幕内容">
+            <button onclick="updateSubtitle()">更新</button>
+        </div>
+        <div class="material-controls voice-controls">
+            <label class="file-picker">选择配音<input id="voiceFile" type="file" accept="audio/*,.wav,.mp3,.m4a,.ogg,.flac"></label>
+            <label for="voiceAnchor">配音主播</label><select id="voiceAnchor"><option value="xiaoXu">秾小序</option><option value="xiaoHe">楠小禾</option></select>
+            <button onclick="playVoice()">播放配音</button><button onclick="pauseVoice()">暂停配音</button><button onclick="clearVoice()">清空配音</button>
+            <audio id="voiceAudio" controls preload="metadata" aria-label="配音播放与进度"></audio>
+            <label for="voiceThreshold">静音阈值</label><input id="voiceThreshold" type="range" min="0.003" max="0.08" value="0.015" step="0.001"><output id="voiceMeter">音量 0.000</output>
+            <span id="talkStatus" role="status">选择配音后播放：有声粒子＋轻抖，停顿停止；表情直接换图，切换保留弹跳。</span>
+        </div>
+        <div class="material-controls">
+            <label class="file-picker">添加图片 / 视频<input id="newsFiles" type="file" accept="image/*,video/*" multiple></label>
+            <select id="newsPlaylist" aria-label="新闻素材列表"><option value="">尚未选择素材</option></select>
+            <button id="previousNews">上一条</button><button id="nextNews">下一条</button><button id="playNewsVideo">播放 / 暂停视频</button><button id="showSampleNews">查看示例图</button><button id="clearNews">清空素材</button>
+            <p id="newsStatus" role="status" aria-live="polite">本地素材仅用于当前页面，刷新后需重新选择。纯净画面隐藏视频操作条。</p>
+        </div>
+    </div>
+    
+    <script src="news-media.js"></script>
+    <script src="script.js"></script>
+    <script src="voice-demo.js"></script>
+    <script src="talking.js"></script>
+</body>
+</html>

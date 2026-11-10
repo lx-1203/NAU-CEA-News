@@ -1,0 +1,6 @@
+{
+  "repository": null,
+  "branch": null,
+  "scope": "reviewed_daily_manuscript_only",
+  "credential_environment": "GITHUB_TOKEN"
+}

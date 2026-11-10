@@ -1,0 +1,27 @@
+/* Approved production bubble in the same anime studio palette. */
+.is-news .news-side-label{
+  top:var(--news-bubble-top,24%);left:76.1%;width:21.9%;height:auto;box-sizing:border-box;
+  border:.18cqw solid #28534f;border-radius:1.65cqw 1.8cqw 1.65cqw 1.35cqw;
+  background:#fffdf3;padding:.7cqw .8cqw .8cqw;
+  box-shadow:.24cqw .3cqw 0 #8eb8ab,0 .6cqw 1cqw #244c4d16;
+  overflow:visible;transform-origin:56% 100%;animation:newsBubbleFloat 4.8s ease-in-out infinite;
+}
+.is-news .news-side-label::before{
+  content:"";position:absolute;bottom:-1.06cqw;left:53%;width:1.65cqw;height:1.65cqw;
+  background:#fffdf3;border-right:.18cqw solid #28534f;border-bottom:.18cqw solid #28534f;
+  transform:skewY(-15deg) rotate(40deg);border-radius:0 0 .35cqw 0;
+  box-shadow:.22cqw .12cqw 0 #8eb8ab;z-index:0;
+}
+.is-news .news-side-label>b{
+  display:block;position:relative;margin:0 0 .5cqw;padding:0 0 .45cqw;
+  border-bottom:.1cqw dashed #b8cbb8;background:none;color:#426f5c;
+  font-size:1.15cqw;line-height:1.25;font-weight:700;letter-spacing:.08cqw;
+}
+.is-news .news-key-facts{position:relative;margin:0;padding:0;gap:.5cqw;list-style:none;z-index:1}
+.is-news .news-key-facts li{font-size:var(--news-fact-font,1.48cqw)!important;font-weight:600;line-height:1.35;padding-left:.8cqw;color:#26494a}
+.is-news .news-key-facts li::before{
+  width:.3cqw;height:.3cqw;top:.48em;left:0;background:#bdd86c;
+  border:.07cqw solid #567d52;border-radius:.07cqw;transform:rotate(-12deg);
+}
+@keyframes newsBubbleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-.38cqw)}}
+@media(prefers-reduced-motion:reduce){.is-news .news-side-label{animation:none}}

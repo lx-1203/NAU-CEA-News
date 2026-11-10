@@ -1,0 +1,4 @@
+interface:
+  display_name: "内容创作工作流"
+  short_description: "Persona-driven content creation workflows from raw material"
+  default_prompt: "Use $content-creator to develop this material into a publishable article."

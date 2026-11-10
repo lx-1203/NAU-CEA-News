@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-11-09",
+  "project_config": "config/pipeline.json",
+  "selection_priority": "最新明确要求：小序自然男童声boy-v2，小禾自然女童声方向girl-v2，固定男童+女童",
+  "note": "Historical voice-selection metadata only; actual runtime paths and parameters come from current config/pipeline.json.",
+  "speech_pacing": {
+    "enabled": true,
+    "min_cpm": 280,
+    "max_cpm": 300,
+    "normal_cpm": 295,
+    "sensitive_cpm": 285,
+    "min_tempo": 0.75,
+    "max_tempo": 1.6,
+    "threshold_db": -45,
+    "terms": [
+      "人工智能",
+      "核动力",
+      "月球车",
+      "文字识别",
+      "语音识别",
+      "专家缓存",
+      "预发布",
+      "大模型",
+      "模型接口",
+      "工具调用",
+      "代码压缩",
+      "客户端",
+      "AI",
+      "CPU",
+      "GPU",
+      "PDF",
+      "MCP",
+      "Open WebUI",
+      "Docling",
+      "llama.cpp",
+      "Repomix",
+      "LiteLLM"
+    ]
+  },
+  "speech_pacing_reference": "speech-pacing.md"
+}
