@@ -1,4 +1,4 @@
-# NJAU-CEA 新闻项目架构 1.1.2
+# NJAU-CEA 新闻项目架构 1.2.0
 
 下载整个复用包后解压到任意 Windows 目录；程序自动定位自己的根目录，不依赖原作者的 D、F 盘。双击 first_run.bat 首次安装，start.bat 日常启动，next_episode.bat 准备新一期。角色、固定音色及合格共享素材随包提供；模型按固定来源另行下载。
 
@@ -32,6 +32,8 @@ NJAU-CEA-News/
 新刊期通过 pipeline.storage.issue_paths 建目录。collect/new/plan/render/desktop统一调用该接口；下载原图时用 register_media 或 organize_issues.py --media，按刊期即时归类，重名且内容不同自动加哈希后缀。图片来源、资料画面用途和SHA仍必须记录；归类不代表审核或获准公开发布。证据截图仅作核验，不是合格新闻配图。禁止用SVG、Canvas、Pillow等自行绘制图片或LOGO替代所需原图。
 
 render先写production/runs和audio/cues/轮次，状态为待终检；不会把未经终检的新片冒称当前最终版。终检通过后使用 `organize_issues.py --date YYYY-MM-DD --pointer <该轮交付指针JSON> --publish-current` 将配套交付归入当期deliverables/current，保留已有稿件和任务；旧current保存在同级history目录。该操作保存独立finalization清单，之后可按依赖清理历史中间版。9号、10号的历史封存目录不在原地继续生产，若重制应选新工作数据根或独立导出路径。
+
+架构1.2.0起，最终化核验通过后自动回收已被替代的history文件及生产者登记的中间产物，更新当前入口。清理状态、回执和未解决项持久记录；原件、实际依赖、无BGM输入和唯一证据保留。回收失败或登记异常时标记pending_cleanup，不永久删除或虚报完成。详见[TASK_CLEANUP.md](TASK_CLEANUP.md)。其他打包/架构工作完成后也按本任务明确废弃清单调用通用清理入口。
 
 历史最终片以原哈希保留，分类归档是二进制相同的副本和独立相对路径清单；原始制作清单只作为历史证据保留。旧清单不会被改写来伪造“当前源码仍一致”。原片仍可播放，不代表其旧源码满足后来的新要求。新制作轮次与当前交付分别存放，清理按实际依赖进行。
 

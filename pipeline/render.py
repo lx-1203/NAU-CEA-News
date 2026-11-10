@@ -588,6 +588,13 @@ def render_edition(edition_path, run_dir, audio_manifest_path=None):
     for i, frame in enumerate(frames):
         with Image.open(frame) as im: sheet.paste(im.resize((480,270)), ((i%3)*480,(i//3)*270))
     sheet.save(run_dir/'contact-sheet.jpg', quality=92)
+    from .task_finish import register_intermediates
+    disposable=[*clips,*[item['path'] for item in assembly],*[run_dir/f'cue-{i:03d}-padded.wav' for i in range(len(lines))]]
+    disposable.extend(run_dir/name for name in ['news-before-transitions.mp4','news-before-ticker.mp4','news-body.mp4'])
+    # These working copies remain usable until finalization has copied and
+    # verified current; only that later lifecycle step may retire them.
+    disposable.extend(run_dir/name for name in ['news.mp4','watch.html','daily.html'])
+    register_intermediates(run_dir,edition['date'],disposable)
     files = {p.name:sha256(p) for p in run_dir.iterdir() if p.is_file()}
     current_hashes = {name:sha256(ROOT/name) for name in source_hashes}
     if current_hashes != source_hashes: raise ValueError('渲染期间源码变化，请按新源码重新渲染')

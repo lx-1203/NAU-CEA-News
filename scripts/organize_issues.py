@@ -8,6 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from pipeline.core import ROOT, read_json
 from pipeline.issue_archive import export_issue, publish_current
+from pipeline.task_finish import finish_reviewed_issue
 from pipeline.storage import issue_paths, register_media, valid_day, data_root
 
 
@@ -20,7 +21,8 @@ def main():
     parser.add_argument('--publish-current', action='store_true', help='Explicitly finalize reviewed output into an existing issue; preserve authoring inputs')
     args = parser.parse_args()
     from pipeline.updates import ensure_current
-    if ensure_current(ROOT).get('rerun_required'):
+    update_receipt=ensure_current(ROOT)
+    if update_receipt.get('rerun_required'):
         os.execv(sys.executable,[sys.executable,*sys.orig_argv[1:]])
     day = valid_day(args.date)
     output = args.output or issue_paths(day)['root']
@@ -35,9 +37,14 @@ def main():
         pointer = read_json(args.pointer or default)
         if pointer.get('date') != day:
             raise ValueError('Requested date and pointer date disagree')
-        result = publish_current(pointer, output) if args.publish_current else export_issue(pointer, output)
+        if args.publish_current:
+            from pipeline.updates import production_guard
+            with production_guard(ROOT,update_receipt):
+                result=finish_reviewed_issue(pointer,output,active_locks=[data_root()/'.render.lock',ROOT/'outputs/daily/.render.lock'])
+        else:result=export_issue(pointer,output)
         print(json.dumps(dict(date=day, output=str(output.resolve()), files=len(result['files']),
-                             **({'ledger':result['ledger']} if args.publish_current else {})), ensure_ascii=False))
+                             **({'ledger':result['ledger'],'cleanup':result['cleanup'],'completion_status':result['completion_status']} if args.publish_current else {})), ensure_ascii=False))
+        if args.publish_current and result['completion_status']!='complete':raise SystemExit(2)
     if args.media:
         # Media registration is for original intake, separate from sealed archives.
         if (output/'ISSUE_MANIFEST.json').exists():
