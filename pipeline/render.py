@@ -244,6 +244,25 @@ def overlay_news_ticker(source, target, receipt, run_dir, duration, fps=30):
 
 
 def render_edition(edition_path, run_dir, audio_manifest_path=None):
+    from .bgm import BgmSession, settings
+    if not settings(ROOT).get('enabled',True):
+        return _render_edition(edition_path,run_dir,audio_manifest_path)
+    edition=validate_edition(read_json(edition_path))
+    with BgmSession(ROOT,edition['date']) as music:
+        result=_render_edition(edition_path,run_dir,audio_manifest_path,bgm=music)
+        music.seal_cache()
+        # Seal output metadata and actual deletion before atomically counting use.
+        receipt=Path(run_dir)/'bgm-receipt.json'
+        value=read_json(receipt);value['cleanup']=music.cleanup_receipt
+        write_json(receipt,value)
+        result['files'][receipt.name]=sha256(receipt)
+        result['bgm']['cache_audio_bytes_after']=music.cleanup_receipt['audio_bytes_after']
+        write_json(Path(run_dir)/'manifest.json',result)
+        music.commit(Path(run_dir)/'news.mp4')
+    return result
+
+
+def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
     edition = validate_edition(read_json(edition_path))
     from .date_guard import validate_issue_day
     validate_issue_day(edition['date'], archive=edition.get('archive_production',False))
@@ -268,6 +287,8 @@ def render_edition(edition_path, run_dir, audio_manifest_path=None):
     dependencies.extend(sorted((ROOT/'assets/branding').glob('*.svg')))
     dependencies.extend(sorted((ROOT/'assets/player').glob('news-player.*')))
     dependencies.append(edition_path.resolve())
+    for name in ['config/bgm.json','config/bgm.local.json']:
+        if (ROOT/name).is_file():dependencies.append(ROOT/name)
     if supplied_audio: dependencies.append(supplied_audio)
     dependencies.extend(workbench_dependencies(config))
     media_cache = {}
@@ -564,6 +585,11 @@ def render_edition(edition_path, run_dir, audio_manifest_path=None):
                 command([FFMPEG,'-v','error','-y','-i',run_dir/'news-no-bgm.mp4','-i',run_dir/'chapters.ffmetadata',
                          '-map','0:v','-map','0:a?','-map_metadata','0','-map_chapters','1','-c','copy',run_dir/'news-no-bgm-with-chapters.mp4'])
                 (run_dir/'news-no-bgm-with-chapters.mp4').replace(run_dir/'news-no-bgm.mp4')
+    if bgm:
+        # This remix input stays usable after disposable downloaded music is gone.
+        if not (run_dir/'news-no-bgm.mp4').exists():shutil.copy2(video,run_dir/'news-no-bgm.mp4')
+        bgm.mix(video,run_dir/'news-with-bgm.mp4',read_json(run_dir/'timeline.json'))
+        (run_dir/'news-with-bgm.mp4').replace(video)
     # A complete decode is required before advancing the latest pointer.
     command([FFMPEG,'-v','error','-i',video,'-f','null','-'])
     info = imageio_ffmpeg.read_frames(str(video))
@@ -599,6 +625,10 @@ def render_edition(edition_path, run_dir, audio_manifest_path=None):
     current_hashes = {name:sha256(ROOT/name) for name in source_hashes}
     if current_hashes != source_hashes: raise ValueError('渲染期间源码变化，请按新源码重新渲染')
     if any(sha256(path) != digest for path,digest in audio_inputs.items()): raise ValueError('渲染期间配音源文件变化')
+    if bgm:
+        music_receipt=dict(bgm.receipt,status='validated',video_sha256=sha256(video))
+        write_json(run_dir/'bgm-receipt.json',music_receipt)
+        files['bgm-receipt.json']=sha256(run_dir/'bgm-receipt.json')
     manifest = dict(status='rendered', editorial_status='reviewed', publication_status='not_published', date=edition['date'], created_at=datetime.now(TZ).isoformat(), metadata=metadata, total_seconds=cues[-1]['end'], peak_db=peak, speech_provider=provider, voices=sorted({s['voice'] for s in shots}), source_hashes=source_hashes, audio_inputs=audio_inputs, files=files, checks=dict(full_decode=True, dimensions=True, fps=True, duration=True, peak=True), limitations=['固定机位、逐句切素材；新闻原视频静音，只保留主播口播', '句中表情动作按语义和发声区间比例安排，未做逐字强制对齐；整图姿态切换，不是骨骼动画或嘴型同步', '音色采用项目选定参考音频，合成音频按实际时长重排字幕与镜头', '未进行人工完整试听；自动音量测量不代表发音自然度验收'])
     if transition_receipt:
         manifest['transitions'] = dict(count=len(transition_receipt['plan']['transitions']),
@@ -607,5 +637,8 @@ def render_edition(edition_path, run_dir, audio_manifest_path=None):
                                        library_sha256=sha256(DEFAULT_LIBRARY))
     if opening_receipt:
         manifest['opening'] = opening_receipt
+    if bgm:
+        manifest['bgm']=dict(receipt='bgm-receipt.json',sha256=bgm.selection['track']['sha256'],
+                             cycle=bgm.selection['cycle'],catalog_version=bgm.selection['catalog_version'])
     write_json(run_dir/'manifest.json', manifest)
     return manifest

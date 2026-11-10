@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "repository": "lx-1203/NAU-CEA-News",
+  "catalog_url": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/music-pack/MUSIC_MANIFEST.json",
+  "rotation": "all_tracks_once_then_next_cycle",
+  "cache_budget_bytes_after_use": 0,
+  "history_scope": "configured_data_root/music/history.json"
+}

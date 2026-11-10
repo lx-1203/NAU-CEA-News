@@ -2,12 +2,12 @@
 name: nau-cea-daily-video
 description: Use when producing or revising NJAU-CEA 校园科技每日新闻、双主播配音视频，或维护该项目每日生产接口、素材和表演规范。
 metadata:
-  version: "1.2.1"
+  version: "1.3.0"
 ---
 
 # NJAU-CEA 每日新闻视频
 
-当前skill版本：**1.2.1**。版本权威及逐文件哈希见项目 `architecture/release.json`。
+当前skill版本：**1.3.0**。版本权威及逐文件哈希见项目 `architecture/release.json`。
 
 2026-11-10最新用户纠正：开场第一句必须说“这里是南京农业大学计算机爱好者协会。”，随后欢迎收看NJAU-CEA新闻联播。品牌及节目LOGO统一为大写 **NJAU-CEA**（保留连字符），取代NAUCEA/NAU CEA；中文社团全称不变。
 
@@ -49,6 +49,16 @@ metadata:
 render产物先作为待终检轮次，不自动替换当前最终片。终检通过后，使用 `organize_issues.py --date YYYY-MM-DD --pointer <本轮交付指针JSON> --publish-current` 更新当期current和finalization清单；不覆盖已有稿件、任务或证据。历史封存期原件不原地重制。渲染与更新共用协调锁，检查后的版本变化必须新进程重试。
 
 生成/下载文件时立即选刊期和类别，禁止统一倒进根目录或跨日期复用未标注图片。登记素材来源、用途与SHA；完成步骤同步tasks/status.json及docs/TODO.md。归档使用 `scripts/organize_issues.py`，便携包以相对路径和独立清单验收。历史日期旧路径是只读原件，不强行搬迁破坏其证据链；当前入口见data日期目录。
+
+## 每期自动 BGM（2026-11-11 用户要求）
+
+正式 render 默认自动检查 GitHub 独立音乐包、选择当前轮未用录音、按需下载并校验 SHA256、混音、机器检查并封存元数据、清理缓存，最后提交已使用记录。不再手工每期留下原曲。每轮全部可用录音成功用过后才重开一轮，跨轮尽量不连续撞曲；新增歌加入当前轮，移除歌不阻塞，失败不计数，同一期重导出沿用选择。固定开屏 News Theme 不参与每日轮换。
+
+记录在配置数据根 music/history.json，升级和清理缓存都不删除；换轮只清当前轮集合，历史刊期和成片哈希继续保留。状态损坏停止而非悄悄重建，多窗口用操作系统锁串行；不同数据根各自维护历史，可复制 JSON 迁移。原曲目录和全库不会每次下载，现有 ZIP 支持 HTTP Range 按单曲提取；整包降级仅存临时文件，校验后关闭删除。正在上传的草稿版不视为已发布。
+
+用户本次明确要求真正释放空间：只有工具创建且可重新下载的 music/cache/ 音频与下载片段在成功、异常和下次启动时直接删除，用后预算 0 字节音频。此例外不改变其他视频中间产物送回收站的规则，不碰原件、共享曲库、原配音、成片及无 BGM 重混输入。归档保留 bgm-receipt.json 的来源、轮次、署名和实际清理回执。不得把未清理或未试听说成已完成。
+
+日常无需手动调用；独立复用可用 python scripts/bgm.py check/status/cleanup/mix。详见项目 docs/BGM.md；本机 config/bgm.local.json 可覆盖默认配置，明确 enabled=false 可关闭自动混音。开屏和独立转场继续按实际 timeline 保持既有声音规范；混音后实测真峰值不得高于 -3 dB。
 
 ## 工作完成后自动清理（用户持续授权）
 
