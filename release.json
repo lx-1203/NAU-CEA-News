@@ -1,12 +1,12 @@
 {
   "project": "njau-cea-news",
-  "architecture_version": "1.3.0",
-  "skill_version": "1.3.0",
+  "architecture_version": "1.3.1",
+  "skill_version": "1.3.1",
   "files": {
     ".gitignore": "ea6ae4ba46a71516bc969bff81c76113a2449056c33313cdf12b5c153320b703",
     "QUICK_START.md": "0f23930ec8c6ecf437b4afdc57c7f8572dd25a5d8d7d92576bc193657519cad4",
     "README.md": "271c0e3db5296c43a2d65f7fea9ea764057b162c1ff06f12eb885334fb8f695e",
-    "architecture/managed-files.json": "9c6ae2839dfb81888e4e568fb8a343ab36cee297ff0c8d0ba1431856e44e420a",
+    "architecture/managed-files.json": "35abbd6c52c4e5a40a92a667c9cc80f12ad89962d4adf9e82a1a680978cc07e7",
     "assets/player/news-player.css": "7e22791ddd5f33cd252f5ceacc3a16d207ec45829c41ff86adc02505bac7931b",
     "assets/player/news-player.js": "d22dd84946f5e06017e015a502fc9ce8f6cb0f6aa32fb49ed1f23eeac2d6f743",
     "branding-logo.css": "399e0aa21820ed4093a8678cfcfd9e394d52c17dc5f96cc78d844f2a74648d33",
@@ -35,7 +35,7 @@
     "docs/REUSE_GUIDE.md": "9f620ca43bcbac99410c31fdc64a7a6206e9ee08f6dee1e0ac4a946ecea63b8f",
     "docs/TASK_CLEANUP.md": "88e9024bbcb5f9078821a545824840a5f469422a6705621b07be0705f853a297",
     "docs/THIRD_PARTY_LINKS.md": "474da4a9784687bc05238ff332c5a5de28a8d4086981364c2614ca653499cf63",
-    "docs/VERSIONING.md": "5f2e82883c06d29fdc6ae943ffbafa837ee445656c1d1099f12825289e3094f6",
+    "docs/VERSIONING.md": "1c0b757099d19474f806ff310a39c77b77d666ad7d0865feac90863ae4ae25c8",
     "docs/VISUAL_MATERIAL_POLICY.md": "b7c33d9f49d7ef276cc4c99f1ff2ca141b18af974ee22fd8f9e4a0a866405359",
     "first_run.bat": "d6c838981767e1b7c93fec34cbb8966c987dabfd7e0058f641c115f9811b4b7f",
     "index.html": "4e0e4c76150ffd3805dd860dbb4bf8d78bceefba6af42d77e50103d7c009d90d",
@@ -91,10 +91,11 @@
     "scripts/verify_daily_delivery.py": "73f4dbab2093eab10d0addc1cb28bf801a240d6e2981111d5c9e5094eacc43d7",
     "scripts/verify_daily_player.py": "277c7619c4d2c4fc83c23852f05b8b6baef3cd2630ee523d8938c441f016fc89",
     "scripts/workbench_service.py": "c51a7e7defb04636f21518aa44ca19b3044beeb3fd7630d5da56e137fae562e6",
-    "skills/nau-cea-daily-video/SKILL.md": "1eef0153489396190f2469d8e9e14a863281be7808aefbb32e8745e491011c8f",
+    "skills/nau-cea-daily-video/SKILL.md": "728cc6c55860b7dd78734b6a2b0d11aa41a8eabaaedd25e1430b1c9ea6124852",
     "skills/nau-cea-daily-video/agents/openai.yaml": "bff9a10ad862d3b0e2887e36e9e923cbf68786eec35af8288c48dd331fbf2491",
     "skills/nau-cea-daily-video/references/narration-writing.md": "d8bb2c184a998fc4e60a58938dd878393b1474c7cc7187b3c764a4a94cb5b7c7",
     "skills/nau-cea-daily-video/references/production-contract.md": "b81380f8240cfdc3b30d8a5039b179be11271b839163382904295fddd7bbd6b9",
+    "skills/nau-cea-daily-video/references/shared-music-workflow.md": "9c0d269d123cb586445a474f4b0b0649de0f9b5d45ab67bbe0ac8a27d578e90c",
     "skills/nau-cea-daily-video/references/speech-pacing.md": "4de1f5c811e32b102f300508e55db55b3581f893bb101acd4c61a2a3d6b2af84",
     "skills/nau-cea-daily-video/references/upstream/humanizer-zh/.gitignore": "60e2fa4bf2647667b82c5351d453847ae233821ff6af15846b19f40a0c1a45d0",
     "skills/nau-cea-daily-video/references/upstream/humanizer-zh/CHANGELOG.md": "254ac282ea3a224237d7778d1704165f5dd51db29839de6431569435561fd0fe",
@@ -157,8 +158,8 @@
     "voice-demo.js": "84e611d4f7c8b058d0c9ce78d6c19fa9ddb1327f1aec7d65fd4a2b1d8cc82505"
   },
   "archive": {
-    "url": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/v1.3.0/updates/update.zip",
-    "sha256": "674a7313f53804b632d122a71f400424c98bfbccde5f80c65f3cac708f058bdc",
-    "bytes": 343137
+    "url": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/v1.3.1/updates/update.zip",
+    "sha256": "93b1d03905c943a0cadc2701e3e04d03b9fb13eacf5c767adbea843d3bbfa533",
+    "bytes": 349115
   }
 }
