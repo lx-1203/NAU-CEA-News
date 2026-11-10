@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "package": "NJAU-CEA-Music-Pack",
+  "version": "1.0.0",
+  "files": {
+    "assets/audio/music/CHANGELOG.md": "a8594bcfc66045c054495e03fb2cc7443bf08238f2b7f7d6a90be6c920b0ec01",
+    "assets/audio/music/CREDITS.txt": "e0bd162920704fb5f8a55d1f4d566ccad5057609362e42429710691be0af2fb5",
+    "assets/audio/music/MUSIC_MANIFEST.json": "4a370e269887f2f17323519fc67196998a6e5293f6e6d8597c82a51c97e65d3c",
+    "assets/audio/music/news-theme-kevin-macleod.mp3": "671e9432ce2361a0074a5c97a9d2e19e495f8ff29e6cbad2afe35e2a7d6057e4",
+    "assets/audio/music/qifeng-piano-original.mp3": "92bee08d8a97573c6676bbd0b059e8195a6810ee68c2fcbae65736e3d767549a",
+    "assets/audio/music/README.md": "b90c4dcc96f72cb1abddea733423cc467af618f9dad25fcc0f35cc242a1b13ee",
+    "assets/audio/music/RIGHTS.md": "6f4b20665c70fde11bcc5012472092b8f51215d3cddf27722497b9d49fffbb9e",
+    "assets/audio/music/shengxia-original.mp3": "70ff0106e7303f671aedcf94d10a0af113e84e6ff1def4777b2e495e7cdee342",
+    "README.md": "fa99061505383d83970f9c78a2cad57fe23db1b729bc04e4b8644e3e5bfad1fa"
+  }
+}

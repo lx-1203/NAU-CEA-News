@@ -1,0 +1,13 @@
+NJAU-CEA Shared Music Pack 1.0.0
+
+ALisa - 盛夏：用户提供的原始录音，历史用于2026-11-09期。
+纯音乐 - 起风了（钢琴版）：用户提供的原始录音，历史用于2026-11-10期。
+两份录音及原作品保留其原权利，未在本包内另行授予MIT/Creative Commons许可。
+
+News Theme — Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100544
+Original audio: https://incompetech.com/music/royalty-free/mp3-royaltyfree/News%20Theme.mp3
+Changes in this pack: none; the original MP3 is included unchanged.
+Historical opening use: eight-second excerpt, reduced level and fades.

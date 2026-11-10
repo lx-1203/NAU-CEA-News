@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "package": "NJAU-CEA-Music-Pack",
+  "version": "1.0.0",
+  "created_on": "2026-11-11",
+  "asset_group": "music",
+  "optional_component": true,
+  "shared_asset_directory": "assets/audio/music",
+  "selection_policy": "共享库供各期按需选用；入库不自动改变既有视频或每日默认配乐。",
+  "tracks": [
+    {
+      "id": "shengxia",
+      "title": "ALisa - 盛夏",
+      "historical_usage": [
+        "2026-11-09"
+      ],
+      "source_kind": "user_provided_recording",
+      "path": "shengxia-original.mp3",
+      "group": "music",
+      "sha256": "70ff0106e7303f671aedcf94d10a0af113e84e6ff1def4777b2e495e7cdee342",
+      "bytes": 7480584,
+      "duration_seconds": 186.96,
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "historical_mix_profile": {
+        "base_target_lufs": -25.0,
+        "voice_ducking": {
+          "threshold": 0.02,
+          "ratio": 4,
+          "attack_ms": 25,
+          "release_ms": 500
+        },
+        "crossfade_seconds": 6.0,
+        "fade_in_seconds": 1.2,
+        "fade_out_seconds": 3,
+        "limiter_peak_amplitude": 0.6
+      },
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音；2026-11-11按用户指令加入共享包，不将原曲或录音重新许可为MIT/CC。"
+      }
+    },
+    {
+      "id": "qifeng-piano",
+      "title": "纯音乐 - 起风了（钢琴版）",
+      "historical_usage": [
+        "2026-11-10"
+      ],
+      "source_kind": "user_provided_recording",
+      "path": "qifeng-piano-original.mp3",
+      "group": "music",
+      "sha256": "92bee08d8a97573c6676bbd0b059e8195a6810ee68c2fcbae65736e3d767549a",
+      "bytes": 3338155,
+      "duration_seconds": 208.51,
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "historical_mix_profile": {
+        "base_target_lufs": -25.5,
+        "voice_ducking": {
+          "threshold": 0.02,
+          "ratio": 4,
+          "attack_ms": 25,
+          "release_ms": 500
+        },
+        "crossfade_seconds": 6.0,
+        "fade_in_seconds": 1.2,
+        "fade_out_seconds": 3,
+        "limiter_peak_amplitude": 0.6
+      },
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音；2026-11-11按用户指令加入共享包，不将原曲或录音重新许可为MIT/CC。"
+      }
+    },
+    {
+      "id": "news-theme",
+      "title": "News Theme — Kevin MacLeod",
+      "historical_usage": [
+        "approved_8_second_opening"
+      ],
+      "source_kind": "publisher_original",
+      "path": "news-theme-kevin-macleod.mp3",
+      "group": "music",
+      "sha256": "671e9432ce2361a0074a5c97a9d2e19e495f8ff29e6cbad2afe35e2a7d6057e4",
+      "bytes": 606071,
+      "duration_seconds": 27.17,
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "source_url": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/News%20Theme.mp3",
+      "artist": "Kevin MacLeod",
+      "rights": {
+        "status": "attribution_required",
+        "license": "CC BY 4.0",
+        "license_url": "https://creativecommons.org/licenses/by/4.0/",
+        "source_page": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100544"
+      }
+    }
+  ]
+}
