@@ -1,4 +1,4 @@
-# NJAU-CEA 新闻项目架构 1.2.0
+# NJAU-CEA 新闻项目架构 1.2.1
 
 下载整个复用包后解压到任意 Windows 目录；程序自动定位自己的根目录，不依赖原作者的 D、F 盘。双击 first_run.bat 首次安装，start.bat 日常启动，next_episode.bat 准备新一期。角色、固定音色及合格共享素材随包提供；模型按固定来源另行下载。
 
@@ -47,7 +47,7 @@ render先写production/runs和audio/cues/轮次，状态为待终检；不会把
 
 发布源支持HTTPS release.json或file URI、本项目内相对路径。发布目录必须同时提供清单列出的文件，以相同相对目录排列。`python scripts/publish_local_release.py --output <空发布目录>` 会校验后生成发布目录。
 
-维护者先修改受管文件；新增受管源码时同步architecture/managed-files.json，然后运行 `python scripts/freeze_release.py --architecture-version 1.1.1 --skill-version 1.1.0` 生成新哈希。skill改变时递增skill-version。禁止同版本变更文件哈希；生成清单后运行build_online_release.py生成固定版本ZIP与根release.json，再完成测试与发布；推送main清单和对应不可变版本tag。先发布tag中的ZIP，再发布新的main清单，最后以匿名下载验证。
+维护者每次更新都必须在交付前递增对应版本并记录变更，详见[VERSIONING.md](VERSIONING.md)。新增受管文件时同步architecture/managed-files.json，然后运行 `python scripts/freeze_release.py --architecture-version <新项目版本> --skill-version <当前或新skill版本>` 生成新哈希。受管内容变化必须递增项目版本；skill改变还必须递增skill-version，并同步入口可见版本和本机已安装skill。冻结器拒绝遗漏版本递增的改动；禁止同版本变更文件哈希。生成清单后运行build_online_release.py生成固定版本ZIP与根release.json，再完成测试与发布；推送main清单和对应不可变版本tag。先发布tag中的ZIP，再发布新的main清单，最后以匿名下载验证。
 
 默认公开更新源：`https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json`。每次启动实际读取该HTTPS清单；有新版时下载固定版本tag下的updates/update.zip，先核对整包SHA256、ZIP成员范围与每个受管文件SHA，全部通过后事务安装。网络失败直接报错，不退回本地基线。config/updates.local.json仅用于明确选择其他可信镜像；旧包若存在本地基线覆盖配置，需要将source改为上述在线地址。
 

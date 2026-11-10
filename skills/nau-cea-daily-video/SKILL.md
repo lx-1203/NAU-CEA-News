@@ -1,9 +1,13 @@
 ---
 name: nau-cea-daily-video
 description: Use when producing or revising NJAU-CEA 校园科技每日新闻、双主播配音视频，或维护该项目每日生产接口、素材和表演规范。
+metadata:
+  version: "1.2.1"
 ---
 
 # NJAU-CEA 每日新闻视频
+
+当前skill版本：**1.2.1**。版本权威及逐文件哈希见项目 `architecture/release.json`。
 
 2026-11-10最新用户纠正：开场第一句必须说“这里是南京农业大学计算机爱好者协会。”，随后欢迎收看NJAU-CEA新闻联播。品牌及节目LOGO统一为大写 **NJAU-CEA**（保留连字符），取代NAUCEA/NAU CEA；中文社团全称不变。
 
@@ -29,6 +33,12 @@ description: Use when producing or revising NJAU-CEA 校园科技每日新闻、
 - 输出 current/updated 且进程退出0后继续。未配置更新源、源不可达、本地冲突或坏哈希时，保留现有文件并记录具体失败，不能用缓存或“上次已检查”冒充本次成功。
 - 默认在线源为 `https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json`。每次实际读取GitHub清单；新版从固定版本tag下载更新ZIP，校验整包与逐文件哈希后安装。不得自动退回本地基线。仅部署者明确配置其他可信源时才切换。
 - 不覆盖 data、runtime、outputs、本地配置、已生成新闻或未提交本地修改；不删除活锁，不顺带更新第三方模型。详见项目 docs/ARCHITECTURE.md。
+
+## 每次更新同步递增版本（用户持续要求）
+
+每次修改并交付项目、skill或独立音色包，必须在本次交付前更新对应版本号和变更记录，不等用户提醒。skill的规则、引用资源或脚本发生变化时，必须递增skill版本，并同步本文件metadata.version、正文版本、项目release清单及已安装skill；项目受管文件发生变化时同时递增架构/更新包版本。修复和规范文字调整升PATCH，兼容新功能升MINOR，不兼容变更升MAJOR。
+
+遵循绑定项目根目录的`docs/VERSIONING.md`。发布前运行freeze_release、重建更新包及SHA256、验收后发布新的不可变tag；不得用同版本覆盖已交付内容或只改版本不重建包。独立音色包按自身版本管理，内容未变不空升版本。新刊期用日期标识，重导出的成片使用递增修订号并记录实际哈希；既有配音和原始素材不因版本递增被擅自更换。
 
 ## 每日目录与即时分类
 

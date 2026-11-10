@@ -19,7 +19,7 @@
 
 唯一配套skill：skills/nau-cea-daily-video。全局安装使用python scripts/install_agent_skill.py --home <助手主目录>，安装前保留旧版，后续每次调用自检并同步项目版。
 
-架构和skill版本见architecture/release.json。默认在线源是 https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json ，每次使用都会实际检查，下载固定版本更新包并核验后备份安装。网络失败或本地冲突会停止，不回退到本地基线。已有Python可运行 `python scripts/check_updates.py --apply`；没有Python可双击check_updates.bat，它只准备更新所需环境，不下载语音模型。
+架构和skill版本见architecture/release.json。每次更新都必须递增对应版本，skill同步更新；规则与变更记录见[docs/VERSIONING.md](docs/VERSIONING.md)。默认在线源是 https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json ，每次使用都会实际检查，下载固定版本更新包并核验后备份安装。网络失败或本地冲突会停止，不回退到本地基线。已有Python可运行 `python scripts/check_updates.py --apply`；没有Python可双击check_updates.bat，它只准备更新所需环境，不下载语音模型。
 
 GitHub公开发布的是架构、skill和配置模板；没有新闻图片、音乐、音色或人物/LOGO位图。完整生产需提供合法共享素材；公共框架包可独立更新和安装skill，full setup在素材缺失时会明确停止。解压既有完整本地素材包的用户也可直接升级代码，数据和素材不被覆盖。
 
