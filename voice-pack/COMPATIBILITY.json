@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "native_preset_schema": "1.0",
+  "native_preset_directory": "outputs/presets",
+  "api": "/api/v1/presets/{name}",
+  "studio": {
+    "version": "bf24477121939a411d31215151a4f7834c1eef6e",
+    "url": "https://codeload.github.com/lfandrh/indextts2-studio/zip/bf24477121939a411d31215151a4f7834c1eef6e",
+    "sha256": "79c9367bb007dfa4a9ae859786dabd6b3c3b1c92008a08c883384676f81ddfcf",
+    "size": 29361406
+  },
+  "workbench_patch": {
+    "version": "v0.33",
+    "url": "https://github.com/Mars-1438/indextts2-longform-workbench/releases/download/v0.33/indextts2-longform-workbench-patch-v0.33.zip",
+    "sha256": "15f0afd0add081370057850c83394d3af4b6952fe080cd34596947865f71d41d",
+    "size": 126480704
+  },
+  "model_revisions": {
+    "IndexTeam/IndexTTS-2": "740dcaff396282ffb241903d150ac011cd4b1ede",
+    "facebook/w2v-bert-2.0": "da985ba0987f70aaeb84a80f2851cfac8c697a7b",
+    "amphion/MaskGCT": "265c6cef07625665d0c28d2faafb1415562379dc",
+    "funasr/campplus": "e4b6ede7ce16997aff4ae69fbca1f0175e2afede",
+    "nvidia/bigvgan_v2_22khz_80band_256x": "633ff708ed5b74903e86ff1298cf4a98e921c513"
+  },
+  "upstream_links": {
+    "studio": "https://github.com/lfandrh/indextts2-studio",
+    "workbench": "https://github.com/Mars-1438/indextts2-longform-workbench",
+    "model": "https://huggingface.co/IndexTeam/IndexTTS-2",
+    "model_mirror": "https://modelscope.cn/models/IndexTeam/IndexTTS-2",
+    "vc_runtime": "https://aka.ms/vs/17/release/vc_redist.x64.exe",
+    "drivers": "https://www.nvidia.com/Download/index.aspx"
+  },
+  "requirements": [
+    "Windows PowerShell 5.1 or PowerShell 7",
+    "An installed compatible IndexTTS2 Studio/Longform Workbench for activation",
+    "Installed model/runtime/GPU support for subsequent synthesis"
+  ],
+  "not_included": [
+    "model weights",
+    "Python environment",
+    "GPU drivers",
+    "tokens or local configuration"
+  ]
+}

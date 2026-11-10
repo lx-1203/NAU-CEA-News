@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "organization": "南京农业大学计算机爱好者协会",
+  "organization_english": "Computer Enthusiasts Association",
+  "provider": "indextts2",
+  "voices": [
+    {
+      "anchor": "xiaoXu",
+      "name": "小序·自然男童声 v2",
+      "preset": "NJAU-CEA-xiaoXu-boy-v2",
+      "reference": "presets/NJAU-CEA-xiaoXu-boy-v2/prompt.wav",
+      "reference_sha256": "f95b7a143073d09ae5f261be8d2f2342853a16e19f56f2da480770f7e433e899",
+      "source": "Microsoft zh-CN-YunxiaNeural synthetic reference (Cute/Cartoon); generated once and frozen locally",
+      "rate": 1.0,
+      "audio": {
+        "sample_rate": 24000,
+        "channels": 1,
+        "seconds": 9.816
+      }
+    },
+    {
+      "anchor": "xiaoHe",
+      "name": "小禾·自然女童声方向 v2",
+      "preset": "NJAU-CEA-xiaoHe-girl-v2",
+      "reference": "presets/NJAU-CEA-xiaoHe-girl-v2/prompt.wav",
+      "reference_sha256": "9d60fef25bb169cfd6f07ea74f741a1971bfd8e8c451984cb2a3c730dd125bf6",
+      "source": "Existing frozen Microsoft zh-CN-XiaoyiNeural reference; Female/Lively/Cartoon; reassigned to xiaoHe per explicit child-voice request",
+      "rate": 1.0,
+      "audio": {
+        "sample_rate": 24000,
+        "channels": 1,
+        "seconds": 9.456
+      }
+    }
+  ],
+  "synthesis_parameters": {
+    "emo_mode": 2,
+    "emo_vector": "0,0,0,0,0,0,0,0.65",
+    "emo_weight": 0.65,
+    "seg_tokens": 80
+  },
+  "native_sampling_parameters": {
+    "do_sample": true,
+    "top_p": 0.8,
+    "top_k": 30,
+    "temperature": 0.8,
+    "length_penalty": 0.0,
+    "num_beams": 3,
+    "repetition_penalty": 10.0,
+    "max_mel_tokens": 1500,
+    "max_text_tokens_per_segment": 80,
+    "interval_silence": 200
+  },
+  "pacing": {
+    "enabled": true,
+    "min_cpm": 280,
+    "max_cpm": 300,
+    "normal_cpm": 295,
+    "sensitive_cpm": 285,
+    "min_tempo": 0.75,
+    "max_tempo": 1.6,
+    "threshold_db": -45,
+    "terms": [
+      "人工智能",
+      "核动力",
+      "月球车",
+      "文字识别",
+      "语音识别",
+      "专家缓存",
+      "预发布",
+      "大模型",
+      "模型接口",
+      "工具调用",
+      "代码压缩",
+      "客户端",
+      "AI",
+      "CPU",
+      "GPU",
+      "PDF",
+      "MCP",
+      "Open WebUI",
+      "Docling",
+      "llama.cpp",
+      "Repomix",
+      "LiteLLM"
+    ],
+    "application": "post_synthesis_pitch_preserving_calibration_not_native_preset"
+  },
+  "reproducibility": "Same reference/model/settings target the same voice identity; sampling and hardware can change fine detail."
+}

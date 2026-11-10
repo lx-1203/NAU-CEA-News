@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "package": "NJAU-CEA-Voice-Pack",
+  "version": "1.0.0",
+  "files": {
+    ".gitattributes": "40f4e18f96b13ad5d516fd123e216b27a45f4b05bab4b65d23cf1846f43a2689",
+    ".gitignore": "983b1cb766ef271e9da59ded7ec0e097a2d65342f90865b1bcd2114fa34c5394",
+    "COMPATIBILITY.json": "b2b77168a753cddaadae29d034812ca79e146b554147062080b53da266388d98",
+    "enable.ps1": "7b132ae3ecd002c049f8d62a695031b9a65faf8701d60f738263be59f0eac8d9",
+    "presets/NJAU-CEA-xiaoHe-girl-v2/preset.json": "6ad2da1a2e5ce370ec68fccb34a3bf7b5b0f070c4516c3fc4ae1f6eb2ee72519",
+    "presets/NJAU-CEA-xiaoHe-girl-v2/prompt.wav": "9d60fef25bb169cfd6f07ea74f741a1971bfd8e8c451984cb2a3c730dd125bf6",
+    "presets/NJAU-CEA-xiaoXu-boy-v2/preset.json": "6ad2da1a2e5ce370ec68fccb34a3bf7b5b0f070c4516c3fc4ae1f6eb2ee72519",
+    "presets/NJAU-CEA-xiaoXu-boy-v2/prompt.wav": "f95b7a143073d09ae5f261be8d2f2342853a16e19f56f2da480770f7e433e899",
+    "README.md": "73aa7cfcdee808ed1362dcc7d2d972297a34ca8f044621b67be8c25f36ec7d20",
+    "RIGHTS.md": "95dffd488639c83a8c6a146b688954342ed16abe36342fcda93b5c5ad8e20e1a",
+    "start.bat": "1805d4024c351fdcec4e44a6a08bc159a8e861340ba471324f05850444bbab0b",
+    "voice-profile.json": "6a64c23fb2a4b13dd3241dbd47d002806cbd65878e295fa37b420619fffc8806"
+  },
+  "mutable_local_only": [
+    "runtime/**"
+  ]
+}

@@ -1,0 +1,2 @@
+# Preserve exact package SHA256 values, including CRLF in the Windows launcher.
+* -text whitespace=cr-at-eol
