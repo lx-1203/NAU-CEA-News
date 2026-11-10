@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "package": "NJAU-CEA-Music-Pack",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "created_on": "2026-11-11",
   "asset_group": "music",
   "optional_component": true,
@@ -516,6 +516,4285 @@
         "status": "user_provided_rights_retained",
         "license": null,
         "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-619c9ca46ba6baf4",
+      "title": "A L E X - Lord You're Okay",
+      "original_filename": "A L E X - Lord You're Okay.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-619c9ca46ba6baf4.mp3",
+      "group": "music",
+      "sha256": "619c9ca46ba6baf4df557ddcf7ffc1fa9fa8720e3d32e01fcd42c9d63fc6991b",
+      "bytes": 2894672,
+      "duration_seconds": 179.382857,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 6867,
+        "final_frame_footer_overlap_bytes": 51,
+        "pcm_sha256": "580cceeeb5be3c11a4152358fed982f33762c65aace93967cfdbac000cee1821",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-c580162d12023590",
+      "title": "ALisa - 溯Reverse (治愈版)",
+      "original_filename": "ALisa - 溯Reverse (治愈版).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-c580162d12023590.mp3",
+      "group": "music",
+      "sha256": "c580162d12023590fa5f20a16a1fba2f10ea28ec91da8d32af79780d32f6ba11",
+      "bytes": 1900202,
+      "duration_seconds": 113.5625,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-d29500db2b18e46f",
+      "title": "Capo Productions - Serenity",
+      "original_filename": "Capo Productions - Serenity.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d29500db2b18e46f.mp3",
+      "group": "music",
+      "sha256": "d29500db2b18e46fe7f6181f2816bb42d48ea6af713dadde093a838ec7336032",
+      "bytes": 3415864,
+      "duration_seconds": 210.012494,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-dcfd00123c03edc4",
+      "title": "Chamber橙 - 在每天重复的日子里遗失了梦",
+      "original_filename": "Chamber橙 - 在每天重复的日子里遗失了梦.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-dcfd00123c03edc4.mp3",
+      "group": "music",
+      "sha256": "dcfd00123c03edc409961b720925f21cd531bd7ad5b66353809df1101b3be457",
+      "bytes": 4460085,
+      "duration_seconds": 275.202902,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-7b719ffbcddae738",
+      "title": "Chifoov - 反正你也不会听",
+      "original_filename": "Chifoov - 反正你也不会听.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-7b719ffbcddae738.mp3",
+      "group": "music",
+      "sha256": "7b719ffbcddae738dfaab795f9a1dc7af5505fdc45201f769be4f57febb7cdb6",
+      "bytes": 3002117,
+      "duration_seconds": 183.013878,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7006,
+        "final_frame_footer_overlap_bytes": 82,
+        "pcm_sha256": "d1df391552d4a2ce6925fb5efc2afd4901ccfdce6399215e33640bc532e87897",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-1930c7e8e088b788",
+      "title": "CHINESE - ICE TRAIN",
+      "original_filename": "CHINESE - ICE TRAIN.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-1930c7e8e088b788.mp3",
+      "group": "music",
+      "sha256": "1930c7e8e088b788bbcc5dd09f6a9f9009f89db28ff04b12ce3d9c7ea8767d9e",
+      "bytes": 3591545,
+      "duration_seconds": 195.448163,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7482,
+        "final_frame_footer_overlap_bytes": 57,
+        "pcm_sha256": "76251c2dc8c08b61d243fd2f320aed760a54aad279bc0d2177fac12316f86f6a",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-eb6d6e9ec5974792",
+      "title": "COP - Walking Seasons",
+      "original_filename": "COP - Walking Seasons.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-eb6d6e9ec5974792.mp3",
+      "group": "music",
+      "sha256": "eb6d6e9ec597479208a0ab79243114f3d4ad8a57cef5245613fd6f64b4f5948f",
+      "bytes": 3727413,
+      "duration_seconds": 230.50449,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 8824,
+        "final_frame_footer_overlap_bytes": 92,
+        "pcm_sha256": "1fc013f3c511b5185744d694a95ad8008141471014e81645dedb9c634b3ef21c",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-e133cd5c3f582644",
+      "title": "dylanf - Spring After Rain (治愈钢琴曲)",
+      "original_filename": "dylanf - Spring After Rain (治愈钢琴曲).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-e133cd5c3f582644.mp3",
+      "group": "music",
+      "sha256": "e133cd5c3f582644697f2685ee693058cf151223366c2f24e2e5d89113325d3c",
+      "bytes": 3951369,
+      "duration_seconds": 241.057959,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-2cbb1e0a0a34850a",
+      "title": "dylanf - 四月樱花",
+      "original_filename": "dylanf - 四月樱花.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-2cbb1e0a0a34850a.mp3",
+      "group": "music",
+      "sha256": "2cbb1e0a0a34850a4e945b9af357e0446174d538da5b71306cfa22087cf18124",
+      "bytes": 3502376,
+      "duration_seconds": 213.221156,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-a593fb3b03e6514c",
+      "title": "echo - Merry Christmas, Mr Lawrence",
+      "original_filename": "echo - Merry Christmas, Mr Lawrence.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-a593fb3b03e6514c.mp3",
+      "group": "music",
+      "sha256": "a593fb3b03e6514c1a23034d1e6232ecfd222fc9584700752b1a2db435d25fc8",
+      "bytes": 4311731,
+      "duration_seconds": 269.310454,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-91eb2dc723d13f0d",
+      "title": "Funton - 别念",
+      "original_filename": "Funton - 别念.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-91eb2dc723d13f0d.mp3",
+      "group": "music",
+      "sha256": "91eb2dc723d13f0d9e17e564cc4cd37f288ab7ea475858d5f00e0c012189c5c2",
+      "bytes": 3796633,
+      "duration_seconds": 234.266122,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-88b3b766f70d744f",
+      "title": "FYNial - 经不住似水流年，逃不过此间少年",
+      "original_filename": "FYNial - 经不住似水流年，逃不过此间少年.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-88b3b766f70d744f.mp3",
+      "group": "music",
+      "sha256": "88b3b766f70d744f926dd7d2f4d6f18347e651dbbc11301f4f7958813190d440",
+      "bytes": 3028160,
+      "duration_seconds": 189.090907,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-d6aefdf7400e5fce",
+      "title": "hea2t - 星辰坠入梦里",
+      "original_filename": "hea2t - 星辰坠入梦里.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d6aefdf7400e5fce.mp3",
+      "group": "music",
+      "sha256": "d6aefdf7400e5fce6f6903bfc97a2ba5b515f12da220890272c872551f42cb05",
+      "bytes": 3235215,
+      "duration_seconds": 199.57551,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7640,
+        "final_frame_footer_overlap_bytes": 62,
+        "pcm_sha256": "24befbcaac0441240acdbc2ae6f969f9ab31743357900b9e490660f67b2b176c",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-9995740fcc67b829",
+      "title": "HZ.MY - 我黑色的世界里紫色的星球",
+      "original_filename": "HZ.MY - 我黑色的世界里紫色的星球.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-9995740fcc67b829.mp3",
+      "group": "music",
+      "sha256": "9995740fcc67b829cdd8d33de5c0fb4f3d6fbee188df5586920355cf44564cf7",
+      "bytes": 2291694,
+      "duration_seconds": 143.053288,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-b4d6692c9c4fc210",
+      "title": "iw ix - 精神存在",
+      "original_filename": "iw ix - 精神存在.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-b4d6692c9c4fc210.mp3",
+      "group": "music",
+      "sha256": "b4d6692c9c4fc2106e5769d41f6094464b1e43f43e4be0e42ee831e2db71bcf0",
+      "bytes": 1882068,
+      "duration_seconds": 115.096576,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-edc834a9e7a3a03f",
+      "title": "Jacoo - Breathe.",
+      "original_filename": "Jacoo - Breathe..mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-edc834a9e7a3a03f.mp3",
+      "group": "music",
+      "sha256": "edc834a9e7a3a03f1e9b04518a4e0ed66773d6e1377a68bc16de2b4101e021b2",
+      "bytes": 3432598,
+      "duration_seconds": 211.591837,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 8100,
+        "final_frame_footer_overlap_bytes": 82,
+        "pcm_sha256": "04a3aca86a36e190a00deb1f485be5f01f7cd186d8b6daa36d7ba0756ad8797e",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-9d78d6e9323a1d68",
+      "title": "Joe Bae - Studybreak",
+      "original_filename": "Joe Bae - Studybreak.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-9d78d6e9323a1d68.mp3",
+      "group": "music",
+      "sha256": "9d78d6e9323a1d684319ddb16b83ec24cb4af14793abd7614bdbc3549b0f6f3c",
+      "bytes": 2571953,
+      "duration_seconds": 153.234286,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5866,
+        "final_frame_footer_overlap_bytes": 86,
+        "pcm_sha256": "f6c578656587e97a1f6099669542ef4b8b24ae0fb7c283a046917a34d3e26647",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-481a595eae5ca575",
+      "title": "July - My Soul",
+      "original_filename": "July - My Soul_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-481a595eae5ca575.mp3",
+      "group": "music",
+      "sha256": "481a595eae5ca575aeabf9cff9fee2c6fac25e59e64836df8abc172ad3bcf0fc",
+      "bytes": 7564923,
+      "duration_seconds": 230.269388,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-be6d11b47912856c",
+      "title": "July - 봄의 태양 (春天的太阳)",
+      "original_filename": "July - 봄의 태양 (春天的太阳)_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-be6d11b47912856c.mp3",
+      "group": "music",
+      "sha256": "be6d11b47912856ca372128db70e38abf3e4e452201ebca2c8c6174cfb33f67e",
+      "bytes": 7169581,
+      "duration_seconds": 218.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-c8abee0d01002a68",
+      "title": "Kan Gao、Laura Shigihara - Born a Stranger (生而陌路)",
+      "original_filename": "Kan Gao、Laura Shigihara - Born a Stranger (生而陌路).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-c8abee0d01002a68.mp3",
+      "group": "music",
+      "sha256": "c8abee0d01002a688e50ddabc9e81bc8ca5dc43fb293868eec5885b04620b945",
+      "bytes": 1715025,
+      "duration_seconds": 101.877528,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-74d1de80ac240225",
+      "title": "Kevin Kern - Fairy Wings",
+      "original_filename": "Kevin Kern - Fairy Wings.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-74d1de80ac240225.mp3",
+      "group": "music",
+      "sha256": "74d1de80ac240225d1cf499bf1ee8435580f96b6db309b1f25d5db2a6b404132",
+      "bytes": 4475806,
+      "duration_seconds": 269.949388,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-0fc2c495a375c9ce",
+      "title": "Kevin Kern - Through The Arbor (走过绿意)",
+      "original_filename": "Kevin Kern - Through The Arbor (走过绿意).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-0fc2c495a375c9ce.mp3",
+      "group": "music",
+      "sha256": "0fc2c495a375c9ced2a61fc02abe86fd8ec78acc55cfbb258cfdc545250dbc78",
+      "bytes": 3769481,
+      "duration_seconds": 225.802449,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-6d09dcfdee4e35da",
+      "title": "5mg - Adieu",
+      "original_filename": "5mg - Adieu.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-6d09dcfdee4e35da.mp3",
+      "group": "music",
+      "sha256": "6d09dcfdee4e35da62eaa04af7751e555bf5a9f5bff31dee303024a7ea6748b6",
+      "bytes": 2667541,
+      "duration_seconds": 100.182494,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-0d59860081752169",
+      "title": "Candy_Wind - 和煦的糖果风",
+      "original_filename": "Candy_Wind - 和煦的糖果风.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-0d59860081752169.mp3",
+      "group": "music",
+      "sha256": "0d5986008175216911567d4982b2eb7550d13d80f0ddac8175b1bc274a6f3d9f",
+      "bytes": 4717311,
+      "duration_seconds": 183.026508,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-2fd30f83d402d69f",
+      "title": "Candy_Wind - 静之守候",
+      "original_filename": "Candy_Wind - 静之守候.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-2fd30f83d402d69f.mp3",
+      "group": "music",
+      "sha256": "2fd30f83d402d69ff63e494c8f809ecde04644f70b5e23d507ecefbeccf4a61e",
+      "bytes": 3847272,
+      "duration_seconds": 148.663923,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-ba7f9e846c75afd6",
+      "title": "ChakYoun9 - Wonderful World",
+      "original_filename": "ChakYoun9 - Wonderful World.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ba7f9e846c75afd6.mp3",
+      "group": "music",
+      "sha256": "ba7f9e846c75afd63ed89114458036d3be6f64ea38a46f397cf69edb8fd47366",
+      "bytes": 6254139,
+      "duration_seconds": 215.793741,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-5587cd04eb8c9f3d",
+      "title": "Cicada - 浮游在海上的岛屿／潜沉于水下的人们",
+      "original_filename": "Cicada - 浮游在海上的岛屿／潜沉于水下的人们.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-5587cd04eb8c9f3d.mp3",
+      "group": "music",
+      "sha256": "5587cd04eb8c9f3df999e0d048d05c669cc5dbd61d18ccb5d956dd3d032e5e17",
+      "bytes": 11120697,
+      "duration_seconds": 408.026667,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-cab06e13b74a187e",
+      "title": "Denean - To The Lost and Forgotten",
+      "original_filename": "Denean - To The Lost and Forgotten.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-cab06e13b74a187e.mp3",
+      "group": "music",
+      "sha256": "cab06e13b74a187ea89495b7a9ae31e1720aa8dec3ef9f63360331d11209809b",
+      "bytes": 5160627,
+      "duration_seconds": 179.173333,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-bc1bebb2103ea606",
+      "title": "go missing - 吹海风",
+      "original_filename": "go missing - 吹海风.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-bc1bebb2103ea606.mp3",
+      "group": "music",
+      "sha256": "bc1bebb2103ea606fa3c600a0d1a4c97863f46a7f8212f1e1e8c2539c971df73",
+      "bytes": 2876251,
+      "duration_seconds": 130.303583,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-cc33f780d89a3a1f",
+      "title": "hea2t - 盛夏与蝉鸣",
+      "original_filename": "hea2t - 盛夏与蝉鸣.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-cc33f780d89a3a1f.mp3",
+      "group": "music",
+      "sha256": "cc33f780d89a3a1ffa07b35984e2efdf1db4c22fe36228db15d7ef353c93c625",
+      "bytes": 2794727,
+      "duration_seconds": 170.854172,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": false,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-4c212dc20886f946",
+      "title": "Isaac Shepard - Before Dawn",
+      "original_filename": "Isaac Shepard - Before Dawn.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-4c212dc20886f946.mp3",
+      "group": "music",
+      "sha256": "4c212dc20886f946499930e5c4c1c38e488de2147d9a6ba1c20eafcd5efc462b",
+      "bytes": 6825403,
+      "duration_seconds": 237.64,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-e09a646058f313c7",
+      "title": "Isaac Shepard - Felicity",
+      "original_filename": "Isaac Shepard - Felicity.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-e09a646058f313c7.mp3",
+      "group": "music",
+      "sha256": "e09a646058f313c7ab3ae498fce2907b9ed1a291fd51911ac7e63fc909928d75",
+      "bytes": 6337368,
+      "duration_seconds": 230.6,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-5dd9f55a88766058",
+      "title": "Josh Vietti - Because of You (因你而起)",
+      "original_filename": "Josh Vietti - Because of You (因你而起).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-5dd9f55a88766058.mp3",
+      "group": "music",
+      "sha256": "5dd9f55a88766058317d9c27284c9094ec078ecafc5d7a8a4582457aee2a875e",
+      "bytes": 6899980,
+      "duration_seconds": 226.093333,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-7562f023d301f481",
+      "title": "Lightscape - Collapsing World (崩溃的世界)(Original Mix)",
+      "original_filename": "Lightscape - Collapsing World (崩溃的世界)(Original Mix).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-7562f023d301f481.mp3",
+      "group": "music",
+      "sha256": "7562f023d301f481001af8a45863162edcefcbadd2a3a031a150f45a3546d0b0",
+      "bytes": 5472980,
+      "duration_seconds": 190.223673,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-d68399b347ca1ca7",
+      "title": "marlboro. - That Mistake Is Not u",
+      "original_filename": "marlboro. - That Mistake Is Not u.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d68399b347ca1ca7.mp3",
+      "group": "music",
+      "sha256": "d68399b347ca1ca72af7c827e04d500d4b09900fe79bf5b18b104e1e27a95680",
+      "bytes": 3652105,
+      "duration_seconds": 127.007347,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-1f2f92b59a9ace0c",
+      "title": "Martin Ermen - River Flows In You (你的心河)",
+      "original_filename": "Martin Ermen - River Flows In You (你的心河).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-1f2f92b59a9ace0c.mp3",
+      "group": "music",
+      "sha256": "1f2f92b59a9ace0c1cdde51e1a884ce07c614d9c6ff3c996a61deac3cacd8458",
+      "bytes": 5458501,
+      "duration_seconds": 198.12,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-900e7a9a436ce81a",
+      "title": "Mei - ✘人间是个好地方可我不想再来了",
+      "original_filename": "Mei - ✘人间是个好地方可我不想再来了.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-900e7a9a436ce81a.mp3",
+      "group": "music",
+      "sha256": "900e7a9a436ce81a0d3eaf98e133856d098f942c1474fa19a608caac4c4a4741",
+      "bytes": 5099271,
+      "duration_seconds": 187.471723,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-19d6befb51e0b834",
+      "title": "Parkinson White - dont tear ma heart. ma achey breaky heart",
+      "original_filename": "Parkinson White - dont tear ma heart. ma achey breaky heart.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-19d6befb51e0b834.mp3",
+      "group": "music",
+      "sha256": "19d6befb51e0b834ac815173a66a8bde968f3748a46e07ba309ef49a709b7b8e",
+      "bytes": 2001300,
+      "duration_seconds": 73.013311,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-b911f12191f83a12",
+      "title": "sAr - Reaction",
+      "original_filename": "sAr - Reaction.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-b911f12191f83a12.mp3",
+      "group": "music",
+      "sha256": "b911f12191f83a1244eada42a75dc4323ce94c34c70539cd8e7c6761ef134d9a",
+      "bytes": 8245529,
+      "duration_seconds": 285.074286,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-0432ea6aa5d1d96d",
+      "title": "TARGA. - Late Breeze",
+      "original_filename": "TARGA. - Late Breeze.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-0432ea6aa5d1d96d.mp3",
+      "group": "music",
+      "sha256": "0432ea6aa5d1d96dee2fad9c17c9733d15456cac749f5118978f6728876c2015",
+      "bytes": 5015155,
+      "duration_seconds": 182.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-58f399ed9eb0c72a",
+      "title": "TARGA. - Setting sun",
+      "original_filename": "TARGA. - Setting sun.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-58f399ed9eb0c72a.mp3",
+      "group": "music",
+      "sha256": "58f399ed9eb0c72a357310cfc5a32bedae7c38438b43825ba5d29ba6285a0f39",
+      "bytes": 4604043,
+      "duration_seconds": 173.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-afaf447fe430730c",
+      "title": "Thomas Greenberg - The Right Path",
+      "original_filename": "Thomas Greenberg - The Right Path.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-afaf447fe430730c.mp3",
+      "group": "music",
+      "sha256": "afaf447fe430730c4ba6ef71dcaed0334f3962fad26fe1baefadb3d095cd2f27",
+      "bytes": 4200233,
+      "duration_seconds": 148.351995,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-4af3cbcd863246af",
+      "title": "Valentin - A Little Story (小故事)",
+      "original_filename": "Valentin - A Little Story (小故事).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-4af3cbcd863246af.mp3",
+      "group": "music",
+      "sha256": "4af3cbcd863246af55de309cc3b0ed9fd2fe3f8430617e410b8e82ed48823ff6",
+      "bytes": 6184452,
+      "duration_seconds": 204.428571,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-cd00f7baef9879b4",
+      "title": "White Cherry - Melancholy",
+      "original_filename": "White Cherry - Melancholy.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-cd00f7baef9879b4.mp3",
+      "group": "music",
+      "sha256": "cd00f7baef9879b45f2b69643a063eee7d87fa51b22e26b8490189888ebe96d1",
+      "bytes": 3061178,
+      "duration_seconds": 128.287347,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-ee4ee3f4530d1914",
+      "title": "William Joseph - Radioactive",
+      "original_filename": "William Joseph - Radioactive.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ee4ee3f4530d1914.mp3",
+      "group": "music",
+      "sha256": "ee4ee3f4530d191472c4263696924237ee01086cac94bff1f18b66a0d8eadd9f",
+      "bytes": 5486996,
+      "duration_seconds": 197.142857,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-085003b4c496f2db",
+      "title": "William Joseph - Safe & Sound",
+      "original_filename": "William Joseph - Safe & Sound.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-085003b4c496f2db.mp3",
+      "group": "music",
+      "sha256": "085003b4c496f2db9819adabd70c2c53dbddca793d07def26190d35f60fdf3d8",
+      "bytes": 6908714,
+      "duration_seconds": 241.259229,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-ba7e385e355890c9",
+      "title": "伊賀拓郎 - 月がきれい (月色真美)",
+      "original_filename": "伊賀拓郎 - 月がきれい (月色真美).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ba7e385e355890c9.mp3",
+      "group": "music",
+      "sha256": "ba7e385e355890c958122378ca4c9d2fd29a7951e4af388f78cb5d7bee437225",
+      "bytes": 3127247,
+      "duration_seconds": 113.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-2650e3851a7d0897",
+      "title": "兮沐 - 黄昏之时 (钢琴曲)",
+      "original_filename": "兮沐 - 黄昏之时 (钢琴曲).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-2650e3851a7d0897.mp3",
+      "group": "music",
+      "sha256": "2650e3851a7d08972c953c5bf74f19a9e782b122e8abca4226f3a9560b38dfef",
+      "bytes": 6435251,
+      "duration_seconds": 256.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-c18f4325ac66ebbc",
+      "title": "出羽良彰 - 海の涙",
+      "original_filename": "出羽良彰 - 海の涙.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-c18f4325ac66ebbc.mp3",
+      "group": "music",
+      "sha256": "c18f4325ac66ebbc89a93c685c8f3180c9bafc8a6e9a3aec01c1dbdad90305e1",
+      "bytes": 3095447,
+      "duration_seconds": 118.773333,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-7ad4b3fa9524e083",
+      "title": "四季音色 - 春日",
+      "original_filename": "四季音色 - 春日.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-7ad4b3fa9524e083.mp3",
+      "group": "music",
+      "sha256": "7ad4b3fa9524e0834f04202961de1c6da1a002c3909cbf101b8f7773a46dd42e",
+      "bytes": 4713758,
+      "duration_seconds": 159.753741,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-15f63c46f58e904d",
+      "title": "徐梦圆 - 愿世界对你温柔相待",
+      "original_filename": "徐梦圆 - 愿世界对你温柔相待.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-15f63c46f58e904d.mp3",
+      "group": "music",
+      "sha256": "15f63c46f58e904d9d929eb9c55034f85a6c8a200da3c82eeeb9b146377f6956",
+      "bytes": 3293213,
+      "duration_seconds": 128.001066,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-f0af9aa66b47c146",
+      "title": "心动唱片 - Time Passes",
+      "original_filename": "心动唱片 - Time Passes.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-f0af9aa66b47c146.mp3",
+      "group": "music",
+      "sha256": "f0af9aa66b47c1465c149950f496ebba2fd757ecacdc36f8b1fc94703c267c93",
+      "bytes": 3954601,
+      "duration_seconds": 132.857166,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-b387f21f02cffe37",
+      "title": "横山克 - アゲイン (Again)",
+      "original_filename": "横山克 - アゲイン (Again).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-b387f21f02cffe37.mp3",
+      "group": "music",
+      "sha256": "b387f21f02cffe3701a36b86a7e7bddbe4578f93093048615da62e9d4af9eba3",
+      "bytes": 3847949,
+      "duration_seconds": 151.506667,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-531439f9469a75f5",
+      "title": "永恒之音 - Filtered Sun",
+      "original_filename": "永恒之音 - Filtered Sun.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-531439f9469a75f5.mp3",
+      "group": "music",
+      "sha256": "531439f9469a75f5c781d7ea813d0a2b8917f4556dc5ee4d78bd593b72fc8c6b",
+      "bytes": 4265681,
+      "duration_seconds": 135.624989,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-d74b264d65390a9b",
+      "title": "澤野弘之 - f (pfs)",
+      "original_filename": "澤野弘之 - f (pfs).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d74b264d65390a9b.mp3",
+      "group": "music",
+      "sha256": "d74b264d65390a9b49c2c4621d8eec2a819da2bc0575e5c4c5be2060a6e9400d",
+      "bytes": 6257688,
+      "duration_seconds": 229.986667,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-3f6d3be6877ea9d0",
+      "title": "澤野弘之 - 進撃gt20130218巨人",
+      "original_filename": "澤野弘之 - 進撃gt20130218巨人.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-3f6d3be6877ea9d0.mp3",
+      "group": "music",
+      "sha256": "3f6d3be6877ea9d0896cdca2c22a6f37248fe9fbbbf2dffda2dbe68dec1be32d",
+      "bytes": 4339393,
+      "duration_seconds": 151.4,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-43b80f10efa22857",
+      "title": "灰澈 - 木鲸 (纯音乐)",
+      "original_filename": "灰澈 - 木鲸 (纯音乐).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-43b80f10efa22857.mp3",
+      "group": "music",
+      "sha256": "43b80f10efa2285798456483221058647de8a3edb4b4600d621ae693de022ac9",
+      "bytes": 5759298,
+      "duration_seconds": 207.5178,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-61ecbe48e28c86a8",
+      "title": "蒋六多 - 一切都会好起来的,对吗",
+      "original_filename": "蒋六多 - 一切都会好起来的,对吗.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-61ecbe48e28c86a8.mp3",
+      "group": "music",
+      "sha256": "61ecbe48e28c86a81b7ea1210b1c2b61829272cddd2da864d413a17340f01692",
+      "bytes": 5254215,
+      "duration_seconds": 192.182857,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-ec491e865aa850fc",
+      "title": "郑物 - 西星",
+      "original_filename": "郑物 - 西星.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ec491e865aa850fc.mp3",
+      "group": "music",
+      "sha256": "ec491e865aa850fcd4267cc314c66f83a77d335cf9a849ecfa446814cd04083d",
+      "bytes": 2091306,
+      "duration_seconds": 130.097075,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": false,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-ea4c0264f4908934",
+      "title": "魏琮霏 - 青石巷",
+      "original_filename": "魏琮霏 - 青石巷.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ea4c0264f4908934.mp3",
+      "group": "music",
+      "sha256": "ea4c0264f49089347dff50d264db580b4f9c40c40460d2c0538c76605c3bfd9e",
+      "bytes": 6634498,
+      "duration_seconds": 227.449229,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-50497ceac1877fad",
+      "title": "Leon不太冷的邓壬鑫 - 夜的钢琴曲5",
+      "original_filename": "Leon不太冷的邓壬鑫 - 夜的钢琴曲5.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-50497ceac1877fad.mp3",
+      "group": "music",
+      "sha256": "50497ceac1877fad1edb0b02f958ef769416b06200f1e18fda262bb6a33ffc22",
+      "bytes": 3265788,
+      "duration_seconds": 201.325624,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-5948e4a637a2fd0f",
+      "title": "Little End - Sky",
+      "original_filename": "Little End - Sky.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-5948e4a637a2fd0f.mp3",
+      "group": "music",
+      "sha256": "5948e4a637a2fd0f4c90254cdf8294b5b884969ea0c1b55ce4bd42f46daca534",
+      "bytes": 3049503,
+      "duration_seconds": 184.624989,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-32096a4fa08450b3",
+      "title": "Little West - Breeze",
+      "original_filename": "Little West - Breeze.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-32096a4fa08450b3.mp3",
+      "group": "music",
+      "sha256": "32096a4fa08450b35f4bb0dfaec1867db66401373e37cc7645cb9835227fb507",
+      "bytes": 3207763,
+      "duration_seconds": 194.429388,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7443,
+        "final_frame_footer_overlap_bytes": 82,
+        "pcm_sha256": "c79a2a09e9922a59b83defefb0465e8612b79ea2dc1a1116b9d4de229d357596",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-ce430260ff3defe4",
+      "title": "M.Graveyard - You",
+      "original_filename": "M.Graveyard - You.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ce430260ff3defe4.mp3",
+      "group": "music",
+      "sha256": "ce430260ff3defe4f8961a31325f649313fa7cbfc9ec32ca0936cb40f9850cd9",
+      "bytes": 3478972,
+      "duration_seconds": 214.778776,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 8222,
+        "final_frame_footer_overlap_bytes": 79,
+        "pcm_sha256": "d6839fd7ae973044e898e9498da7e60600d2556a6819796db88d8ecb546c628b",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-6522c90a1200e890",
+      "title": "MappleZS - Star river in your eyes-满目星河",
+      "original_filename": "MappleZS - Star river in your eyes-满目星河.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-6522c90a1200e890.mp3",
+      "group": "music",
+      "sha256": "6522c90a1200e8908f28bd030edf7059dc0851aa5784c296a1d5750ba6b930e3",
+      "bytes": 2433759,
+      "duration_seconds": 146.442449,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5606,
+        "final_frame_footer_overlap_bytes": 105,
+        "pcm_sha256": "772437311a7fe32c3a6df6d2e6aace2a2e7dcd93ee5ccb15b38b9481d8efe5c3",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-8c43dfdb46039868",
+      "title": "Miro - Whisper (纯音乐)",
+      "original_filename": "Miro - Whisper (纯音乐).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-8c43dfdb46039868.mp3",
+      "group": "music",
+      "sha256": "8c43dfdb4603986812e517967c31a620fb17e5b75dfd5983f52ff14cf11ef7ef",
+      "bytes": 3678648,
+      "duration_seconds": 228.414694,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 8744,
+        "final_frame_footer_overlap_bytes": 85,
+        "pcm_sha256": "2cf066f896f6b7bfb407456e2aecd07f34dfc983cfeb69fa1bda4aaa95c3ba62",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-7ec40127aa656317",
+      "title": "Nomak - Next Dimension",
+      "original_filename": "Nomak - Next Dimension.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-7ec40127aa656317.mp3",
+      "group": "music",
+      "sha256": "7ec40127aa6563175ef19b699bfe64583fdcace10c750c5d4369cecb89255ab9",
+      "bytes": 4588740,
+      "duration_seconds": 261.01551,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 9992,
+        "final_frame_footer_overlap_bytes": 90,
+        "pcm_sha256": "a080253c1dd8fe3c991f644d700e485eece47a25742c9f0ff63013351ca0083d",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-0ea40ecb868fa412",
+      "title": "Omar Akram - Free as a Bird",
+      "original_filename": "Omar Akram - Free as a Bird.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-0ea40ecb868fa412.mp3",
+      "group": "music",
+      "sha256": "0ea40ecb868fa4129d03dcc66f42e43b7e585b27f44d145ca368fb63708746db",
+      "bytes": 4962918,
+      "duration_seconds": 305.71102,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-98c566aaf5624c50",
+      "title": "Otokaze - Mallow Flower",
+      "original_filename": "Otokaze - Mallow Flower.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-98c566aaf5624c50.mp3",
+      "group": "music",
+      "sha256": "98c566aaf5624c50e1fece8a21048f7c21c9dce9daa5ff58c92c27cb9884e563",
+      "bytes": 4202587,
+      "duration_seconds": 259.761633,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-832a81b0a12e6b94",
+      "title": "Otokaze - Save The Flavor",
+      "original_filename": "Otokaze - Save The Flavor.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-832a81b0a12e6b94.mp3",
+      "group": "music",
+      "sha256": "832a81b0a12e6b94bddb408cdf3777b768a6f7a605531097128df57a28e46f67",
+      "bytes": 3550574,
+      "duration_seconds": 219.010612,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-88d124af9a0a9f35",
+      "title": "Otokaze - 帰路",
+      "original_filename": "Otokaze - 帰路.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-88d124af9a0a9f35.mp3",
+      "group": "music",
+      "sha256": "88d124af9a0a9f35f6a0a5f948b00a95d20353fcda38e3267e64c2e5ecbafe84",
+      "bytes": 3440593,
+      "duration_seconds": 213.315918,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-4845afaade6ccd38",
+      "title": "Richard Clayderman - Harmony",
+      "original_filename": "Richard Clayderman - Harmony.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-4845afaade6ccd38.mp3",
+      "group": "music",
+      "sha256": "4845afaade6ccd387a78c522d50347e5f087abb3f2b0b0529951df73b8de557b",
+      "bytes": 2892824,
+      "duration_seconds": 177.633719,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-8eaa261b57dd14cc",
+      "title": "Richard Clayderman - 梦中的鸟",
+      "original_filename": "Richard Clayderman - 梦中的鸟.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-8eaa261b57dd14cc.mp3",
+      "group": "music",
+      "sha256": "8eaa261b57dd14ccea2a6fb3750d0ae8b47adfd1a9c858d4ced94bf4e546d576",
+      "bytes": 2561412,
+      "duration_seconds": 156.16,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5978,
+        "final_frame_footer_overlap_bytes": 91,
+        "pcm_sha256": "627fd110289ae46c3bbff85c9e5adeb234d5f6ce75ff10fc8c3650a2479109ec",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-8ede211bb1a47d63",
+      "title": "ROOK1E、J'san - Pure Imagination (纯粹的幻想)(1)",
+      "original_filename": "ROOK1E、J'san - Pure Imagination (纯粹的幻想)(1).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-8ede211bb1a47d63.mp3",
+      "group": "music",
+      "sha256": "8ede211bb1a47d630718b7419758f128e6d16bd39c1be00ca36606bede1c12f0",
+      "bytes": 1744820,
+      "duration_seconds": 104.620408,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-1ea36f0bb7e39203",
+      "title": "S.E.N.S. - Missing You",
+      "original_filename": "S.E.N.S. - Missing You.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-1ea36f0bb7e39203.mp3",
+      "group": "music",
+      "sha256": "1ea36f0bb7e39203bb061d8ae0dcf982d828e193574340212718dee67712c83c",
+      "bytes": 3549625,
+      "duration_seconds": 215.954286,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-0c7916420dc15935",
+      "title": "Sappheiros - Radiant Night",
+      "original_filename": "Sappheiros - Radiant Night.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-0c7916420dc15935.mp3",
+      "group": "music",
+      "sha256": "0c7916420dc159353e9f6c5097a8b0c292a6688645d4efa0a09a9ac700c653ec",
+      "bytes": 4733106,
+      "duration_seconds": 289.541224,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 11084,
+        "final_frame_footer_overlap_bytes": 78,
+        "pcm_sha256": "6f7ac5f6ed61fb17df9bcaefb335649f51983d85c5e41ed5ec7b348f1209f70a",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-6568e0806e6e54cf",
+      "title": "Silky - to the seaside...",
+      "original_filename": "Silky - to the seaside....mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-6568e0806e6e54cf.mp3",
+      "group": "music",
+      "sha256": "6568e0806e6e54cf9c40451af04826ac1b58caa876867f89978ab378a792429d",
+      "bytes": 1694634,
+      "duration_seconds": 99.996735,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 3828,
+        "final_frame_footer_overlap_bytes": 2,
+        "pcm_sha256": "ce43f32ffa389f689cbc8bae27f32069c5e84f1005c52dffe470687b2f47ac26",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-04c80344523d959a",
+      "title": "SipSu小口酥 - 我总不能阻止你奔向比我更好的人吧",
+      "original_filename": "SipSu小口酥 - 我总不能阻止你奔向比我更好的人吧.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-04c80344523d959a.mp3",
+      "group": "music",
+      "sha256": "04c80344523d959ab67454c663327bd4c021c42b150c05ba2a8ab4f860e67236",
+      "bytes": 2609037,
+      "duration_seconds": 157.714292,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-5dfc465e4d0436c7",
+      "title": "Snigellin - When I see the light at that Time",
+      "original_filename": "Snigellin - When I see the light at that Time.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-5dfc465e4d0436c7.mp3",
+      "group": "music",
+      "sha256": "5dfc465e4d0436c7f86ee21dc93c66279174eebc6907951ed3db94a911ac9749",
+      "bytes": 4373386,
+      "duration_seconds": 269.035102,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-cd8b36bcb40c626b",
+      "title": "songroger - time flows away",
+      "original_filename": "songroger - time flows away.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-cd8b36bcb40c626b.mp3",
+      "group": "music",
+      "sha256": "cd8b36bcb40c626b011dfecf52527a23952dbe9bc61b8987f311e4e76e0215b4",
+      "bytes": 1507382,
+      "duration_seconds": 90.07127,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-a0b58f4180814e42",
+      "title": "Soul Hug - 月下美人",
+      "original_filename": "Soul Hug - 月下美人.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-a0b58f4180814e42.mp3",
+      "group": "music",
+      "sha256": "a0b58f4180814e42e6e56818079bb478e1e2fc4b5a8c9b1f228f3e600e8d4c44",
+      "bytes": 3143073,
+      "duration_seconds": 194.072381,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-35976219935d2758",
+      "title": "Starry Sky - The Way I Still Love You (纯音乐)",
+      "original_filename": "Starry Sky - The Way I Still Love You (纯音乐)_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-35976219935d2758.mp3",
+      "group": "music",
+      "sha256": "35976219935d275885803ec82cb2e6d99a23ddd845966389f7ef1ceabcf39327",
+      "bytes": 3631153,
+      "duration_seconds": 109.479161,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-e56a6146725b8bc7",
+      "title": "Sun Yehoshua - heartbreaker",
+      "original_filename": "Sun Yehoshua - heartbreaker.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-e56a6146725b8bc7.mp3",
+      "group": "music",
+      "sha256": "e56a6146725b8bc79c22bd6d6ef777150b7131ce474f9b8a361ac44c13caa037",
+      "bytes": 1962958,
+      "duration_seconds": 116.68898,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-a07b1438d683e3d0",
+      "title": "TAMUSIC - 東方萃夢想",
+      "original_filename": "TAMUSIC - 東方萃夢想.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-a07b1438d683e3d0.mp3",
+      "group": "music",
+      "sha256": "a07b1438d683e3d011cffc1eb6c7b61a23f9d2b40d8745325f5ace718629d7cb",
+      "bytes": 5476297,
+      "duration_seconds": 338.912653,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-59ba0be61d913cb3",
+      "title": "THT - 葬花",
+      "original_filename": "THT - 葬花_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-59ba0be61d913cb3.mp3",
+      "group": "music",
+      "sha256": "59ba0be61d913cb3cd539689fa42371c53213b79326662e889b460550e93386a",
+      "bytes": 7681516,
+      "duration_seconds": 235.939615,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-d8a72fe4ba531ee4",
+      "title": "Tim Janis - The Sea on Every Side",
+      "original_filename": "Tim Janis - The Sea on Every Side.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d8a72fe4ba531ee4.mp3",
+      "group": "music",
+      "sha256": "d8a72fe4ba531ee47b0bc6de8243b43a22ab94fb96ae9e5185113ef18f9f505b",
+      "bytes": 3100268,
+      "duration_seconds": 190.458776,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7291,
+        "final_frame_footer_overlap_bytes": 73,
+        "pcm_sha256": "104c1d217bccbfbd446f4f3f3799a2fa53bbd12710e4fd69f0e7d3eb23e5b8ce",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-568c416b03cf8731",
+      "title": "TLK天翔 - The rain in the summer afternoon",
+      "original_filename": "TLK天翔 - The rain in the summer afternoon.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-568c416b03cf8731.mp3",
+      "group": "music",
+      "sha256": "568c416b03cf8731529dfff0b17b0bb7357a0c7b0c1baa6d0a2764d82db887df",
+      "bytes": 2622770,
+      "duration_seconds": 163.740522,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-0aac41e7279845cd",
+      "title": "Valentin - Orange Days",
+      "original_filename": "Valentin - Orange Days.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-0aac41e7279845cd.mp3",
+      "group": "music",
+      "sha256": "0aac41e7279845cd5dd8b5e8f6d954828126a49cae5219bf20163d3cdfa31e4c",
+      "bytes": 4027134,
+      "duration_seconds": 246.308571,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 9429,
+        "final_frame_footer_overlap_bytes": 86,
+        "pcm_sha256": "930b9bf38a12dc4eeaaf2a460f73f53bd84a9dd5c255f6f40685af0f54bb5bab",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-612a65b9ff0d915c",
+      "title": "William Joseph - Come Thou Fount",
+      "original_filename": "William Joseph - Come Thou Fount.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-612a65b9ff0d915c.mp3",
+      "group": "music",
+      "sha256": "612a65b9ff0d915c8d1a9205d6dfaf71bd21504f856ff8b98f6185179a334906",
+      "bytes": 3618037,
+      "duration_seconds": 222.589388,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-1b4a87accec92e5e",
+      "title": "William Joseph - With Royal Praise",
+      "original_filename": "William Joseph - With Royal Praise.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-1b4a87accec92e5e.mp3",
+      "group": "music",
+      "sha256": "1b4a87accec92e5ed09ecdbd1156983a23a6a7789b2a5987c0ce98e822265dcc",
+      "bytes": 3720491,
+      "duration_seconds": 228.989388,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 8766,
+        "final_frame_footer_overlap_bytes": 79,
+        "pcm_sha256": "acfe5df92f125f04a2fc465e575d26aa1c4eb8311d0443fe3c48601fea6b56c9",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-e6e5b9d681baa876",
+      "title": "XHIRO - 因为时间不等了",
+      "original_filename": "XHIRO - 因为时间不等了.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-e6e5b9d681baa876.mp3",
+      "group": "music",
+      "sha256": "e6e5b9d681baa87659446eabf6292d754f84bc903c8f65aec6bff08fce11e297",
+      "bytes": 3865976,
+      "duration_seconds": 238.5,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-4d8038cb3654c2e0",
+      "title": "¿Téo# - Ascended Vibrations",
+      "original_filename": "¿Téo# - Ascended Vibrations.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-4d8038cb3654c2e0.mp3",
+      "group": "music",
+      "sha256": "4d8038cb3654c2e044bf31c882987fb3d3a8a32a2dfa2e85c5d28728061ca093",
+      "bytes": 1363430,
+      "duration_seconds": 82.339025,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-536a41e1d3bcbe5b",
+      "title": "三亩地 - 城南花已开",
+      "original_filename": "三亩地 - 城南花已开.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-536a41e1d3bcbe5b.mp3",
+      "group": "music",
+      "sha256": "536a41e1d3bcbe5b1c4e600f4258a3dae75b403fe480d5440091ef198e8eb464",
+      "bytes": 4468085,
+      "duration_seconds": 271.020408,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 10375,
+        "final_frame_footer_overlap_bytes": 109,
+        "pcm_sha256": "53b23fa3178f40b8d29ec62cce9d3e3004c1f4cdf1b6f04f680c6fa682425ce9",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-c943a54f1a1a2f6c",
+      "title": "三亩地 - 寻",
+      "original_filename": "三亩地 - 寻.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-c943a54f1a1a2f6c.mp3",
+      "group": "music",
+      "sha256": "c943a54f1a1a2f6c59eb5969fe6b6dbda40c6bab94085469f1c33ad703c8585c",
+      "bytes": 3156448,
+      "duration_seconds": 191.973878,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7349,
+        "final_frame_footer_overlap_bytes": 79,
+        "pcm_sha256": "de56061dff681b3151cfd87552f45c4a1054d2333ac9dbf93cb07fbc2e5ed8ef",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-8b01c2bf50cd8406",
+      "title": "中村遥 - anne",
+      "original_filename": "中村遥 - anne.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-8b01c2bf50cd8406.mp3",
+      "group": "music",
+      "sha256": "8b01c2bf50cd840610edc5f7bf19510ae62058b8bb0996cf0a136c5178d2772b",
+      "bytes": 2792747,
+      "duration_seconds": 171.833469,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 6578,
+        "final_frame_footer_overlap_bytes": 80,
+        "pcm_sha256": "17f1ebc87e639189de2a53b663adace22b473a793f5cb59927dbccc9afd60706",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-7af8e672c6957aa2",
+      "title": "中村遥 - Every Day",
+      "original_filename": "中村遥 - Every Day.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-7af8e672c6957aa2.mp3",
+      "group": "music",
+      "sha256": "7af8e672c6957aa2b3ca37a8ef7759d3bde5b303e1ad71119f52103eb362da07",
+      "bytes": 3159157,
+      "duration_seconds": 195.004082,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7465,
+        "final_frame_footer_overlap_bytes": 88,
+        "pcm_sha256": "51a89b047ec1a47e0128359db4b785841df6ea5257fb541071d1ac96c83a10a6",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-bab7f269b3176c1f",
+      "title": "久石让 - 月光の雲海 (月光下的云海)",
+      "original_filename": "久石让 - 月光の雲海 (月光下的云海).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-bab7f269b3176c1f.mp3",
+      "group": "music",
+      "sha256": "bab7f269b3176c1f5cfe6128792cbf0e3652b811e822c5e310587160db6de5b4",
+      "bytes": 2551902,
+      "duration_seconds": 153.364898,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5871,
+        "final_frame_footer_overlap_bytes": 84,
+        "pcm_sha256": "13ccedf3669ded119c20181f68d46f12c5199e5d4d19883a12ae3d9ed1ecdb38",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-2a5e0674547c299d",
+      "title": "云云众生、云雾心 - 朋友之间 (致佐助鸣人最后悲壮决战)",
+      "original_filename": "云云众生、云雾心 - 朋友之间 (致佐助鸣人最后悲壮决战).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-2a5e0674547c299d.mp3",
+      "group": "music",
+      "sha256": "2a5e0674547c299d1b41c8d18df03575f709d53690be8523db28e07c01ba20bb",
+      "bytes": 1856505,
+      "duration_seconds": 112.065306,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-84b582e44fbbaaa1",
+      "title": "余日秋山 - 儿时的夏日",
+      "original_filename": "余日秋山 - 儿时的夏日.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-84b582e44fbbaaa1.mp3",
+      "group": "music",
+      "sha256": "84b582e44fbbaaa18613e7f861dff7a27b70f64d00702192576836b881a17118",
+      "bytes": 4526747,
+      "duration_seconds": 274.95,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-9d1c98fc72545aea",
+      "title": "余日秋山 - 恍惚交错的记忆",
+      "original_filename": "余日秋山 - 恍惚交错的记忆.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-9d1c98fc72545aea.mp3",
+      "group": "music",
+      "sha256": "9d1c98fc72545aea0bbf0bdbca7fff7e38259290d2d7269a13ae2732b6ae3bb5",
+      "bytes": 2991247,
+      "duration_seconds": 183.763469,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-da92e98054754fbc",
+      "title": "傅许 - 夏日之梦",
+      "original_filename": "傅许 - 夏日之梦.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-da92e98054754fbc.mp3",
+      "group": "music",
+      "sha256": "da92e98054754fbc3f03342b81bf9c3cd6b2ac6a1c9caba3e60bab97441f95ea",
+      "bytes": 5175729,
+      "duration_seconds": 317.988571,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 12173,
+        "final_frame_footer_overlap_bytes": 76,
+        "pcm_sha256": "6f199cd0a7819651f46fbd492bf82b2dba0346240eff44b5fb92de2ef2303c9b",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-5acc355dad8ab331",
+      "title": "八云轨 - 星空の下で会いましょう (在星空下见)",
+      "original_filename": "八云轨 - 星空の下で会いましょう (在星空下见).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-5acc355dad8ab331.mp3",
+      "group": "music",
+      "sha256": "5acc355dad8ab3310c10d4325d5706398ffd9f79a903d5fd578e638dcf7e0ab8",
+      "bytes": 3804897,
+      "duration_seconds": 232.202449,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-1879af5f5fc7f298",
+      "title": "八云轨 - 渐无书",
+      "original_filename": "八云轨 - 渐无书.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-1879af5f5fc7f298.mp3",
+      "group": "music",
+      "sha256": "1879af5f5fc7f298a9d1970b1466cdc606ab8401945ab9ec05c56a750126d5c7",
+      "bytes": 4557286,
+      "duration_seconds": 278.987755,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-32a557e63ae0225d",
+      "title": "八云轨 - 秒 · EX3",
+      "original_filename": "八云轨 - 秒 · EX3.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-32a557e63ae0225d.mp3",
+      "group": "music",
+      "sha256": "32a557e63ae0225db98a543591d3f2ccded08b2ee30f76ef4b111d533c07a831",
+      "bytes": 3665987,
+      "duration_seconds": 220.943673,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-c6d48341a2274d1d",
+      "title": "八云轨 - 秒 · 流云",
+      "original_filename": "八云轨 - 秒 · 流云.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-c6d48341a2274d1d.mp3",
+      "group": "music",
+      "sha256": "c6d48341a2274d1df59982b14238259957d7fbf491536f3311d369318df40d46",
+      "bytes": 3228341,
+      "duration_seconds": 199.250045,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-6e993c0ddf2dd717",
+      "title": "八云轨 - 秒 · 繁梦",
+      "original_filename": "八云轨 - 秒 · 繁梦.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-6e993c0ddf2dd717.mp3",
+      "group": "music",
+      "sha256": "6e993c0ddf2dd717e5b9aa5e5e7982f997e1e34445cc20d5457c9fe5dd3e0395",
+      "bytes": 4442095,
+      "duration_seconds": 275.121633,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-4b2feb8b623d6a9b",
+      "title": "八云轨 - 秒 · 落樱",
+      "original_filename": "八云轨 - 秒 · 落樱.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-4b2feb8b623d6a9b.mp3",
+      "group": "music",
+      "sha256": "4b2feb8b623d6a9b4d985f6cc7e72899aabc16f55a6b150d00376919af834406",
+      "bytes": 3426454,
+      "duration_seconds": 211.644082,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-1a4b2ac8563fc4fe",
+      "title": "兮沐 - 黄昏之时 (钢琴曲)",
+      "original_filename": "兮沐 - 黄昏之时 (钢琴曲)_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-1a4b2ac8563fc4fe.mp3",
+      "group": "music",
+      "sha256": "1a4b2ac8563fc4fec34a8e12b04994e2452f5c74c6f1caf2a894c31e55090abe",
+      "bytes": 7304590,
+      "duration_seconds": 256.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-270caa49e29931ea",
+      "title": "凡以三 - 爱我少一点 但爱我久一点",
+      "original_filename": "凡以三 - 爱我少一点 但爱我久一点.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-270caa49e29931ea.mp3",
+      "group": "music",
+      "sha256": "270caa49e29931eaf8872d50c73d5064c7d3f24167aad42b064f9bf2fa48e94a",
+      "bytes": 2848590,
+      "duration_seconds": 176.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-439897de8ce89a5d",
+      "title": "刘佳怡 - 山海不可平 (钢琴版)",
+      "original_filename": "刘佳怡 - 山海不可平 (钢琴版).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-439897de8ce89a5d.mp3",
+      "group": "music",
+      "sha256": "439897de8ce89a5d3ce325a742be91d0a988cdc3dbc2ba2dc5191f37b609f4f4",
+      "bytes": 1925814,
+      "duration_seconds": 116.48,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-3e121920eae4d937",
+      "title": "十指流玉 - Delete",
+      "original_filename": "十指流玉 - Delete.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-3e121920eae4d937.mp3",
+      "group": "music",
+      "sha256": "3e121920eae4d937f7599b04ebae585093b0ac24d70d1917517f78f3dd8d688e",
+      "bytes": 3262542,
+      "duration_seconds": 203.807347,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7802,
+        "final_frame_footer_overlap_bytes": 69,
+        "pcm_sha256": "d877df58bbb39a777b291f578fbdeea14b9a118cb381eafbf985b12645416ca5",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-0df9bba9b968dacb",
+      "title": "千坂 - At The Edge(1)",
+      "original_filename": "千坂 - At The Edge(1).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-0df9bba9b968dacb.mp3",
+      "group": "music",
+      "sha256": "0df9bba9b968dacb46d5464670842691ac3cb457347b1ebcef68ab888cae9a94",
+      "bytes": 3268227,
+      "duration_seconds": 199.051905,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-5171391aa97c04b5",
+      "title": "变奏的梦想 - 江上清风游",
+      "original_filename": "变奏的梦想 - 江上清风游.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-5171391aa97c04b5.mp3",
+      "group": "music",
+      "sha256": "5171391aa97c04b5fba88d91615a871b23b707da9149f56c97af1a27e95adb64",
+      "bytes": 4346531,
+      "duration_seconds": 270.001633,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 10336,
+        "final_frame_footer_overlap_bytes": 73,
+        "pcm_sha256": "96e6e808ddb2b08c6dda879796dc5bd9cac2a396035b06c30d92fe4d376484c3",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-bb92424ae03db180",
+      "title": "叶轻衣 - 海の岸こう (海的彼岸)(Demo)",
+      "original_filename": "叶轻衣 - 海の岸こう (海的彼岸)(Demo).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-bb92424ae03db180.mp3",
+      "group": "music",
+      "sha256": "bb92424ae03db18082119bd9bf8eae8d107ce2d614676409261b02370d3d8371",
+      "bytes": 2442106,
+      "duration_seconds": 149.565215,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-f479da8edabf4e08",
+      "title": "叶轻衣 - 秋风细雨，你我皆是过客",
+      "original_filename": "叶轻衣 - 秋风细雨，你我皆是过客.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-f479da8edabf4e08.mp3",
+      "group": "music",
+      "sha256": "f479da8edabf4e089b9f0cfdfd6be52152392041efd081f39d03ccd4d1fc6f5c",
+      "bytes": 1996371,
+      "duration_seconds": 120.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-76b9e89d054dccb8",
+      "title": "吴宇深 - 8月31日",
+      "original_filename": "吴宇深 - 8月31日.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-76b9e89d054dccb8.mp3",
+      "group": "music",
+      "sha256": "76b9e89d054dccb8253c62b354640311f88bffc9e2e0547532df6b2a76893832",
+      "bytes": 3127741,
+      "duration_seconds": 193.28,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7399,
+        "final_frame_footer_overlap_bytes": 83,
+        "pcm_sha256": "f0a6cfef4767d6897dbe6dc60eb83efae800c58626e29054184fc9a9f51d4f2c",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-d6ee1f9f7c48c918",
+      "title": "吴昊泽MUSICALBLAST - Flower Dance (花之舞)(钢琴版I)",
+      "original_filename": "吴昊泽MUSICALBLAST - Flower Dance (花之舞)(钢琴版I).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d6ee1f9f7c48c918.mp3",
+      "group": "music",
+      "sha256": "d6ee1f9f7c48c91850be2ca94bd0558e3391d6bdfe8e52110f029fd9cec77a03",
+      "bytes": 3025617,
+      "duration_seconds": 185.388118,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-71de73d5c7a2ddd0",
+      "title": "四季音色 - 雨夜",
+      "original_filename": "四季音色 - 雨夜.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-71de73d5c7a2ddd0.mp3",
+      "group": "music",
+      "sha256": "71de73d5c7a2ddd09f168c855dea155da239783fa1e305b085bab13765f60764",
+      "bytes": 2961433,
+      "duration_seconds": 178.329705,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-ea86349b3863be8a",
+      "title": "大宇 - 胡同儿",
+      "original_filename": "大宇 - 胡同儿.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ea86349b3863be8a.mp3",
+      "group": "music",
+      "sha256": "ea86349b3863be8a2ad94c7482dccb5b09c9d95c1bbed8b72b211ded98276bb1",
+      "bytes": 2364833,
+      "duration_seconds": 142.34898,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-684cd3080c04d434",
+      "title": "宗次郎 - いつも何度でも (永远同在)",
+      "original_filename": "宗次郎 - いつも何度でも (永远同在).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-684cd3080c04d434.mp3",
+      "group": "music",
+      "sha256": "684cd3080c04d4347e4a92b5f9f06031882086cc11b200445257e6b0b8abe564",
+      "bytes": 3288124,
+      "duration_seconds": 198.426122,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7596,
+        "final_frame_footer_overlap_bytes": 80,
+        "pcm_sha256": "693888c9cb72bc436e79d6950c4734a62602b34b6bddcdef6f0f70a417390ed0",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-a49112913f629692",
+      "title": "宮西希 - 月光",
+      "original_filename": "宮西希 - 月光.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-a49112913f629692.mp3",
+      "group": "music",
+      "sha256": "a49112913f629692bb5599f98f9c1a7753115c4b09a0c579262130e01055eb59",
+      "bytes": 6225502,
+      "duration_seconds": 385.697959,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-2ec8360006eaf4ef",
+      "title": "小笨喵 - 梦江南",
+      "original_filename": "小笨喵 - 梦江南.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-2ec8360006eaf4ef.mp3",
+      "group": "music",
+      "sha256": "2ec8360006eaf4efddf6240d98af56b81f5f3b614b6533b71bfc6d5ddab5c9e1",
+      "bytes": 4286957,
+      "duration_seconds": 247.849796,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 9488,
+        "final_frame_footer_overlap_bytes": 104,
+        "pcm_sha256": "b35caf19e16a80df3d7c95d6058bcf933be49d0287bc324635d3ec2c38e33faf",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-16c4713db99ac134",
+      "title": "岸部眞明 - Snow fall",
+      "original_filename": "岸部眞明 - Snow fall.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-16c4713db99ac134.mp3",
+      "group": "music",
+      "sha256": "16c4713db99ac1340931f5b04377e7575e189cc79c4667a3fb7aa87edc550f59",
+      "bytes": 4028021,
+      "duration_seconds": 247.24898,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-3193de4adce14d60",
+      "title": "帆足圭吾 - 繋ぎとめた世界",
+      "original_filename": "帆足圭吾 - 繋ぎとめた世界.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-3193de4adce14d60.mp3",
+      "group": "music",
+      "sha256": "3193de4adce14d608d4c7a218a7e56593e4577bfab73ffaea453dfbd514c476b",
+      "bytes": 2656594,
+      "duration_seconds": 160.235102,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-680036f3d0512cd0",
+      "title": "幻曦 - 那里的水还在滴吗",
+      "original_filename": "幻曦 - 那里的水还在滴吗.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-680036f3d0512cd0.mp3",
+      "group": "music",
+      "sha256": "680036f3d0512cd0da962ee3a5aee94f293546f9ade06e60605c4a4d08a95e77",
+      "bytes": 7017880,
+      "duration_seconds": 438.517551,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 16787,
+        "final_frame_footer_overlap_bytes": 82,
+        "pcm_sha256": "079424e773b03027921aff8cfb9909c0b662dc7cb4ce3a63a983e222dbb1e414",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-b4d7baae8bab7595",
+      "title": "幽魂乱码 - 千本樱",
+      "original_filename": "幽魂乱码 - 千本樱.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-b4d7baae8bab7595.mp3",
+      "group": "music",
+      "sha256": "b4d7baae8bab7595235de2e57ae3e6396679cf6bffcef9af273d7b78ceed6a54",
+      "bytes": 2263167,
+      "duration_seconds": 141.348571,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5411,
+        "final_frame_footer_overlap_bytes": 86,
+        "pcm_sha256": "f65cddeed2e546d0b1f622ae032aae802d028c440fbdf15a7a6a06bac4c6d90d",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-c555a4381d278f70",
+      "title": "忘乡 - 寂川",
+      "original_filename": "忘乡 - 寂川.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-c555a4381d278f70.mp3",
+      "group": "music",
+      "sha256": "c555a4381d278f70a6d18bf88e1e485342419bc92c7c039e3811f93f82953b78",
+      "bytes": 4535169,
+      "duration_seconds": 279.693061,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 10707,
+        "final_frame_footer_overlap_bytes": 79,
+        "pcm_sha256": "de916b6194b8fedf565f52df6dbe57e4a2431b14669af162df24c3d24f0a4e00",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-9d8369141dd32ff1",
+      "title": "忘乡 - 我能想到的最幸福的事",
+      "original_filename": "忘乡 - 我能想到的最幸福的事.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-9d8369141dd32ff1.mp3",
+      "group": "music",
+      "sha256": "9d8369141dd32ff1707bd5cd68e443a765bf10e7ceca0cfd0af4a438bf7faf06",
+      "bytes": 2568881,
+      "duration_seconds": 157.178776,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 6017,
+        "final_frame_footer_overlap_bytes": 88,
+        "pcm_sha256": "654e841f068eb19e5c80270272773467f2774023b1710e1ec64f6e8efb709ef6",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-d669184a0493770e",
+      "title": "忘乡 - 浮游于梦",
+      "original_filename": "忘乡 - 浮游于梦.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d669184a0493770e.mp3",
+      "group": "music",
+      "sha256": "d669184a0493770eec911d9bd2392818f434fdd2a2dfe5d7bffee8dceca33d72",
+      "bytes": 3016868,
+      "duration_seconds": 183.250045,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-72ca4adf0336bdb6",
+      "title": "忘乡 - 那年夏天，阳光正好",
+      "original_filename": "忘乡 - 那年夏天，阳光正好.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-72ca4adf0336bdb6.mp3",
+      "group": "music",
+      "sha256": "72ca4adf0336bdb6b8ba0cc18d701fa2bbf0114f4001ef755735cc50449b9c0e",
+      "bytes": 2377162,
+      "duration_seconds": 143.36,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5488,
+        "final_frame_footer_overlap_bytes": 81,
+        "pcm_sha256": "59a8305e38a74946998c20575229060f4bc701b1d95040c7e20e8666c2f35c49",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-6c05aa86338f351b",
+      "title": "恰见明月栖山 - 三葉のテーマ (三叶的主题曲)(钢琴)",
+      "original_filename": "恰见明月栖山 - 三葉のテーマ (三叶的主题曲)(钢琴).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-6c05aa86338f351b.mp3",
+      "group": "music",
+      "sha256": "6c05aa86338f351bcceb00fac8b23f056cf8a485e624b7c79f3c6f4705eed15f",
+      "bytes": 3770390,
+      "duration_seconds": 231.456,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-01a0d580a76b4ba3",
+      "title": "恰见明月栖山 - 三葉のテーマ (三叶的主题曲)(钢琴)",
+      "original_filename": "恰见明月栖山 - 三葉のテーマ (三叶的主题曲)(钢琴)_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-01a0d580a76b4ba3.mp3",
+      "group": "music",
+      "sha256": "01a0d580a76b4ba3dbf867274014e4c94442743eed348f5ae0298dae654009fb",
+      "bytes": 5747536,
+      "duration_seconds": 231.456009,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-df10c2a251cc6eed",
+      "title": "春野杉卉 - 雨に濡れた空気 (被雨淋湿的空气)",
+      "original_filename": "春野杉卉 - 雨に濡れた空気 (被雨淋湿的空气).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-df10c2a251cc6eed.mp3",
+      "group": "music",
+      "sha256": "df10c2a251cc6eedebb3a7c7b803ac6593f960f7bf97db3ae661f0708989bb51",
+      "bytes": 2549042,
+      "duration_seconds": 154.514286,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5915,
+        "final_frame_footer_overlap_bytes": 74,
+        "pcm_sha256": "514548028db6f070ac8a12c463cd78e9ed9b4e252dadea3310ca8bf9af33bd15",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-c1624ab3aca1b587",
+      "title": "春野杉卉 - 雨宿り亭 (避雨亭)",
+      "original_filename": "春野杉卉 - 雨宿り亭 (避雨亭).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-c1624ab3aca1b587.mp3",
+      "group": "music",
+      "sha256": "c1624ab3aca1b587d90dd6ae321e7b3d00f93505d4466346e0d22ed0ecd5f617",
+      "bytes": 3755313,
+      "duration_seconds": 234.605714,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 8981,
+        "final_frame_footer_overlap_bytes": 80,
+        "pcm_sha256": "c4ffc232e075633dd62aec8662008d5bafd35f02cd313d83d064e5a0b4f19122",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-63390a92f175d4d1",
+      "title": "昼夜 - Valder Fields",
+      "original_filename": "昼夜 - Valder Fields.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-63390a92f175d4d1.mp3",
+      "group": "music",
+      "sha256": "63390a92f175d4d147a50f30e53e880f5d8b12d4274721d937726d3e98282b5f",
+      "bytes": 2861554,
+      "duration_seconds": 175.804082,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 6730,
+        "final_frame_footer_overlap_bytes": 82,
+        "pcm_sha256": "059171ddc84b39298ba336d6ba1414a4ba964ca0ae5157ff7c94b0d766783c32",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-3bfaa03cc6346a69",
+      "title": "景随风 - 孤单成双",
+      "original_filename": "景随风 - 孤单成双.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-3bfaa03cc6346a69.mp3",
+      "group": "music",
+      "sha256": "3bfaa03cc6346a69a4b3ec99795ba0f18c675d55b3a5b840e20414e9be7ddffc",
+      "bytes": 2142320,
+      "duration_seconds": 131.02873,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-12d4ef46a27a328a",
+      "title": "杜贴心 - 星之恋 (治愈系钢琴曲)",
+      "original_filename": "杜贴心 - 星之恋 (治愈系钢琴曲)_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-12d4ef46a27a328a.mp3",
+      "group": "music",
+      "sha256": "12d4ef46a27a328af81db58a179f2ac5c7c3a2448a87b429e99229abb6e683ff",
+      "bytes": 5932498,
+      "duration_seconds": 221.0,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-883d52cee039b538",
+      "title": "松谷卓 - 共病文庫",
+      "original_filename": "松谷卓 - 共病文庫.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-883d52cee039b538.mp3",
+      "group": "music",
+      "sha256": "883d52cee039b53854e7fa3b6198f69dba81974215b7ce59fdcd762c58f36145",
+      "bytes": 6434922,
+      "duration_seconds": 397.374694,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-858cdb8877942e44",
+      "title": "林键标 - 一叶子",
+      "original_filename": "林键标 - 一叶子.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-858cdb8877942e44.mp3",
+      "group": "music",
+      "sha256": "858cdb8877942e449aa7f4f37c5a2ced839e1992589843aa84593a5f37ab0f9b",
+      "bytes": 3190410,
+      "duration_seconds": 196.362449,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7517,
+        "final_frame_footer_overlap_bytes": 78,
+        "pcm_sha256": "a2dd4a55c36ac298900f0e01950e94a7786b5a113ba334d0db14608ca9b43104",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-8a1e13e7f36033c4",
+      "title": "林鹿言 - 在最寒冷的冬天，遇见最温暖的你",
+      "original_filename": "林鹿言 - 在最寒冷的冬天，遇见最温暖的你.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-8a1e13e7f36033c4.mp3",
+      "group": "music",
+      "sha256": "8a1e13e7f36033c462f677e8856592e09fa208be1cdc718169d84c73ca3a762c",
+      "bytes": 3857348,
+      "duration_seconds": 236.733628,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-3c096655a3671501",
+      "title": "柳不贰 - Poem in fall",
+      "original_filename": "柳不贰 - Poem in fall.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-3c096655a3671501.mp3",
+      "group": "music",
+      "sha256": "3c096655a3671501aa2fd44f0b521356d97a0c77fb7763400105a26f9a9954f9",
+      "bytes": 2275068,
+      "duration_seconds": 137.562766,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-c027e3b857f7ec22",
+      "title": "柳轻颂 - 寄给你全宇宙的爱和自太古至永劫的思念 (钢琴版)",
+      "original_filename": "柳轻颂 - 寄给你全宇宙的爱和自太古至永劫的思念 (钢琴版).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-c027e3b857f7ec22.mp3",
+      "group": "music",
+      "sha256": "c027e3b857f7ec226abb81918f2ba08ea919d7ee64209f0c0df7103c8e4cf49d",
+      "bytes": 821305,
+      "duration_seconds": 45.993152,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-ab49e78e2f48497b",
+      "title": "梁靖国 - 下个青春见",
+      "original_filename": "梁靖国 - 下个青春见.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ab49e78e2f48497b.mp3",
+      "group": "music",
+      "sha256": "ab49e78e2f48497bea208421c22ad66815120d4cdeaa918f6d3881527a20e989",
+      "bytes": 4975401,
+      "duration_seconds": 307.932721,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-702a8e58d2eb8709",
+      "title": "植地雅哉 - A South Wind",
+      "original_filename": "植地雅哉 - A South Wind.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-702a8e58d2eb8709.mp3",
+      "group": "music",
+      "sha256": "702a8e58d2eb87097eb823e05ab7116212d1c983d7e42bc9fc31d9cddba08a42",
+      "bytes": 6001896,
+      "duration_seconds": 371.853061,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 14235,
+        "final_frame_footer_overlap_bytes": 97,
+        "pcm_sha256": "6a97bddbb1b596537711c488a9f5ea32c83cb53ae9ca48213a130e00f2b70b17",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-deb34bb075c421b1",
+      "title": "王雨笙 - Illusionary Daytime (枪声版)(DJ王雨笙版)",
+      "original_filename": "王雨笙 - Illusionary Daytime (枪声版)(DJ王雨笙版).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-deb34bb075c421b1.mp3",
+      "group": "music",
+      "sha256": "deb34bb075c421b1eb7d0d7f8556a66205fef796fa52c0ec5834e0b6e5d7b312",
+      "bytes": 4134279,
+      "duration_seconds": 255.764898,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 9791,
+        "final_frame_footer_overlap_bytes": 47,
+        "pcm_sha256": "a556fae40a11c9a35455912c67c526d8e8fd914eb731e2c620a6b92d68fb8c74",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-e69a4a76452560e6",
+      "title": "白鸿 - 不离",
+      "original_filename": "白鸿 - 不离.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-e69a4a76452560e6.mp3",
+      "group": "music",
+      "sha256": "e69a4a76452560e638b851fcf2756a2a7510ad3c5848fc508fa4da059e669188",
+      "bytes": 1194400,
+      "duration_seconds": 73.013311,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-572ce074983677ae",
+      "title": "羽肿 - City",
+      "original_filename": "羽肿 - City.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-572ce074983677ae.mp3",
+      "group": "music",
+      "sha256": "572ce074983677ae277f6ba8640b772dc15d7641d81a976cdadf1be4c0e94a00",
+      "bytes": 4145538,
+      "duration_seconds": 253.15068,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-d53975375596f415",
+      "title": "羽肿 - Rain after Summer",
+      "original_filename": "羽肿 - Rain after Summer.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d53975375596f415.mp3",
+      "group": "music",
+      "sha256": "d53975375596f4153632940e4ad1b491a2922f4eb594b529ba6a028b6e149484",
+      "bytes": 5525042,
+      "duration_seconds": 345.155918,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-bea4a252a3098626",
+      "title": "羽肿 - Windy Hill (风之谷)",
+      "original_filename": "羽肿 - Windy Hill (风之谷)_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-bea4a252a3098626.mp3",
+      "group": "music",
+      "sha256": "bea4a252a30986265da46d6cc9b7165105f65bed578b597fd447d8a1439d26c7",
+      "bytes": 10956632,
+      "duration_seconds": 308.918912,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-bf85bc06752fad13",
+      "title": "羽肿 - 花火が瞬く夜に (烟花闪烁的夜晚)",
+      "original_filename": "羽肿 - 花火が瞬く夜に (烟花闪烁的夜晚).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-bf85bc06752fad13.mp3",
+      "group": "music",
+      "sha256": "bf85bc06752fad1374b6ddcb5e60e2d4f05b9e9697ed427fa738a23578ed3e26",
+      "bytes": 4390186,
+      "duration_seconds": 270.837551,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-ea7e3c5ae6094baa",
+      "title": "葛羽瞳 - 為 你 數 的 羊 都 掉 進 了 深 不 見 底 的 夜 裡",
+      "original_filename": "葛羽瞳 - 為 你 數 的 羊 都 掉 進 了 深 不 見 底 的 夜 裡.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ea7e3c5ae6094baa.mp3",
+      "group": "music",
+      "sha256": "ea7e3c5ae6094baa9513a0744d42288324a49256e6e680afedc6b58816d349be",
+      "bytes": 2431051,
+      "duration_seconds": 148.009796,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5666,
+        "final_frame_footer_overlap_bytes": 104,
+        "pcm_sha256": "2ace354a749cc7ec38aa2d46b1075d483dcf842186a54472e12609395f734b7f",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-f75a615041ba6f1f",
+      "title": "蒋六多 - 该往哪里走",
+      "original_filename": "蒋六多 - 该往哪里走.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-f75a615041ba6f1f.mp3",
+      "group": "music",
+      "sha256": "f75a615041ba6f1fa57c44ef4b6693e4e116aa19b6ea015dfdc904969f6df35c",
+      "bytes": 2953176,
+      "duration_seconds": 161.28,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 6174,
+        "final_frame_footer_overlap_bytes": 87,
+        "pcm_sha256": "41d57916c92d2f7425d6d935d38c6c2c2229aa20767e466fce5d45c4799bbc28",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-3add716b31e0f9ca",
+      "title": "蓝云木 - Lost In Love",
+      "original_filename": "蓝云木 - Lost In Love.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-3add716b31e0f9ca.mp3",
+      "group": "music",
+      "sha256": "3add716b31e0f9caf14d6842407f8c911734d94608052e453a5ce05724c58252",
+      "bytes": 2281487,
+      "duration_seconds": 137.132812,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-ff6bd4388d24558e",
+      "title": "蓝云木 - Where am I？",
+      "original_filename": "蓝云木 - Where am I？.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-ff6bd4388d24558e.mp3",
+      "group": "music",
+      "sha256": "ff6bd4388d24558e2483a949fe1c411ca1ddaa2159c085c897806efb3d8629b8",
+      "bytes": 3379914,
+      "duration_seconds": 207.369184,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-680aa05005dabf1e",
+      "title": "詹昊晁 Zhan.H.C - 薰衣草",
+      "original_filename": "詹昊晁 Zhan.H.C - 薰衣草.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-680aa05005dabf1e.mp3",
+      "group": "music",
+      "sha256": "680aa05005dabf1e360ffb7819a802fbaf26671f186ee6cc3f14cc1dd5cbc5cb",
+      "bytes": 4397241,
+      "duration_seconds": 271.046531,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-d3f0dea2579ce93a",
+      "title": "钱小航 - 起床进行曲",
+      "original_filename": "钱小航 - 起床进行曲.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d3f0dea2579ce93a.mp3",
+      "group": "music",
+      "sha256": "d3f0dea2579ce93a1317a9bd09cf6401ae4191e937bc2ad87988d555492ec2aa",
+      "bytes": 3357886,
+      "duration_seconds": 187.506939,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7178,
+        "final_frame_footer_overlap_bytes": 89,
+        "pcm_sha256": "bec61892fac51dfb6b55324efedb09ab5cf2be582a1c13b0839aab3a63d757b7",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-356d1dcea1755791",
+      "title": "闫东炜 - 初秋与七夕",
+      "original_filename": "闫东炜 - 初秋与七夕.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-356d1dcea1755791.mp3",
+      "group": "music",
+      "sha256": "356d1dcea17557913cbf7ede5948254a8b61adb9c74413c41231677b98afa8e3",
+      "bytes": 2641153,
+      "duration_seconds": 160.862041,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 6158,
+        "final_frame_footer_overlap_bytes": 87,
+        "pcm_sha256": "12ff93e373032e0933e9c02f7259aae202d0023f712446e7ab436f8c47ce7909",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-979c3a06c2f34cea",
+      "title": "陈嘉俊 - 想带你漫不经心的逛",
+      "original_filename": "陈嘉俊 - 想带你漫不经心的逛.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-979c3a06c2f34cea.mp3",
+      "group": "music",
+      "sha256": "979c3a06c2f34cea2e47bfbc129af7bd1e2c56a17babf513850e86093889659c",
+      "bytes": 1729499,
+      "duration_seconds": 107.075918,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 4099,
+        "final_frame_footer_overlap_bytes": 79,
+        "pcm_sha256": "698443b7008c69c425e21d13cf957c81d4f0f19ebadeb3c33f14244f73858723",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-d142db3eb41870c4",
+      "title": "陈嘉俊 - 慢慢 沉入 海底",
+      "original_filename": "陈嘉俊 - 慢慢 沉入 海底.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-d142db3eb41870c4.mp3",
+      "group": "music",
+      "sha256": "d142db3eb41870c41bb126a1303a86e516070b3acb2538770b716d184f33bd9d",
+      "bytes": 2320066,
+      "duration_seconds": 143.986939,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 5512,
+        "final_frame_footer_overlap_bytes": 87,
+        "pcm_sha256": "8c1c08989951d6a1ff1a4a7d735ca94857a74675220db0e96c96f672adbb2982",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-3bbcff0d8a0d071e",
+      "title": "陈嘉俊 - 我都快忘了你笑起来的时候有多美",
+      "original_filename": "陈嘉俊 - 我都快忘了你笑起来的时候有多美.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-3bbcff0d8a0d071e.mp3",
+      "group": "music",
+      "sha256": "3bbcff0d8a0d071ed9f81905187ce813077395e425fe02237787fdc97c715058",
+      "bytes": 1375024,
+      "duration_seconds": 82.494694,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 3158,
+        "final_frame_footer_overlap_bytes": 75,
+        "pcm_sha256": "0251641d0f16402807f4ea5afd9e34127911581e67028db754995c652fe78321",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-a75c2827c747aab2",
+      "title": "青日 - dream",
+      "original_filename": "青日 - dream.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-a75c2827c747aab2.mp3",
+      "group": "music",
+      "sha256": "a75c2827c747aab2a742d42c1d6b53896c129116c98e9ea7bdeb05e3cb27dea7",
+      "bytes": 3378881,
+      "duration_seconds": 208.184127,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-4e5750301895184e",
+      "title": "顾均临 - 生为冰山，就该淡淡地爱海流、爱风",
+      "original_filename": "顾均临 - 生为冰山，就该淡淡地爱海流、爱风.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-4e5750301895184e.mp3",
+      "group": "music",
+      "sha256": "4e5750301895184ef177f628efa67914064ec2bfe2f3cc5ef88e2f500f4cee2d",
+      "bytes": 2273550,
+      "duration_seconds": 139.834535,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-2a210430858260b7",
+      "title": "饭碗的彼岸 - 莲有秀兮",
+      "original_filename": "饭碗的彼岸 - 莲有秀兮.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-2a210430858260b7.mp3",
+      "group": "music",
+      "sha256": "2a210430858260b7fd5f23ac3097bd17353d8a76d8c77c12e382282565bf5932",
+      "bytes": 3285835,
+      "duration_seconds": 203.154286,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 7777,
+        "final_frame_footer_overlap_bytes": 35,
+        "pcm_sha256": "8cf93add33c904e2473dccc9c84217e3f8f75ecde0773fda695393ff74419ccb",
+        "original_bytes_preserved": true
+      }
+    },
+    {
+      "id": "music-2c54945cddbf523a",
+      "title": "饭碗的彼岸 - 風の住む街 (风居住的街道)(Piano Ver.)",
+      "original_filename": "饭碗的彼岸 - 風の住む街 (风居住的街道)(Piano Ver.).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-2c54945cddbf523a.mp3",
+      "group": "music",
+      "sha256": "2c54945cddbf523afe217bff823b72b535471aaf44add6c4f61bbe9e6be85155",
+      "bytes": 4663008,
+      "duration_seconds": 286.209161,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      }
+    },
+    {
+      "id": "music-38646ef47230550b",
+      "title": "饭碗的彼岸 - 風の住む街 (风居住的街道)(Piano Ver.)",
+      "original_filename": "饭碗的彼岸 - 風の住む街 (风居住的街道)(Piano Ver.)_HQ.mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-38646ef47230550b.mp3",
+      "group": "music",
+      "sha256": "38646ef47230550b5f7a919b602c2a6f83461d16598e9a17570a20a10d4dc882",
+      "bytes": 8636185,
+      "duration_seconds": 286.276984,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": true,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "processing": {
+        "prior_conversion": "kugou_to_mp3",
+        "audio_reencoded": true,
+        "verification": "full_decode_and_duration_match"
+      }
+    },
+    {
+      "id": "music-935231f0c7266ab1",
+      "title": "饭碗的彼岸、夜莺与玫瑰 - Rainy Blue (蓝色阴雨)",
+      "original_filename": "饭碗的彼岸、夜莺与玫瑰 - Rainy Blue (蓝色阴雨).mp3",
+      "historical_usage": [],
+      "source_kind": "user_provided_recording",
+      "path": "track-935231f0c7266ab1.mp3",
+      "group": "music",
+      "sha256": "935231f0c7266ab1e6d4aab2ce8d5cdc92669b168a99a64b1638f01bcb746882",
+      "bytes": 4299849,
+      "duration_seconds": 266.814694,
+      "media_format": "mp3",
+      "usage_scope": "shared_asset_selected_per_edition",
+      "daily_default": false,
+      "recording_changed": false,
+      "added_in": "1.2.0",
+      "rights": {
+        "status": "user_provided_rights_retained",
+        "license": null,
+        "note": "用户提供录音，原作品和录音保留其原权利。"
+      },
+      "media_validation": {
+        "method": "full_payload_decode_and_pcm_identity",
+        "id3v1_footer_excluded_only_for_validation": true,
+        "mp3_frame_headers_verified": 10214,
+        "final_frame_footer_overlap_bytes": 69,
+        "pcm_sha256": "0eb0232b6197a84622973c2bfd830ae65eb065d4f6412e17b34d049731e33cf3",
+        "original_bytes_preserved": true
       }
     }
   ],
