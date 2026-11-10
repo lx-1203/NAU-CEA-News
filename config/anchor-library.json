@@ -1,0 +1,230 @@
+{
+  "version": "1.1.0",
+  "date": "2026-11-11",
+  "common_states": [
+    "normal",
+    "happy",
+    "surprised",
+    "thinking",
+    "serious",
+    "presenting",
+    "thumbsup",
+    "wave"
+  ],
+  "labels": {
+    "normal": "平静",
+    "happy": "开心",
+    "surprised": "惊讶",
+    "thinking": "思考",
+    "serious": "严肃",
+    "presenting": "讲解",
+    "thumbsup": "点赞",
+    "wave": "招手"
+  },
+  "anchors": {
+    "xiaoXu": {
+      "normal": {
+        "path": "assets/characters/anchors/generated/xiaoxu-normal.png",
+        "sha256": "6bda2dddd8b597dad292df3f6ae28e8a65e2d88c8afdf61023aab3cff9a0f13a",
+        "variants": [
+          {
+            "expression": "normal",
+            "path": "assets/characters/anchors/generated/xiaoxu-normal.png",
+            "sha256": "6bda2dddd8b597dad292df3f6ae28e8a65e2d88c8afdf61023aab3cff9a0f13a"
+          },
+          {
+            "expression": "normal2",
+            "path": "assets/characters/anchors/frequent-v1/xiaoxu-normal2.png",
+            "sha256": "b794f287b4940062c26628bbc9a5d9efd50069aab5fb21b9e5b01329efdefa16"
+          },
+          {
+            "expression": "normal3",
+            "path": "assets/characters/anchors/frequent-v1/xiaoxu-normal3.png",
+            "sha256": "e14e97dacd4b8e7088d8bf762fa66eab310694ad7a04a91d338c619026454130"
+          }
+        ]
+      },
+      "happy": {
+        "path": "assets/characters/anchors/generated/xiaoxu-happy.png",
+        "sha256": "9eb8dcf18c46d38f554aa6190eb96c8eb2e9ec328ce29b627c0086db8f7574bd",
+        "variants": [
+          {
+            "expression": "happy",
+            "path": "assets/characters/anchors/generated/xiaoxu-happy.png",
+            "sha256": "9eb8dcf18c46d38f554aa6190eb96c8eb2e9ec328ce29b627c0086db8f7574bd"
+          },
+          {
+            "expression": "happy2",
+            "path": "assets/characters/anchors/frequent-v1/xiaoxu-happy2.png",
+            "sha256": "5ad7b0ea7493b4e58f5775a1d228244f102efdb2a3791c9aaca34491183b4221"
+          },
+          {
+            "expression": "happy3",
+            "path": "assets/characters/anchors/frequent-v1/xiaoxu-happy3.png",
+            "sha256": "a46f4ff8a743f9f32e05205d2f32c6980e807fd9d04555dd660930428385a1ff"
+          }
+        ]
+      },
+      "surprised": {
+        "path": "assets/characters/anchors/gestures-v2/xiaoxu-surprised.png",
+        "sha256": "aeb054bfa19fd92f3d9c92c7f2d0c56898d252c6c8a63a33d6ca97055e716c9b"
+      },
+      "thinking": {
+        "path": "assets/characters/anchors/gestures-v2/xiaoxu-thinking.png",
+        "sha256": "002643f5c0c033ac490c19137f05b13b9d6bedf1c4f2bf71550c8479ec963744",
+        "variants": [
+          {
+            "expression": "thinking",
+            "path": "assets/characters/anchors/gestures-v2/xiaoxu-thinking.png",
+            "sha256": "002643f5c0c033ac490c19137f05b13b9d6bedf1c4f2bf71550c8479ec963744"
+          },
+          {
+            "expression": "thinking2",
+            "path": "assets/characters/anchors/frequent-v1/xiaoxu-thinking2.png",
+            "sha256": "cee1215b2df29fafa82dd92cdd51320f8a89e4411bc93e40b910e9fa73dbd635"
+          },
+          {
+            "expression": "thinking3",
+            "path": "assets/characters/anchors/frequent-v1/xiaoxu-thinking3.png",
+            "sha256": "cf0e20bb3184e126135a717dacd5a35761764f55fbf83b98433f4eabf618d4f1"
+          }
+        ]
+      },
+      "serious": {
+        "path": "assets/characters/anchors/generated/xiaoxu-serious.png",
+        "sha256": "f3710dde76c5581b4d9268a0b76faffc6c062a90d71f81f4e3bb5fd65dc522a8"
+      },
+      "presenting": {
+        "path": "assets/characters/anchors/gestures-v2/xiaoxu-presenting.png",
+        "sha256": "122a768ac12e8ce09e03b457eab4343a70862217a7eb39714e35a4df0af6c51d",
+        "variants": [
+          {
+            "expression": "presenting",
+            "path": "assets/characters/anchors/gestures-v2/xiaoxu-presenting.png",
+            "sha256": "122a768ac12e8ce09e03b457eab4343a70862217a7eb39714e35a4df0af6c51d"
+          },
+          {
+            "expression": "presenting2",
+            "path": "assets/characters/anchors/frequent-v1/xiaoxu-presenting2.png",
+            "sha256": "50c998d647eb1fed528dc4fb34484c30bb4075bcb946003537ccdcaf8d80b040"
+          },
+          {
+            "expression": "presenting3",
+            "path": "assets/characters/anchors/frequent-v1/xiaoxu-presenting3.png",
+            "sha256": "b7c801fd2f937e3b5cf7d519d252e61037ffd0cc9f7b4920880186d8fe6fb59d"
+          }
+        ]
+      },
+      "thumbsup": {
+        "path": "assets/characters/anchors/gestures-v2/xiaoxu-thumbsup.png",
+        "sha256": "a4b8d54e9662e8e17ef90e546c8eb991c95c5d590405b36b52f1aa231d469009"
+      },
+      "wave": {
+        "path": "assets/characters/anchors/common-v1/xiaoxu-wave.png",
+        "sha256": "d4c51f12cd97fb8bf8b08ff1f61d6cbc792b4946addb8da57fefa97c70c0f805"
+      }
+    },
+    "xiaoHe": {
+      "normal": {
+        "path": "assets/characters/anchors/generated/xiaohe-normal.png",
+        "sha256": "69aa102aab5c5ea7d8fc0ca2c4b71c2b2a30ee4d0861ed717c76e20ef87be8f1",
+        "variants": [
+          {
+            "expression": "normal",
+            "path": "assets/characters/anchors/generated/xiaohe-normal.png",
+            "sha256": "69aa102aab5c5ea7d8fc0ca2c4b71c2b2a30ee4d0861ed717c76e20ef87be8f1"
+          },
+          {
+            "expression": "normal2",
+            "path": "assets/characters/anchors/frequent-v1/xiaohe-normal2.png",
+            "sha256": "5a49c290b2da5f50f4f0e7bb7b7eeda5410f957f2e2e07d9200533a1d7aa7c14"
+          },
+          {
+            "expression": "normal3",
+            "path": "assets/characters/anchors/frequent-v1/xiaohe-normal3.png",
+            "sha256": "374fde92be57a57e80a42cd7b1b93f30ab16feaadb8bbedcb46a563c067ff7b3"
+          }
+        ]
+      },
+      "happy": {
+        "path": "assets/characters/anchors/generated/xiaohe-happy.png",
+        "sha256": "b1b78b5115851da86cf3775e05dca2433cf7d8380afbfb4e090ed9caf28aa272",
+        "variants": [
+          {
+            "expression": "happy",
+            "path": "assets/characters/anchors/generated/xiaohe-happy.png",
+            "sha256": "b1b78b5115851da86cf3775e05dca2433cf7d8380afbfb4e090ed9caf28aa272"
+          },
+          {
+            "expression": "happy2",
+            "path": "assets/characters/anchors/frequent-v1/xiaohe-happy2.png",
+            "sha256": "71c460cae9ae7a5a02c19ea9ee8861273c39dc41f24ef5fd1cf792db9796bfa3"
+          },
+          {
+            "expression": "happy3",
+            "path": "assets/characters/anchors/frequent-v1/xiaohe-happy3.png",
+            "sha256": "17d0dfd0a1b8ee315755ad4a0c680043ab3f7ac16627b762dc4c601a5f51b759"
+          }
+        ]
+      },
+      "surprised": {
+        "path": "assets/characters/anchors/common-v1/xiaohe-surprised.png",
+        "sha256": "13f34ab55f949800a99f13018f1797e84c334443488e7b5b6f8f116df7778cdb"
+      },
+      "thinking": {
+        "path": "assets/characters/anchors/common-v1/xiaohe-thinking.png",
+        "sha256": "81d31abd7c227c53a1877bd95d90ffddefe5fa016ce93c99419dfbb128bfc673",
+        "variants": [
+          {
+            "expression": "thinking",
+            "path": "assets/characters/anchors/common-v1/xiaohe-thinking.png",
+            "sha256": "81d31abd7c227c53a1877bd95d90ffddefe5fa016ce93c99419dfbb128bfc673"
+          },
+          {
+            "expression": "thinking2",
+            "path": "assets/characters/anchors/frequent-v1/xiaohe-thinking2.png",
+            "sha256": "397196052020628594f9af4c1d2c745885c5a69db3be79f5b307a01089153c30"
+          },
+          {
+            "expression": "thinking3",
+            "path": "assets/characters/anchors/frequent-v1/xiaohe-thinking3.png",
+            "sha256": "d7bc188acf7771825f9e449b5300b41ac896d8d3aa7bc5e7a3757b6c43865414"
+          }
+        ]
+      },
+      "serious": {
+        "path": "assets/characters/anchors/common-v1/xiaohe-serious.png",
+        "sha256": "a3a7262e60a4ca61a1caf819c0171345271bbf576e916f7d6e7dbab07a856b52"
+      },
+      "presenting": {
+        "path": "assets/characters/anchors/common-v1/xiaohe-presenting.png",
+        "sha256": "f1fa55e6092cbc8bdd6b04088c04321460c1754290b614f99f44bf5fe8237f1f",
+        "variants": [
+          {
+            "expression": "presenting",
+            "path": "assets/characters/anchors/common-v1/xiaohe-presenting.png",
+            "sha256": "f1fa55e6092cbc8bdd6b04088c04321460c1754290b614f99f44bf5fe8237f1f"
+          },
+          {
+            "expression": "presenting2",
+            "path": "assets/characters/anchors/frequent-v1/xiaohe-presenting2.png",
+            "sha256": "b0b39b0f38fc4abdf0cf55e5a1cf7dfc097924f1f3b791777bc9e0bcb672cb11"
+          },
+          {
+            "expression": "presenting3",
+            "path": "assets/characters/anchors/frequent-v1/xiaohe-presenting3.png",
+            "sha256": "770fafc8adcf70051581cce494c68b7d6d24547eef79743a1e1b0ab72e833aac"
+          }
+        ]
+      },
+      "thumbsup": {
+        "path": "assets/characters/anchors/common-v1/xiaohe-thumbsup.png",
+        "sha256": "eb487effaf39c562979d042dadbfe73ca883454cd3f321232b07be10fed7fb4e"
+      },
+      "wave": {
+        "path": "assets/characters/anchors/gestures-v2/xiaohe-wave.png",
+        "sha256": "8e0e04ed59fa9efcbd9a9a933eb2a15577d1cdf1144987f5acce307758b2cbd6"
+      }
+    }
+  }
+}

@@ -18,19 +18,19 @@ class ProductionTests(unittest.TestCase):
         self.assertEqual(result['offset'],20)
         self.assertEqual(cached['original.mp4']['offset'],1)
 
-    def test_every_sentence_changes_pose_inside_actual_speech_and_returns(self):
+    def test_every_sentence_binds_pose_inside_actual_speech_and_returns(self):
         for anchor in ['xiaoXu','xiaoHe']:
             for text in ['大家好，我是小序。','团队研发机器人软件。','这是一项后续任务安排。','我们下期再见。']:
                 events=performance_events(dict(anchor=anchor,text=text,scene=0),4.0,[(.25,3.6)])
                 self.assertEqual(events[0]['at'],0)
                 self.assertTrue(.25 < events[1]['at'] < 3.6)
-                self.assertNotEqual(events[0]['expression'],events[1]['expression'])
+                self.assertEqual(events[0]['expression'],'normal')
                 self.assertEqual(events[-1]['expression'],events[0]['expression'])
                 self.assertTrue(all(e['expression'] in expression_assets()[anchor] for e in events))
 
     def test_explicit_invalid_pose_or_timing_fails_before_render(self):
         line=dict(anchor='xiaoXu',text='科学消息。',scene=0)
-        for value in [{'expression':'wave'}, {'focus_ratio':1.5}, {'action':'head-replacement'}]:
+        for value in [{'expression':'missing-pose'}, {'focus_ratio':1.5}, {'action':'head-replacement'}]:
             with self.assertRaises(ValueError): performance_events(line,4,[(.2,3.5)],value)
 
     def test_short_utterance_still_has_bounded_events(self):

@@ -16,7 +16,7 @@ from playwright.sync_api import sync_playwright
 import imageio_ffmpeg
 from .core import ROOT, TZ, coverage, read_json, write_json, validate_edition, make_cues, sha256
 from .workbench import edition_lines, workbench_dependencies, prepare_workbench_audio, validate_audio_entries
-from .production import production_plan, performance_events, expression_assets, media_for_shot
+from .production import production_plan, performance_events, expression_assets, media_for_shot, anchor_library_manifest_path
 from .layout import key_facts, prepare_image, contain_rect
 from .pacing import pace_for_render, pacing_summary
 from .transitions import DEFAULT_LIBRARY, load_library, library_dependencies, make_plan as transition_plan, compose_transitions
@@ -278,7 +278,7 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
     write_json(run_dir/'edition.json', edition)
     write_json(run_dir/'production-plan.json', plan)
     supplied_audio = Path(audio_manifest_path).resolve() if audio_manifest_path else ((edition_path.parent/edition['audio_manifest']).resolve() if edition.get('audio_manifest') else None)
-    dependencies = [ROOT/'index.html', ROOT/'style.css', ROOT/'script.js', ROOT/'news-media.js', ROOT/'talking.js', ROOT/'voice-demo.js', ROOT/'config/pipeline.json', *sorted((ROOT/'pipeline').glob('*.py')), ROOT/'pipeline/speak.ps1', *sorted((ROOT/'assets/branding').glob('*.png')), *sorted((ROOT/'assets/characters/anchors/generated').glob('*.png')), *sorted((ROOT/'assets/characters/anchors/gestures-v2').glob('*.png'))]
+    dependencies = [ROOT/'index.html', ROOT/'style.css', ROOT/'script.js', ROOT/'news-media.js', ROOT/'talking.js', ROOT/'voice-demo.js', ROOT/'config/pipeline.json', anchor_library_manifest_path(), *sorted((ROOT/'pipeline').glob('*.py')), ROOT/'pipeline/speak.ps1', *sorted((ROOT/'assets/branding').glob('*.png')), *sorted({path for states in expression_assets().values() for path in states.values() if path.is_file()})]
     if transition_library: dependencies.extend(library_dependencies(transition_library))
     dependencies.extend(opening_dependencies(opening))
     # Shared branding can add a stylesheet and background video to index.html.
@@ -408,7 +408,7 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
                     facts=key_facts(story), layout=media['framing']['layout'] if media else 'diagram',
                     caption=media.get('display_caption',media['caption']) if media else '编辑整理 · 非现场画面',
                     source=story['source_name']+' · '+news_time(story).split(' ')[0]+'｜配图：'+(media.get('credit') or media.get('source_name') or urlsplit(media['source_url']).hostname) if media else story['source_name']))
-            page.evaluate('''x=>{changeExpression(x.anchor,x.anchor==='xiaoXu'?'normal':'happy');document.querySelector('#subtitleText').textContent=x.text;document.querySelector('#speakerName').textContent=x.anchor==='xiaoXu'?'小序':'小禾';}''', line)
+            page.evaluate('''x=>{changeExpression(x.anchor,x.base);document.querySelector('#subtitleText').textContent=x.text;document.querySelector('#speakerName').textContent=x.anchor==='xiaoXu'?'小序':'小禾';}''', dict(line,base=plan['shots'][index]['performance']['base']))
             page.wait_for_function('Array.from(document.images).filter(e=>e.getBoundingClientRect().width>0).every(e=>e.complete && e.naturalWidth>0)')
             page.evaluate('document.fonts.ready')
             package=page.locator('.news-package').bounding_box()
@@ -492,7 +492,7 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
             command([FFMPEG,'-v','error','-y',*inputs,'-t',f'{duration:.6f}','-filter_complex_threads','1','-filter_complex_script',run_dir/f'{stem}-filter.txt','-map','[out]','-r',fps,'-c:v','libx264','-preset','veryfast','-crf','20','-an','-threads','2',clip])
             command([FFMPEG,'-v','error','-y','-i',wav,'-af',PAD_AUDIO_FILTER,'-t',f'{duration:.6f}','-ar','24000','-ac','1',run_dir/f'{stem}-padded.wav'])
             clips.append(clip)
-            shots.append(dict(line, voice=voice, pacing=pacing, normalization=normalization, raw_duration=raw_duration, duration=duration, frame=screenshot.name, audio=wav.name, audio_sha256=sha256(wav), sprite=str(sprite.relative_to(ROOT)), sprite_sha256=sha256(sprite), speech_intervals=intervals, voice_effects=dict(jitter_px=[2,1.5],particles=8,gate='measured_speech_intervals',deterministic=True), bubble_effect=dict(asset=bubble.name,sha256=sha256(bubble),period_seconds=4.8,amplitude_px=7.296,clock_start=sum(durations[:-1])) if bubble else None, performance_events=events, pose_assets=sprite_proof, media=media, media_box=video_box))
+            shots.append(dict(line, performance=plan['shots'][index]['performance'], voice=voice, pacing=pacing, normalization=normalization, raw_duration=raw_duration, duration=duration, frame=screenshot.name, audio=wav.name, audio_sha256=sha256(wav), sprite=str(sprite.relative_to(ROOT)), sprite_sha256=sha256(sprite), speech_intervals=intervals, voice_effects=dict(jitter_px=[2,1.5],particles=8,gate='measured_speech_intervals',deterministic=True), bubble_effect=dict(asset=bubble.name,sha256=sha256(bubble),period_seconds=4.8,amplitude_px=7.296,clock_start=sum(durations[:-1])) if bubble else None, performance_events=events, pose_assets=sprite_proof, media=media, media_box=video_box))
         browser.close()
     if config.get('speech',{}).get('pacing',{}).get('enabled'):
         write_json(run_dir/'speech-pacing.json', pacing_summary(shots,config['speech']['pacing']))
@@ -629,7 +629,7 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
         music_receipt=dict(bgm.receipt,status='validated',video_sha256=sha256(video))
         write_json(run_dir/'bgm-receipt.json',music_receipt)
         files['bgm-receipt.json']=sha256(run_dir/'bgm-receipt.json')
-    manifest = dict(status='rendered', editorial_status='reviewed', publication_status='not_published', date=edition['date'], created_at=datetime.now(TZ).isoformat(), metadata=metadata, total_seconds=cues[-1]['end'], peak_db=peak, speech_provider=provider, voices=sorted({s['voice'] for s in shots}), source_hashes=source_hashes, audio_inputs=audio_inputs, files=files, checks=dict(full_decode=True, dimensions=True, fps=True, duration=True, peak=True), limitations=['固定机位、逐句切素材；新闻原视频静音，只保留主播口播', '句中表情动作按语义和发声区间比例安排，未做逐字强制对齐；整图姿态切换，不是骨骼动画或嘴型同步', '音色采用项目选定参考音频，合成音频按实际时长重排字幕与镜头', '未进行人工完整试听；自动音量测量不代表发音自然度验收'])
+    manifest = dict(status='rendered', editorial_status='reviewed', publication_status='not_published', date=edition['date'], created_at=datetime.now(TZ).isoformat(), metadata=metadata, total_seconds=cues[-1]['end'], peak_db=peak, speech_provider=provider, voices=sorted({s['voice'] for s in shots}), source_hashes=source_hashes, anchor_library_version=plan['anchor_library_version'], performance_audit=plan['performance_audit'], audio_inputs=audio_inputs, files=files, checks=dict(full_decode=True, dimensions=True, fps=True, duration=True, peak=True), limitations=['固定机位、逐句切素材；新闻原视频静音，只保留主播口播', '句中表情动作按语义和发声区间比例安排，未做逐字强制对齐；整图姿态切换，不是骨骼动画或嘴型同步', '音色采用项目选定参考音频，合成音频按实际时长重排字幕与镜头', '未进行人工完整试听；自动音量测量不代表发音自然度验收'])
     if transition_receipt:
         manifest['transitions'] = dict(count=len(transition_receipt['plan']['transitions']),
                                        seed=transition_receipt['plan']['seed'],

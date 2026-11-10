@@ -42,3 +42,12 @@
 ## 协作边界与下一步
 
 本轮仅新增此交接文档。不修改主窗口负责的 `pipeline/`、`config/`、`tests/` 或 `docs/PIPELINE*`，也不覆盖共享演播室文件。当前素材侧无阻塞。下一步由主窗口将真实配音和播报时间轴接入上述现有入口，再对导出成片的声音、字幕、媒体区和人物效果做验收。无需为已关闭的“三个按钮重复”问题返工。
+
+
+## 共同表演库 1.1.0
+
+平静、开心、讲解、思考每位主播各三套。惊讶、严肃、点赞、招手各一套。共同库共32张整图。获得授权的素材后，按 `config/anchor-library.json` 中的路径安装。打开 `anchor-library-preview.html` 查看三套对照。
+
+如使用自有授权图片，可按 `script.js` 中的映射路径放置。将默认清单复制为 `config/anchor-library.local.json`，填写实际文件的 SHA256。每类首图记录的路径和哈希应与变体列表第一项一致。配音前会验证两位主播的全部共同状态。
+
+用 `python scripts/check_anchor_library.py --output outputs/anchor-library-qa` 验证已安装的整图与桌面按钮。

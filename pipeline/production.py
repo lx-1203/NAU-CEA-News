@@ -8,6 +8,7 @@ from .core import ROOT, read_json, sha256, validate_edition
 from .workbench import edition_lines
 from .date_guard import validate_date_proof
 from .layout import validate_framing, key_facts
+from .performance import COMMON_STATES, ASSET_VARIANTS, plan_performances, performance_audit
 
 
 def expression_assets():
@@ -21,28 +22,46 @@ def expression_assets():
     return result
 
 
+def anchor_library_manifest_path():
+    local = ROOT/'config/anchor-library.local.json'
+    return local if local.is_file() else ROOT/'config/anchor-library.json'
+
+
+def validate_anchor_library(assets=None):
+    """Validate both complete shared libraries before spending time on speech."""
+    assets = expression_assets() if assets is None else assets
+    manifest = read_json(anchor_library_manifest_path())
+    for anchor in ['xiaoXu', 'xiaoHe']:
+        records = manifest.get('anchors', {}).get(anchor, {})
+        for state in COMMON_STATES:
+            record = records.get(state, {})
+            variants = record.get('variants', [dict(record, expression=state)])
+            expected = ASSET_VARIANTS[state]
+            if (len(variants) != len(expected) or
+                    len({v.get('sha256') for v in variants}) != len(expected) or
+                    variants[0].get('path') != record.get('path') or
+                    variants[0].get('sha256') != record.get('sha256')):
+                raise ValueError(f'共同主播库变体数量或首图不符: {anchor}/{state}')
+            for expression, variant in zip(expected, variants):
+                path = assets.get(anchor, {}).get(expression)
+                if (variant.get('expression') != expression or path is None or not path.is_file() or
+                        path.resolve() != (ROOT/variant.get('path', '')).resolve() or
+                        sha256(path) != variant.get('sha256')):
+                    raise ValueError(f'共同主播库缺失或哈希不符: {anchor}/{expression}')
+    return manifest
+
+
 def performance_events(line, duration, intervals, override=None):
     """Semantic pose cue, then bind to measured speech (approximate, not word alignment)."""
     override = override or {}
     if not math.isfinite(duration) or duration <= 0 or not intervals:
         raise ValueError('表演时间线需要实际发声时长')
-    anchor, text = line['anchor'], line['text']
-    base = 'normal' if anchor == 'xiaoXu' else 'happy'
-    action = 'nod'
-    if any(t in text for t in ['再见', '大家好', '欢迎', '我是']):
-        focus = 'happy' if anchor == 'xiaoXu' else 'wave'
-        action = 'greet'
-    elif any(t in text for t in ['关注', '安排', '计划', '继续']):
-        focus = 'thinking' if anchor == 'xiaoXu' else 'normal'
-    else:
-        focus = 'presenting' if anchor == 'xiaoXu' else 'encourage'
-    focus = override.get('expression', focus)
-    action = override.get('action', action)
-    ratio = override.get('focus_ratio', .38)
-    if focus not in expression_assets()[anchor] or focus == base:
-        raise ValueError(f'无效或无变化的表情: {anchor}/{focus}')
-    if action not in {'nod','greet','hold'} or not isinstance(ratio,(int,float)) or not 0 < ratio < 1:
-        raise ValueError('表演动作或句中触发比例无效')
+    anchor = line['anchor']
+    choice = plan_performances([line], [], {'0': override})[0]
+    base, focus, action, ratio = (choice[k] for k in ['base', 'expression', 'action', 'focus_ratio'])
+    assets = expression_assets()[anchor]
+    if focus not in assets or base not in assets:
+        raise ValueError(f'无效表情: {anchor}/{focus}')
     first, last = intervals[0][0], intervals[-1][1]
     if not 0 <= first < last <= duration+.001: raise ValueError('发声区间超出句子时长')
     remaining = sum(b-a for a,b in intervals)*ratio
@@ -100,6 +119,8 @@ def resolve_media(item, edition_dir):
 def production_plan(edition_path, require_media=None):
     edition_path = Path(edition_path).resolve()
     edition = validate_edition(read_json(edition_path))
+    assets = expression_assets()
+    library = validate_anchor_library(assets)
     if not edition.get('archive_production'):
         validate_date_proof(edition,edition_path.parent)
     config = read_json(ROOT/'config/pipeline.json')
@@ -110,18 +131,23 @@ def production_plan(edition_path, require_media=None):
         media[i] = [resolve_media(item, edition_path.parent) for item in story.get('media',[])]
         if require_media and not media[i]: raise ValueError(f'{story["id"]} 缺少已回源的新闻素材')
     positions, shots = {}, []
-    overrides = edition.get('performance',{})
-    for index, line in enumerate(edition_lines(edition)):
+    lines = edition_lines(edition)
+    performances = plan_performances(lines, edition['stories'], edition.get('performance'))
+    for index, line in enumerate(lines):
         scene = line['scene']
         position = positions.get(scene,0)
         choices = media.get(scene,[])
         chosen = choices[position % len(choices)] if choices else None
         # Validate defaults/overrides before any speech generation; actual times bind later.
-        override = overrides.get(str(index),{})
+        override = performances[index]
         preview = performance_events(line,1.0,[(.1,.9)],override)
+        for event in preview:
+            expression = event['expression']
+            if not assets[line['anchor']][expression].is_file():
+                raise ValueError(f'缺少完整人物素材: {line["anchor"]}/{expression}')
         shots.append(dict(cue=index, **line, media=chosen, performance=override,
                           preview_events=preview, timing='按实际发声区间绑定；句内触发为比例近似'))
         positions[scene] = position+1
-    return dict(date=edition['date'], edition=str(edition_path), shots=shots,
+    return dict(date=edition['date'], edition=str(edition_path), shots=shots, anchor_library_version=library['version'], performance_audit=performance_audit(shots),
                 speech_provider=config.get('speech',{}).get('provider'),
                 voices=config.get('speech',{}).get('workbench',{}).get('voices',{}))

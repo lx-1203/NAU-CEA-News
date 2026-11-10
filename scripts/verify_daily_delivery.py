@@ -6,6 +6,8 @@ from PIL import Image,ImageDraw
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from pipeline.core import ROOT,read_json,write_json,sha256
 from pipeline.workbench import edition_lines
+from pipeline.performance import performance_audit
+from pipeline.production import performance_events, validate_anchor_library
 from pipeline.render import FFMPEG,timestamp
 from pipeline.programme import section_cards
 from pipeline.navigation import build_navigation
@@ -13,6 +15,9 @@ from pipeline.navigation import build_navigation
 run=Path(sys.argv[1]).resolve();out=run/'delivery-qa';out.mkdir(exist_ok=True)
 e=read_json(run/'edition.json');t=read_json(run/'timeline.json');m=read_json(run/'manifest.json')
 shots=t['shots'];gaps=t['interludes'];cards=section_cards(e);lines=edition_lines(e)
+validate_anchor_library()
+plan=read_json(run/'production-plan.json')
+assert len(plan['shots'])==len(shots)
 assert len(shots)==len(lines) and len(gaps)==len(cards)-1
 assert build_navigation(e,t)==read_json(run/'chapters.json')
 assert e['title']==read_json(ROOT/'config/pipeline.json')['programme']['brand'] and t['opening']['end']==8
@@ -24,7 +29,8 @@ for i,(s,line) in enumerate(zip(shots,lines)):
  assert s['text']==line['text'] and s['anchor']==line['anchor']
  assert sha256(audio[str(i)]['path'])==audio[str(i)]['sha256']
  assert cfg['speech']['workbench']['voices'][s['anchor']]['name'] in s['voice']
- assert s['performance_events'][0]['expression']!=s['performance_events'][1]['expression']
+ assert s['performance_events']==performance_events(line,s['raw_duration'],s['speech_intervals'],plan['shots'][i]['performance'])
+ assert s['performance_events'][0]['expression']==s['performance_events'][-1]['expression']
  assert s['speech_intervals'][0][0]<s['performance_events'][1]['at']<s['speech_intervals'][-1][1]
 blocks=(run/'subtitles.srt').read_text('utf-8-sig').strip().split('\n\n')
 assert len(blocks)==len(shots)
@@ -54,7 +60,8 @@ for filename in ['news.mp4','news-no-bgm.mp4']:
  r=subprocess.run([FFMPEG,'-hide_banner','-i',str(run/filename),'-vn','-af','loudnorm=I=-18:TP=-3:LRA=7:print_format=json','-f','null','-'],capture_output=True,check=True)
  txt=r.stderr.decode('utf8',errors='replace');stats=json.loads(txt[txt.rfind('{'):txt.rfind('}')+1]);peaks[filename]=stats
  assert float(stats['input_tp'])<=-3
-# Three actual frames per utterance: initial pose, speaking focus, restored pose.
+write_json(out/'performance-audit.json', performance_audit(plan['shots']))
+# Three actual frames per utterance: initial pose, speaking focus/hold, restored pose.
 samples=[]
 for i,s in enumerate(shots):
  event=s['performance_events'][1]['at'];last=s['performance_events'][2]['at']

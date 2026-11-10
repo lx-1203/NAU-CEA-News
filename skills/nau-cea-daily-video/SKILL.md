@@ -2,12 +2,12 @@
 name: nau-cea-daily-video
 description: Use when producing or revising NJAU-CEA 校园科技每日新闻、双主播配音视频，或维护该项目每日生产接口、素材和表演规范。
 metadata:
-  version: "1.3.1"
+  version: "1.4.2"
 ---
 
 # NJAU-CEA 每日新闻视频
 
-当前skill版本：**1.3.1**。版本权威及逐文件哈希见项目 `architecture/release.json`。
+当前skill版本：**1.4.2**。版本权威及逐文件哈希见项目 `architecture/release.json`。
 
 2026-11-10最新用户纠正：开场第一句必须说“这里是南京农业大学计算机爱好者协会。”，随后欢迎收看NJAU-CEA新闻联播。品牌及节目LOGO统一为大写 **NJAU-CEA**（保留连字符），取代NAUCEA/NAU CEA；中文社团全称不变。
 
@@ -126,7 +126,7 @@ python -m pipeline.run collect --date YYYY-MM-DD
 
 每条新闻填写media；回源确认图片含义，排除无关logo与二维码。拒绝一切文字截图进入参考、预览、视频和模糊底层；正文、论文、Release、代码、日志、聊天和说明界面截图仅留核验存证。真实原照片、原视频与原始图形资料按视觉规范准入。记录原页、原文件URL、素材日期、当前/资料用途、字幕说明和SHA256；首发未知的资料图不编造时刻。不能把资料画面暗示为本期现场；原视频保留完整比例和水印。下载成功不等于获得发布授权。详情见[production-contract.md](references/production-contract.md)。
 
-每句在制作前就配置语义表情和动作，默认规则选择讲解、思考、问候、鼓励等现有整图姿态，在实际发声区间内触发，句尾收回、静音停动作。根据文稿可覆盖，不把融资或任务计划一律演成震惊。**不拼脸、不替嘴，不把整图姿态切换冒称骨骼动画或精准口型。** 触发比例是近似时点；需要逐字同步时再提供真实对齐证据。
+每句在制作前保存表演计划。两位主播共用八类基础状态。平静、开心、讲解、思考每人各三套，惊讶、严肃、点赞、招手各一套。按句意选类别，并按主播轮换同类整图。显式指定具体图片时保持该选择。平稳句可持有同图，动作由实际发声区间触发并在句尾收回。配音前验证32张共同图，终检核对冻结事件并查看类别及变体统计。素材安装见项目 `docs/ANCHOR_ASSET_HANDOFF.md`。整图切换保留角色人设，触发时机按发声区间比例近似。
 
 ```powershell
 python -X utf8 -B scripts/check_current_programme.py --edition data/issues/YYYY/YYYY-MM-DD/editorial/edition.json
