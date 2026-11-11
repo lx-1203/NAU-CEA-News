@@ -51,7 +51,7 @@ render先写production/runs和audio/cues/轮次，状态为待终检；不会把
 
 默认公开更新源：`https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json`。每次启动实际读取该HTTPS清单；有新版时下载固定版本tag下的updates/update.zip，先核对整包SHA256、ZIP成员范围与每个受管文件SHA，全部通过后事务安装。网络失败直接报错，不退回本地基线。config/updates.local.json仅用于明确选择其他可信镜像；旧包若存在本地基线覆盖配置，需要将source改为上述在线地址。
 
-GitHub仓库同时提供架构与skill源码，以及公共框架ZIP。公共包不上传新闻媒体、音乐、音色、人物/LOGO位图、模型和本机配置。在线检查和skill安装可独立使用；整期生产仍需合法提供自己的共享素材，或在有权限的前提下使用既有本地完整素材包。默认公开配置未启用未经提供的开屏。
+GitHub 提供框架、复刻、曲库和音色四类下载。框架包提供源码、技能及配置模板；复刻包提供正式片尾、开屏、表情和制作配置。曲库和音色按各自的独立版本发布。线上更新按架构清单升级，素材首次安装使用复刻包。[下载入口](../README.md#下载) · [复用说明](REUSE_GUIDE.md)
 
 配套skill的唯一源码为 skills/nau-cea-daily-video。`python scripts/install_agent_skill.py --home <助手主目录>` 安装/同步到该助手的skills目录，旧版先备份；本地被改动则保留并报冲突。已安装skill每次使用先运行自身scripts/check_update.py，再从项目同步。更换项目路径后再次执行安装命令即可重绑。
 
