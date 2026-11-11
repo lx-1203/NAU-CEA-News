@@ -1,6 +1,6 @@
-# NJAU-CEA 新闻项目架构 1.4.2
+# NJAU-CEA 新闻项目架构
 
-下载整个复用包后解压到任意 Windows 目录；程序自动定位自己的根目录，不依赖原作者的 D、F 盘。双击 first_run.bat 首次安装，start.bat 日常启动，next_episode.bat 准备新一期。角色、固定音色及合格共享素材随包提供；模型按固定来源另行下载。
+在 Windows 上克隆仓库，双击 `first_run.bat` 首次安装，用 `start.bat` 日常启动，用 `next_episode.bat` 准备新一期。制作素材按分类存放在 `assets/`，模型由安装程序从固定来源下载。[快速开始](../QUICK_START.md) · [素材目录](../assets/README.md)
 
 ```text
 NJAU-CEA-News/
@@ -8,7 +8,7 @@ NJAU-CEA-News/
   skills/nau-cea-daily-video/  唯一新闻skill入口及引用资料
   pipeline/ scripts/ tests/   生产代码、命令入口与行为测试
   config/                     默认配置；*.local.json只属于本机
-  assets/                     共享角色、演播室、LOGO、音色、转场
+  assets/                     主播表情、音色、台标、开屏、片尾、转场与单曲
   docs/                       规范、复用说明、当前待办
   data/                       默认数据根，可配置到别的盘
     issues/2026/
@@ -51,7 +51,7 @@ render先写production/runs和audio/cues/轮次，状态为待终检；不会把
 
 默认公开更新源：`https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/release.json`。每次启动实际读取该HTTPS清单；有新版时下载固定版本tag下的updates/update.zip，先核对整包SHA256、ZIP成员范围与每个受管文件SHA，全部通过后事务安装。网络失败直接报错，不退回本地基线。config/updates.local.json仅用于明确选择其他可信镜像；旧包若存在本地基线覆盖配置，需要将source改为上述在线地址。
 
-GitHub 提供框架、复刻、曲库和音色四类下载。框架包提供源码、技能及配置模板；复刻包提供正式片尾、开屏、表情和制作配置。曲库和音色按各自的独立版本发布。线上更新按架构清单升级，素材首次安装使用复刻包。[下载入口](../README.md#下载) · [复用说明](REUSE_GUIDE.md)
+程序在线更新包按架构清单分发源码、技能与配置模板。片尾、开屏、表情、音色和曲库以单个文件存放在仓库 `assets/`，随 Git 检出获取。[仓库首页](../README.md) · [复用说明](REUSE_GUIDE.md)
 
 配套skill的唯一源码为 skills/nau-cea-daily-video。`python scripts/install_agent_skill.py --home <助手主目录>` 安装/同步到该助手的skills目录，旧版先备份；本地被改动则保留并报冲突。已安装skill每次使用先运行自身scripts/check_update.py，再从项目同步。更换项目路径后再次执行安装命令即可重绑。
 

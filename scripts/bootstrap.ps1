@@ -63,8 +63,10 @@ if ($taskUpdateReceipt.rerun_required) {
 }
 if ($UpdateOnly) { Write-Output $taskUpdateJson; return }
 if (-not (Test-Path -LiteralPath (Join-Path $root 'assets\qualified-assets.json'))) {
-    throw 'Framework-only download: online updates are ready. Import your authorized shared production assets before full setup. See docs/REUSE_GUIDE.md. No models were downloaded.'
+    throw 'Shared production assets are missing. Clone the project repository with the assets directory before full setup. See docs/REUSE_GUIDE.md.'
 }
+& $python (Join-Path $root 'scripts\verify_assets.py')
+if ($LASTEXITCODE -ne 0) { throw 'Shared asset verification failed. Check the repository checkout before installing models.' }
 & $uv pip install --python $python -r (Join-Path $root 'pipeline\requirements.txt')
 if ($LASTEXITCODE -ne 0) { throw 'News dependency installation failed.' }
 & $python -m playwright install chromium

@@ -1,8 +1,8 @@
 # IndexTTS2本地工作台接入
 
-本项目采用固定双主播参考与串行批量合成。实际路径和参数读取config/pipeline.json中的speech.workbench，不能沿用制作机盘符。公开框架不包含音色录音或模型；使用者应合法提供参考音频，校验SHA并先试听。
+本项目采用固定双主播参考与串行批量合成。实际路径和参数从 `config/pipeline.json` 的 `speech.workbench` 读取。克隆仓库即可取得两位主播的参考音频。安装后先校验 SHA256 并试听。[参考音频目录](../assets/voices/)
 
-下载完整获授权的本地素材包后，first_run.bat准备runtime/IndexTTS2-Studio、runtime/client-config、固定版本依赖及模型；源码、模型地址与SHA在config/reuse-components.json，许可见THIRD_PARTY_LINKS.md。公共框架缺少素材清单时不会自动下载大量模型。
+在仓库目录运行 `first_run.bat`，安装程序先校验制作素材，再准备 `runtime/IndexTTS2-Studio`、`runtime/client-config`、固定版本依赖及模型。依赖地址与校验值记录在 `config/reuse-components.json`。[首次安装](../QUICK_START.md) · [第三方来源与许可](THIRD_PARTY_LINKS.md)
 
 工作台实际端口来自配置state_file中的url字段；有自己的启动器时通过start_script启动，不固定端口、不结束其他项目进程。客户端路径由client字段提供，新闻程序沿用segments预览、batch串行合成与manifest验证，不额外部署远程服务。
 

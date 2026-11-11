@@ -1,5 +1,7 @@
-# 共享音乐资产
+# 共享音乐
 
-独立组件 v1.2.0，现有 188 份可用音频（186 MP3、2 OGG）。按期选择使用，文件位于 assets/audio/music。
+曲库 v1.3.0 的录音直接存放在仓库 `assets/audio/music/`，可按曲目选取单个文件。正式渲染默认从本地仓库取歌，本地缺失时下载选中的一首。
 
-[下载音乐包](https://github.com/lx-1203/NAU-CEA-News/releases/tag/music-pack-v1.2.0) · [曲目、使用与权利说明](music-pack/README.md)
+[曲库目录](assets/audio/music/) · [曲目清单](assets/audio/music/MANIFEST.json) · [自动 BGM 说明](docs/BGM.md)
+
+曲目清单保留录音的来源、使用范围和 SHA256。旧版的独立音乐发布为历史记录。

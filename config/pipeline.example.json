@@ -277,7 +277,7 @@
     "scope": "reviewed_daily_manuscript_only"
   },
   "opening": {
-    "enabled": false,
+    "enabled": true,
     "approval": ".\\assets\\opening\\APPROVED.json"
   },
   "programme": {
@@ -290,9 +290,9 @@
   },
   "browser_channel": null,
   "portable_profile": true,
-  "asset_setup": "Supply your legally authorized shared assets before full production. Public framework does not redistribute image/music/voice assets.",
+  "asset_setup": "Clone the repository to obtain the shared assets under assets/ before full production.",
   "outro": {
-    "enabled": false,
+    "enabled": true,
     "package": "assets/outro"
   }
 }

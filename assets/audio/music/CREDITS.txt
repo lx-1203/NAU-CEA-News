@@ -1,0 +1,202 @@
+NJAU-CEA Shared Music Pack 1.2.0
+
+ALisa - 盛夏：用户提供的原始录音，历史用于2026-11-09期。
+纯音乐 - 起风了（钢琴版）：用户提供的原始录音，历史用于2026-11-10期。
+两份录音及原作品保留其原权利，未在本包内另行授予MIT/Creative Commons许可。
+
+News Theme — Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+Source: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100544
+Original audio: https://incompetech.com/music/royalty-free/mp3-royaltyfree/News%20Theme.mp3
+Changes in this pack: none; the original MP3 is included unchanged.
+Historical opening use: eight-second excerpt, reduced level and fades.
+
+新增用户提供曲目（原曲及录音权利保留）：
+- ALisa - The Way I Still Love You (治愈版)
+- ALisa - 风吹过的那个夏天 (治愈版)
+- EXO-M - Baby,Don't Cry (人鱼的眼泪)(纯音乐)
+- hea2t - 盛夏与蝉鸣
+- m-taku - Komorebi (叶隙间洒落的阳光)
+- Marshall_Peace - Flower Dance
+- Pianoboy高至豪 - The Truth That You Leave (你离开的事实)
+- ROOK1E、J'san - Pure Imagination (纯粹的幻想)
+- Toby Fox - His Theme
+- 倩倩爱吃棉花糖 - 寄夏予你
+- 兮沐 - 星茶会 (钢琴版)
+- 千坂 - At The Edge
+- 听风Xyi - 治愈の景 (治愈之景)
+- 柳轻颂 - 舞い落ちる花びら (Fallin' Flower) (飘落的花瓣)(钢琴版)
+- 栀hen - may i see u again
+- 纯音乐 - 溯 (钢琴版)
+- 耀温顺 - 花海 (纯音乐钢琴版)
+- 赵海洋 - 大鱼 (钢琴版)
+- 风起词 - 玫瑰少年 (小提琴版)
+
+本版新增用户提供录音（原曲与录音权利保留）：
+- A L E X - Lord You're Okay
+- ALisa - 溯Reverse (治愈版)
+- Capo Productions - Serenity
+- Chamber橙 - 在每天重复的日子里遗失了梦
+- Chifoov - 反正你也不会听
+- CHINESE - ICE TRAIN
+- COP - Walking Seasons
+- dylanf - Spring After Rain (治愈钢琴曲)
+- dylanf - 四月樱花
+- echo - Merry Christmas, Mr Lawrence
+- Funton - 别念
+- FYNial - 经不住似水流年，逃不过此间少年
+- hea2t - 星辰坠入梦里
+- HZ.MY - 我黑色的世界里紫色的星球
+- iw ix - 精神存在
+- Jacoo - Breathe.
+- Joe Bae - Studybreak
+- July - My Soul
+- July - 봄의 태양 (春天的太阳)
+- Kan Gao、Laura Shigihara - Born a Stranger (生而陌路)
+- Kevin Kern - Fairy Wings
+- Kevin Kern - Through The Arbor (走过绿意)
+- 5mg - Adieu
+- Candy_Wind - 和煦的糖果风
+- Candy_Wind - 静之守候
+- ChakYoun9 - Wonderful World
+- Cicada - 浮游在海上的岛屿／潜沉于水下的人们
+- Denean - To The Lost and Forgotten
+- go missing - 吹海风
+- hea2t - 盛夏与蝉鸣
+- Isaac Shepard - Before Dawn
+- Isaac Shepard - Felicity
+- Josh Vietti - Because of You (因你而起)
+- Lightscape - Collapsing World (崩溃的世界)(Original Mix)
+- marlboro. - That Mistake Is Not u
+- Martin Ermen - River Flows In You (你的心河)
+- Mei - ✘人间是个好地方可我不想再来了
+- Parkinson White - dont tear ma heart. ma achey breaky heart
+- sAr - Reaction
+- TARGA. - Late Breeze
+- TARGA. - Setting sun
+- Thomas Greenberg - The Right Path
+- Valentin - A Little Story (小故事)
+- White Cherry - Melancholy
+- William Joseph - Radioactive
+- William Joseph - Safe & Sound
+- 伊賀拓郎 - 月がきれい (月色真美)
+- 兮沐 - 黄昏之时 (钢琴曲)
+- 出羽良彰 - 海の涙
+- 四季音色 - 春日
+- 徐梦圆 - 愿世界对你温柔相待
+- 心动唱片 - Time Passes
+- 横山克 - アゲイン (Again)
+- 永恒之音 - Filtered Sun
+- 澤野弘之 - f (pfs)
+- 澤野弘之 - 進撃gt20130218巨人
+- 灰澈 - 木鲸 (纯音乐)
+- 蒋六多 - 一切都会好起来的,对吗
+- 郑物 - 西星
+- 魏琮霏 - 青石巷
+- Leon不太冷的邓壬鑫 - 夜的钢琴曲5
+- Little End - Sky
+- Little West - Breeze
+- M.Graveyard - You
+- MappleZS - Star river in your eyes-满目星河
+- Miro - Whisper (纯音乐)
+- Nomak - Next Dimension
+- Omar Akram - Free as a Bird
+- Otokaze - Mallow Flower
+- Otokaze - Save The Flavor
+- Otokaze - 帰路
+- Richard Clayderman - Harmony
+- Richard Clayderman - 梦中的鸟
+- ROOK1E、J'san - Pure Imagination (纯粹的幻想)(1)
+- S.E.N.S. - Missing You
+- Sappheiros - Radiant Night
+- Silky - to the seaside...
+- SipSu小口酥 - 我总不能阻止你奔向比我更好的人吧
+- Snigellin - When I see the light at that Time
+- songroger - time flows away
+- Soul Hug - 月下美人
+- Starry Sky - The Way I Still Love You (纯音乐)
+- Sun Yehoshua - heartbreaker
+- TAMUSIC - 東方萃夢想
+- THT - 葬花
+- Tim Janis - The Sea on Every Side
+- TLK天翔 - The rain in the summer afternoon
+- Valentin - Orange Days
+- William Joseph - Come Thou Fount
+- William Joseph - With Royal Praise
+- XHIRO - 因为时间不等了
+- ¿Téo# - Ascended Vibrations
+- 三亩地 - 城南花已开
+- 三亩地 - 寻
+- 中村遥 - anne
+- 中村遥 - Every Day
+- 久石让 - 月光の雲海 (月光下的云海)
+- 云云众生、云雾心 - 朋友之间 (致佐助鸣人最后悲壮决战)
+- 余日秋山 - 儿时的夏日
+- 余日秋山 - 恍惚交错的记忆
+- 傅许 - 夏日之梦
+- 八云轨 - 星空の下で会いましょう (在星空下见)
+- 八云轨 - 渐无书
+- 八云轨 - 秒 · EX3
+- 八云轨 - 秒 · 流云
+- 八云轨 - 秒 · 繁梦
+- 八云轨 - 秒 · 落樱
+- 兮沐 - 黄昏之时 (钢琴曲)
+- 凡以三 - 爱我少一点 但爱我久一点
+- 刘佳怡 - 山海不可平 (钢琴版)
+- 十指流玉 - Delete
+- 千坂 - At The Edge(1)
+- 变奏的梦想 - 江上清风游
+- 叶轻衣 - 海の岸こう (海的彼岸)(Demo)
+- 叶轻衣 - 秋风细雨，你我皆是过客
+- 吴宇深 - 8月31日
+- 吴昊泽MUSICALBLAST - Flower Dance (花之舞)(钢琴版I)
+- 四季音色 - 雨夜
+- 大宇 - 胡同儿
+- 宗次郎 - いつも何度でも (永远同在)
+- 宮西希 - 月光
+- 小笨喵 - 梦江南
+- 岸部眞明 - Snow fall
+- 帆足圭吾 - 繋ぎとめた世界
+- 幻曦 - 那里的水还在滴吗
+- 幽魂乱码 - 千本樱
+- 忘乡 - 寂川
+- 忘乡 - 我能想到的最幸福的事
+- 忘乡 - 浮游于梦
+- 忘乡 - 那年夏天，阳光正好
+- 恰见明月栖山 - 三葉のテーマ (三叶的主题曲)(钢琴)
+- 恰见明月栖山 - 三葉のテーマ (三叶的主题曲)(钢琴)
+- 春野杉卉 - 雨に濡れた空気 (被雨淋湿的空气)
+- 春野杉卉 - 雨宿り亭 (避雨亭)
+- 昼夜 - Valder Fields
+- 景随风 - 孤单成双
+- 杜贴心 - 星之恋 (治愈系钢琴曲)
+- 松谷卓 - 共病文庫
+- 林键标 - 一叶子
+- 林鹿言 - 在最寒冷的冬天，遇见最温暖的你
+- 柳不贰 - Poem in fall
+- 柳轻颂 - 寄给你全宇宙的爱和自太古至永劫的思念 (钢琴版)
+- 梁靖国 - 下个青春见
+- 植地雅哉 - A South Wind
+- 王雨笙 - Illusionary Daytime (枪声版)(DJ王雨笙版)
+- 白鸿 - 不离
+- 羽肿 - City
+- 羽肿 - Rain after Summer
+- 羽肿 - Windy Hill (风之谷)
+- 羽肿 - 花火が瞬く夜に (烟花闪烁的夜晚)
+- 葛羽瞳 - 為 你 數 的 羊 都 掉 進 了 深 不 見 底 的 夜 裡
+- 蒋六多 - 该往哪里走
+- 蓝云木 - Lost In Love
+- 蓝云木 - Where am I？
+- 詹昊晁 Zhan.H.C - 薰衣草
+- 钱小航 - 起床进行曲
+- 闫东炜 - 初秋与七夕
+- 陈嘉俊 - 想带你漫不经心的逛
+- 陈嘉俊 - 慢慢 沉入 海底
+- 陈嘉俊 - 我都快忘了你笑起来的时候有多美
+- 青日 - dream
+- 顾均临 - 生为冰山，就该淡淡地爱海流、爱风
+- 饭碗的彼岸 - 莲有秀兮
+- 饭碗的彼岸 - 風の住む街 (风居住的街道)(Piano Ver.)
+- 饭碗的彼岸 - 風の住む街 (风居住的街道)(Piano Ver.)
+- 饭碗的彼岸、夜莺与玫瑰 - Rainy Blue (蓝色阴雨)

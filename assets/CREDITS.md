@@ -4,4 +4,4 @@
 - 开屏配乐：News Theme — Kevin MacLeod（incompetech.com），[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。开屏使用经裁剪、淡入淡出及音量调整的片段，详见 assets/opening/APPROVED.json 与随附署名文件。
 - 片尾音乐：《南京农业大学校歌》，作词王红谊，作曲陶思耀。录音来源为[南京农业大学官网校歌页](https://www.njau.edu.cn/xg/list.htm)，取用时间、原始链接与校验见 assets/outro/source/outro-music.json 和 assets/outro/source/music/source.json。原作品及录音权利保留。
 - 轮换音乐：使用独立音乐包，逐轨权利与署名以该包的 MUSIC_MANIFEST.json 和 RIGHTS.md 为准。
-- 固定声音参考：沿用[双主播音色包 v1.0.0](https://github.com/lx-1203/NAU-CEA-News/releases/tag/voice-pack-v1.0.0) 的参考声音。原音色权利及使用范围保留。
+- 固定声音参考：沿用[双主播声音参考](voices/) 中原有的固定录音。原音色权利及使用范围保留。

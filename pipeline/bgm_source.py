@@ -1,4 +1,4 @@
-"""Verified music catalogs and single-track access to existing release ZIPs."""
+"""Verified music catalogs and single-track access to repository files."""
 import contextlib
 import hashlib
 import io
@@ -17,7 +17,7 @@ from .updates import _no_links
 
 MAX_TRACK_BYTES = 128 * 1024 * 1024
 MAX_ARCHIVE_BYTES = 2 * 1024 * 1024 * 1024
-DEFAULT_CATALOG = 'https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/music-pack/MUSIC_MANIFEST.json'
+DEFAULT_CATALOG = 'https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/main/assets/audio/music/MANIFEST.json'
 
 
 def check_url(url, allow_local_http=False):
@@ -78,7 +78,7 @@ def validate_catalog(catalog):
 
 
 def refresh_catalog(settings):
-    """Always check live main, then bind to the immutable release attachment."""
+    """Read the live catalog and bind the audio source to a fixed revision."""
     url=settings.get('catalog_url',DEFAULT_CATALOG)
     channel=json.loads(_read(url,4*1024*1024))
     validate_catalog(channel)
@@ -86,6 +86,16 @@ def refresh_catalog(settings):
     if not re.fullmatch(r'[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+',repository):
         raise ValueError('Invalid GitHub music repository')
     version=channel['version']
+    if 'repository_files' in channel:
+        source=channel['repository_files']
+        ref=source.get('ref') if isinstance(source,dict) else None
+        if not isinstance(ref,str) or not re.fullmatch('[0-9a-f]{40}',ref):
+            raise ValueError('Repository music catalog requires a fixed Git commit')
+        channel['download']=dict(track_base_url=f'https://raw.githubusercontent.com/{repository}/{ref}/assets/audio/music',
+                                 catalog_url=url)
+        channel['channel_version']=version
+        return channel
+    # Installations with an explicitly configured historical catalog retain its reader.
     base=f'https://github.com/{repository}/releases/download/music-pack-v{version}'
     try:
         frozen=json.loads(_read(base+'/MUSIC_MANIFEST.json',4*1024*1024))
@@ -160,6 +170,18 @@ class RemoteZip(io.RawIOBase):
         self.position+=len(data);return data
 
 
+def _copy_track(incoming,track,partial):
+    digest=hashlib.sha256();total=0
+    with partial.open('xb') as output:
+        while chunk:=incoming.read(min(1024*1024,track['bytes']-total+1)):
+            total+=len(chunk)
+            if total>track['bytes']:
+                raise ValueError('Audio exceeds the catalog byte count')
+            digest.update(chunk);output.write(chunk)
+    if total!=track['bytes'] or digest.hexdigest()!=track['sha256']:
+        raise ValueError('Audio SHA256 or size does not match the catalog')
+
+
 def _extract(stream,track,partial):
     with zipfile.ZipFile(stream) as archive:
         suffix='/assets/audio/music/'+track['path']
@@ -169,29 +191,45 @@ def _extract(stream,track,partial):
         if (member.file_size!=track['bytes'] or member.flag_bits&1
                 or member.compress_type not in {zipfile.ZIP_STORED,zipfile.ZIP_DEFLATED}):
             raise ValueError('Invalid archived audio size or format')
-        digest=hashlib.sha256();total=0
-        with archive.open(member) as incoming,partial.open('xb') as output:
-            while chunk:=incoming.read(1024*1024):
-                total+=len(chunk)
-                if total>track['bytes']:raise ValueError('Extracted music exceeds expected size')
-                digest.update(chunk);output.write(chunk)
-        if total!=track['bytes'] or digest.hexdigest()!=track['sha256']:
-            raise ValueError('Downloaded audio SHA256/size does not match catalog')
+        with archive.open(member) as incoming:
+            _copy_track(incoming,track,partial)
 
 
-def download_track(track,source,directory,*,allow_local_http=False,max_archive_bytes=MAX_ARCHIVE_BYTES):
+def _repository_track(track,source,partial,local_music_directory,allow_local_http):
+    base=check_url(source['track_base_url'],allow_local_http)
+    if urllib.parse.urlsplit(base).query:
+        raise ValueError('Repository music base URL cannot contain a query string')
+    local=Path(local_music_directory)/track['path'] if local_music_directory is not None else None
+    if local is not None:
+        _no_links(local)
+        if local.is_file():
+            with local.open('rb') as incoming:
+                _copy_track(incoming,track,partial)
+            return dict(mode='local_repository_file',download_bytes=0)
+    url=base.rstrip('/')+'/'+urllib.parse.quote(track['path'],safe='')
+    with _open(url,allow_local_http=allow_local_http) as incoming:
+        _copy_track(incoming,track,partial)
+    return dict(mode='repository_file',download_bytes=track['bytes'])
+
+
+def download_track(track,source,directory,*,local_music_directory=None,allow_local_http=False,
+                   max_archive_bytes=MAX_ARCHIVE_BYTES):
     validate_catalog(dict(version='1.0.0',tracks=[track]))
     directory=Path(directory);_no_links(directory);directory.mkdir(parents=True,exist_ok=True)
     target=directory/(track['sha256']+Path(track['path']).suffix.lower())
     partial=directory/(target.name+'.part')
     _no_links(target);_no_links(partial)
     if target.exists() or partial.exists():raise FileExistsError('BGM download target already exists; clean managed cache first')
-    url=check_url(source['archive_url'],allow_local_http)
-    if not re.fullmatch('[0-9a-f]{64}',source.get('archive_sha256','')):
-        raise ValueError('Verified source archive checksum is required')
     if shutil.disk_usage(directory).free<track['bytes']+16*1024*1024:
         raise ValueError('Insufficient free disk for selected music track')
     try:
+        if 'track_base_url' in source:
+            receipt=_repository_track(track,source,partial,local_music_directory,allow_local_http)
+            partial.rename(target)
+            return target,receipt
+        url=check_url(source['archive_url'],allow_local_http)
+        if not re.fullmatch('[0-9a-f]{64}',source.get('archive_sha256','')):
+            raise ValueError('Verified source archive checksum is required')
         try:
             with RemoteZip(url,max_archive_bytes,allow_local_http) as stream:
                 _extract(stream,track,partial)

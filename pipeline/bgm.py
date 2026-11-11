@@ -251,10 +251,20 @@ class BgmSession:
             _save(self.directory/'catalog.json',self.catalog)
             self.rotation=Rotation(self.directory,self.catalog)
             self.selection=self.rotation.reserve(self.day)
-            self.audio,self.download=download_track(self.selection['track'],self.selection['source'],self.cache)
+            source=self.catalog.get('download',{})
+            current=self.rotation.tracks.get(self.selection['track']['sha256'])
+            audio_source={key:copy.deepcopy(self.selection[key]) for key in ('track','source','catalog_version')}
+            if 'track_base_url' in source and current is not None:
+                audio_source=dict(track=copy.deepcopy(current),source=copy.deepcopy(source),
+                                  catalog_version=self.catalog['version'])
+                self.audio,self.download=download_track(
+                    audio_source['track'],audio_source['source'],self.cache,
+                    local_music_directory=self.root/'assets/audio/music')
+            else:
+                self.audio,self.download=download_track(self.selection['track'],self.selection['source'],self.cache)
             _ffmpeg(['-xerror','-i',self.audio,'-map','0:a:0','-vn','-f','null','-'])
             self.receipt=dict(schema=1,edition=self.day,status='prepared',
-                selection=self.selection,download=self.download,source_audio_full_decode=True,
+                selection=self.selection,audio_source=audio_source,download=self.download,source_audio_full_decode=True,
                 local_audio_policy='temporary_download_deleted_at_session_exit')
             return self
         except BaseException:
