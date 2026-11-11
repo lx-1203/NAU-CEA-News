@@ -263,6 +263,7 @@
     "timing_source": "timeline.json",
     "interactive_player": "watch.html",
     "embed_mp4_chapters": true,
+    "burn_in_chapter_bar": true,
     "chapter_outputs": [
       "chapters.json",
       "chapters.vtt",

@@ -14,6 +14,7 @@
 - [编辑规范](docs/EDITORIAL_POLICY.md)与[素材规范](docs/VISUAL_MATERIAL_POLICY.md)：日期、事实和原始媒体准入。
 - [当前待办](docs/TODO.md)：仅保留尚未关闭事项。
 - [自动收尾](docs/TASK_CLEANUP.md)：工作完成并核验最终版后，回收明确废弃的中间产物，保留原件和依赖。
+- [视频章节进度条](docs/CHAPTER_BAR.md)：日更自动合成底栏，也可给已有成片添加。
 
 程序为pipeline/scripts，配置为config，共享角色/声音/演播室/LOGO/转场为assets。每期数据默认在data/issues/YYYY/YYYY-MM-DD，分editorial、media、audio、production、deliverables、review、tasks。另用数据盘时配置config/storage.local.json，不改源码；环境和个人配置不进入复用包。
 

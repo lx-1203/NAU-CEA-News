@@ -2,12 +2,12 @@
 name: nau-cea-daily-video
 description: Use when producing or revising NJAU-CEA 校园科技每日新闻、双主播配音视频，或维护该项目每日生产接口、素材和表演规范。
 metadata:
-  version: "1.5.0"
+  version: "1.6.0"
 ---
 
 # NJAU-CEA 每日新闻视频
 
-当前skill版本：**1.5.0**。版本权威及逐文件哈希见项目 `architecture/release.json`。
+当前skill版本：**1.6.0**。版本权威及逐文件哈希见项目 `architecture/release.json`。
 
 2026-11-10最新用户纠正：开场第一句必须说“这里是南京农业大学计算机爱好者协会。”，随后欢迎收看NJAU-CEA新闻联播。品牌及节目LOGO统一为大写 **NJAU-CEA**（保留连字符），取代NAUCEA/NAU CEA；中文社团全称不变。
 
@@ -161,5 +161,6 @@ python -m pipeline.run render --edition data/issues/YYYY/YYYY-MM-DD/editorial/ed
 - 从实际MP4抽帧检查表情切换、句中动作、视频素材实际运动、字幕/标题/来源可读及演播室层次。不能只看生成前PNG。
 - 成片、配套图文、素材与来源清单、SRT、完整音轨、逐句音频、production-plan、timeline、manifest和审查报告落盘。人工全片试听未做则明确记录；技术量测不能代替自然度验听。
 - 底部交互进度使用真实最终timeline生成watch.html、chapters.json/.vtt/.ffmetadata，支持拖动、键盘、栏目与逐条跳转；写入MP4章节并实测播放器。视频像素不可点击，不能拿占位均分18段的演示进度充当实际导航。
+- 正式导出默认从同一最终时间线生成画面底栏，按实际栏目切换显示开场、目录、各栏目和片尾。合成到带配乐和无配乐版；抽查开场、栏目交界与片尾，核对快讯和字幕没有被遮挡。已有成片的补制命令及开关见项目 `docs/CHAPTER_BAR.md`。
 
 仅保存待发布结果。更新当前审查入口，任务完成有证据后从TODO销项。较早通过的成片如果已被用户纠正或当前源码变更，不得继续宣称为当前成片。

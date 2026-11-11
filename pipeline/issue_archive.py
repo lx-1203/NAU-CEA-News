@@ -146,6 +146,18 @@ def _export(pointer, day, run, inputs, edition, root, asset_namespace=None):
         return destination
 
     put(inputs['video'], delivered/'news.mp4')
+    # Keep the alternate mix from the same revision when it accompanies the master.
+    alternate = inputs['video'].parent/'news-no-bgm.mp4'
+    if alternate.is_file():
+        put(alternate, delivered/alternate.name)
+    receipt = inputs['video'].parent/'chapter-bar.json'
+    if receipt.is_file():
+        media = {name: sha256(delivered/name) for name in ('news.mp4', 'news-no-bgm.mp4')
+                 if (delivered/name).is_file()}
+        expected = {name: value['sha256'] for name, value in read_json(receipt)['outputs'].items()}
+        if media != expected:
+            raise ValueError('Chapter-bar receipt does not match the selected revision videos')
+        put(receipt, delivered/receipt.name)
     # Reserve page destinations before following cyclic navigation links.
     for key, name in [('player', 'watch.html'), ('report', 'daily.html')]:
         mapped[inputs[key]] = delivered/name

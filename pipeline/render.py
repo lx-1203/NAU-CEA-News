@@ -603,9 +603,11 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
         captions = [*cues, *outro_receipt['lines']]
         (run_dir/'subtitles.srt').write_text('\n\n'.join(f'{i+1}\n{timestamp(c["start"])} --> {timestamp(c["end"])}\n{c["text"]}' for i,c in enumerate(captions))+'\n', encoding='utf-8-sig')
     # Chapter timestamps come from the complete final timeline.
-    if config.get('navigation', {}).get('enabled', True):
-        export_navigation(edition, read_json(run_dir/'timeline.json'), run_dir)
-        if config.get('navigation', {}).get('embed_mp4_chapters', True):
+    navigation_config = config.get('navigation', {})
+    chapter_bar = None
+    if navigation_config.get('enabled', True):
+        navigation = export_navigation(edition, timeline, run_dir)
+        if navigation_config.get('embed_mp4_chapters', True):
             chaptered = run_dir/'news-with-chapters.mp4'
             command([FFMPEG,'-v','error','-y','-i',video,'-i',run_dir/'chapters.ffmetadata',
                      '-map','0:v','-map','0:a?','-map_metadata','0','-map_chapters','1',
@@ -616,11 +618,25 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
                 command([FFMPEG,'-v','error','-y','-i',run_dir/'news-no-bgm.mp4','-i',run_dir/'chapters.ffmetadata',
                          '-map','0:v','-map','0:a?','-map_metadata','0','-map_chapters','1','-c','copy',run_dir/'news-no-bgm-with-chapters.mp4'])
                 (run_dir/'news-no-bgm-with-chapters.mp4').replace(run_dir/'news-no-bgm.mp4')
+        if navigation_config.get('burn_in_chapter_bar', True):
+            from .chapterbar import overlay
+            outputs = {}
+            for source in (video, no_bgm_video):
+                if not source.is_file():
+                    continue
+                target = source.with_name(source.stem + '-with-chapter-bar.mp4')
+                outputs[source.name] = overlay(source, target, navigation, font=navigation_config.get('chapter_bar_font'))
+            for name in outputs:
+                source = run_dir/name
+                source.with_name(source.stem + '-with-chapter-bar.mp4').replace(source)
+            chapter_bar = run_dir/'chapter-bar.json'
+            write_json(chapter_bar, dict(outputs=outputs))
     # A complete decode is required before advancing the latest pointer.
     command([FFMPEG,'-v','error','-xerror','-i',video,'-f','null','-'])
+    if no_bgm_video.is_file() and (outro or chapter_bar):
+        command([FFMPEG,'-v','error','-xerror','-i',no_bgm_video,'-f','null','-'])
     if outro:
         from .bgm import true_peak
-        command([FFMPEG,'-v','error','-xerror','-i',no_bgm_video,'-f','null','-'])
         outro_receipt['final_true_peaks_db'] = {path.name: true_peak(path) for path in (video,no_bgm_video)}
         if max(outro_receipt['final_true_peaks_db'].values()) > -3:
             raise ValueError('接入片尾后的最终音轨真峰值高于 -3 dBTP')
@@ -676,6 +692,8 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
     manifest['total_seconds'] = final_end
     if outro_receipt:
         manifest['outro'] = outro_receipt
+    if chapter_bar:
+        manifest['chapter_bar'] = chapter_bar.name
     if bgm:
         manifest['bgm']=dict(receipt='bgm-receipt.json',sha256=bgm.selection['track']['sha256'],
                              cycle=bgm.selection['cycle'],catalog_version=bgm.selection['catalog_version'])
