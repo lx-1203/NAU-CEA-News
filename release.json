@@ -1,6 +1,6 @@
 {
   "project": "njau-cea-news",
-  "architecture_version": "1.5.0",
+  "architecture_version": "1.5.1",
   "skill_version": "1.5.0",
   "files": {
     ".gitignore": "ea6ae4ba46a71516bc969bff81c76113a2449056c33313cdf12b5c153320b703",
@@ -38,7 +38,7 @@
     "docs/REUSE_GUIDE.md": "9f620ca43bcbac99410c31fdc64a7a6206e9ee08f6dee1e0ac4a946ecea63b8f",
     "docs/TASK_CLEANUP.md": "88e9024bbcb5f9078821a545824840a5f469422a6705621b07be0705f853a297",
     "docs/THIRD_PARTY_LINKS.md": "474da4a9784687bc05238ff332c5a5de28a8d4086981364c2614ca653499cf63",
-    "docs/VERSIONING.md": "4c53439f23e2a0a4e0372d531d6812028ca7fd12021491a919b77991d36f80db",
+    "docs/VERSIONING.md": "e3b580021b8298a8a2be10463ee8d3c1ebc7793e1e5c28a6beb132712b2c7a96",
     "docs/VISUAL_MATERIAL_POLICY.md": "b7c33d9f49d7ef276cc4c99f1ff2ca141b18af974ee22fd8f9e4a0a866405359",
     "first_run.bat": "d6c838981767e1b7c93fec34cbb8966c987dabfd7e0058f641c115f9811b4b7f",
     "index.html": "cba0024f17bf1c8fb9de76b6d45603b5a8e427f945ee2f15df09e176e8807acc",
@@ -95,7 +95,7 @@
     "scripts/smoke_voices.py": "94e809d6be220c7dbe2a828e6296ba8e6b3e8c25532b7369e4d337b2e8c40bbd",
     "scripts/start_workbench.ps1": "ea6a50bc870fa39793d38e634c291e13ee7ad01fff49e3ca5983c02bcadf43af",
     "scripts/verify_assets.py": "0d94bdacf932550bde94ae896ec7dca3438079800dba400b04ec8beb7426cb47",
-    "scripts/verify_daily_delivery.py": "bcabb928f57717aba31caec1cfb9f30164c6f6f18cfc426818f2c7935860bcdd",
+    "scripts/verify_daily_delivery.py": "5e38bf678034665a22b8a2d2d67ec5a9c33e66a4be51c1cd2fbb8884ef184fba",
     "scripts/verify_daily_player.py": "277c7619c4d2c4fc83c23852f05b8b6baef3cd2630ee523d8938c441f016fc89",
     "scripts/workbench_service.py": "c51a7e7defb04636f21518aa44ca19b3044beeb3fd7630d5da56e137fae562e6",
     "skills/nau-cea-daily-video/SKILL.md": "0a24fd827730cd1379e866da8d9699fea1050b4a84074c772410de76912533bc",
@@ -167,8 +167,8 @@
     "voice-demo.js": "84e611d4f7c8b058d0c9ce78d6c19fa9ddb1327f1aec7d65fd4a2b1d8cc82505"
   },
   "archive": {
-    "url": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/v1.5.0/updates/update.zip",
-    "sha256": "f334b928bbbd3019ae793527b1ac9195ff2666d3b57365c673a9a5be6c1afd14",
-    "bytes": 372299
+    "url": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/v1.5.1/updates/update.zip",
+    "sha256": "642fd1a37dcd0382ce8c7e56b45883af23d8689fd6e8f9b68407788088c75efc",
+    "bytes": 372554
   }
 }

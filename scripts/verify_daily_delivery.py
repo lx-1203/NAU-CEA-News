@@ -12,7 +12,11 @@ from pipeline.render import FFMPEG,timestamp
 from pipeline.programme import section_cards
 from pipeline.navigation import build_navigation
 
-run=Path(sys.argv[1]).resolve();out=run/'delivery-qa';out.mkdir(exist_ok=True)
+run=Path(sys.argv[1]).resolve()
+out=Path(sys.argv[2]).resolve() if len(sys.argv)>2 else run/'delivery-qa'
+out.mkdir(parents=True,exist_ok=True)
+if any(out.glob('frame-*.jpg')):
+ raise FileExistsError(f'Use an empty frame-output directory: {out}')
 e=read_json(run/'edition.json');t=read_json(run/'timeline.json');m=read_json(run/'manifest.json')
 shots=t['shots'];gaps=t['interludes'];cards=section_cards(e);lines=edition_lines(e)
 if t.get('outro'):
@@ -71,7 +75,9 @@ for i,s in enumerate(shots):
  samples.extend([(i,'start',s['start']+.02),(i,'focus',s['start']+min(last-.02,event+.12)),(i,'end',s['end']-.04)])
 indices=sorted(set(round(x[2]*30) for x in samples))
 select='+'.join(f'eq(n,{n})' for n in indices)
-subprocess.run([FFMPEG,'-v','error','-y','-i',str(run/'news.mp4'),'-vf',f'select={select.replace(",",chr(92)+",")},scale=640:360','-fps_mode','vfr','-q:v','2',str(out/'frame-%03d.jpg')],capture_output=True,check=True)
+# The appended outro may change H.264 parameters. Keep the sample counter
+# continuous when that boundary would otherwise reinitialize the filters.
+subprocess.run([FFMPEG,'-v','error','-y','-reinit_filter','0','-i',str(run/'news.mp4'),'-map','0:v:0','-vf',f'select={select.replace(",",chr(92)+",")},scale=640:360','-fps_mode','vfr','-q:v','2',str(out/'frame-%03d.jpg')],capture_output=True,check=True)
 frames=sorted(out.glob('frame-*.jpg'));assert len(frames)==len(indices)
 font=None
 for page in range(math.ceil(len(frames)/12)):
