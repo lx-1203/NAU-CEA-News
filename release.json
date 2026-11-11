@@ -1,13 +1,13 @@
 {
   "project": "njau-cea-news",
-  "architecture_version": "1.7.0",
+  "architecture_version": "1.7.1",
   "skill_version": "1.7.0",
   "files": {
     ".gitignore": "ea6ae4ba46a71516bc969bff81c76113a2449056c33313cdf12b5c153320b703",
     "QUICK_START.md": "dcef8c780fc4202031fdf152654f7ca4c5a2a91ecaad3f471c1b4e96f350f743",
     "README.md": "9c6498eb36f9f9153e3fe9b5d18a19317bab9f89b28a98bb88a8188f05e2adfc",
     "anchor-library-preview.html": "af954726d1acbf864d2d9baadee9bb6ef3ee887095a5926b5fd617286e9aa326",
-    "architecture/managed-files.json": "e08fa167eb4e271a950aa3d0108b9c6a1d9a65e1ecc62e9b0149ef2e2a954882",
+    "architecture/managed-files.json": "e549a0ca4b1c50f8b954e0ca34fe57162d33bffc36fe7e8df06a10a843cd3d0a",
     "assets/player/news-player.css": "7e22791ddd5f33cd252f5ceacc3a16d207ec45829c41ff86adc02505bac7931b",
     "assets/player/news-player.js": "d22dd84946f5e06017e015a502fc9ce8f6cb0f6aa32fb49ed1f23eeac2d6f743",
     "branding-logo.css": "399e0aa21820ed4093a8678cfcfd9e394d52c17dc5f96cc78d844f2a74648d33",
@@ -33,13 +33,13 @@
     "docs/INDEXTTS_HANDOFF.md": "9d223a1f04014e94a4093dd0e783b2070b7303262c6751698662e040691a5137",
     "docs/MEDIA_PERFORMANCE_PLAN.md": "c43fe2c8009704acd95dac75373754f5ff878263f2777e06ec7311ba83540ab8",
     "docs/NEXT_EPISODE_PROMPT.md": "30a3e34edafd0ae90b2027ee5a9bda9a65e73bfe324307f8b4d55b18cee3aca6",
-    "docs/OUTRO.md": "068b81046e2a54f14430eaa6494b45ddbe0837d93cdd87c4f7e6ebc18e9c5ceb",
+    "docs/OUTRO.md": "6852b315c88492ea8e5c5f298f0eae44dc7b1804590004dee73d8911b4488b20",
     "docs/PIPELINE.md": "ba34f480a3b3b8efd3044ce94615de0d29645beb161b0a0bc6555fad8815d105",
     "docs/PUBLICATION.md": "3b6db66d155c847c73aeaa4403fd2a4821165273542113bc6d5a4ac76e519bd9",
-    "docs/REUSE_GUIDE.md": "7ab72c6d8324afd38f5c088cfc0dface7584b33695c89c3f8aacbcc9d6bc7496",
+    "docs/REUSE_GUIDE.md": "b5fd581e949088cba96ea600d87275ef05838c57a67670a5d5dc2fc6995c16be",
     "docs/TASK_CLEANUP.md": "88e9024bbcb5f9078821a545824840a5f469422a6705621b07be0705f853a297",
     "docs/THIRD_PARTY_LINKS.md": "474da4a9784687bc05238ff332c5a5de28a8d4086981364c2614ca653499cf63",
-    "docs/VERSIONING.md": "9a1df6557ed5586c327bcaa07365ba06e51ca869d4f21a09865526901be45667",
+    "docs/VERSIONING.md": "fde909a1af9bfc9c477e82a427294b50e0a640c76f425f6916cb4f308ba21d3d",
     "docs/VISUAL_MATERIAL_POLICY.md": "b7c33d9f49d7ef276cc4c99f1ff2ca141b18af974ee22fd8f9e4a0a866405359",
     "docs/licenses/ChapterBar-MIT.txt": "c515f63a5d6ec38aed7ec985b52ab9d312dc5d7256de63ef219793f256ca65c1",
     "first_run.bat": "d6c838981767e1b7c93fec34cbb8966c987dabfd7e0058f641c115f9811b4b7f",
@@ -88,6 +88,7 @@
     "scripts/check_current_programme.py": "730d369367573239cab63335f9ac21a8d14a6002db57830b6a51fc6a74b4ff71",
     "scripts/check_updates.py": "618b32167e1b14ab51f0f9d1490a826b9ea8ffa45a0c1e91be7a5cb069a6eee5",
     "scripts/cleanup_completed_task.py": "06e3c1ee343f0dd1fd05c1fab2b0440dfbaa260604f7d646e92cc0f4084f06a4",
+    "scripts/export_outro_project.py": "69297356895bc9e27e92e0a122f2cf7e65e15537d598b51dc43a1140a9c8810d",
     "scripts/freeze_release.py": "e651450416996fb42fd97a21bcd19b627bf7a92de8c89a374f24620174c6d1be",
     "scripts/install_agent_skill.py": "2734f0c9afd1b928f0f3fa5dfeab75a33780ba8a2121c3cd323372c5f3c0e451",
     "scripts/install_workbench.py": "6a1545aaae0138481b6a0a61de9e1a5d5412b99178a0417921115436c4860697",
@@ -171,8 +172,8 @@
     "voice-demo.js": "84e611d4f7c8b058d0c9ce78d6c19fa9ddb1327f1aec7d65fd4a2b1d8cc82505"
   },
   "archive": {
-    "url": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/v1.7.0/updates/update.zip",
-    "sha256": "88d404c3aad359462015be629aa92808bf34c72025c117c243d411f91e176fd6",
-    "bytes": 379497
+    "url": "https://raw.githubusercontent.com/lx-1203/NAU-CEA-News/v1.7.1/updates/update.zip",
+    "sha256": "4d50a5e156e8b54336c60fca6bc927101e6383e10c445b483df4a6e72fd53ae6",
+    "bytes": 383689
   }
 }

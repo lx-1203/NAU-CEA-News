@@ -2,6 +2,12 @@
 
 在新电脑上运行 `git clone --depth 1 https://github.com/lx-1203/NAU-CEA-News.git`，进入项目目录后运行 `first_run.bat`。日常用 `start.bat`，准备下一期用 `next_episode.bat`。主播表情、固定声音参考、台标、开屏、转场、片尾和 BGM 单曲随仓库按目录提供。新安装默认启用开屏、片尾和自动 BGM。[快速开始](../QUICK_START.md) · [素材目录](../assets/README.md)
 
+- [底部进度条](CHAPTER_BAR.md) 说明如何自动生成，或给已有 MP4 补加。
+- [可编辑片尾](OUTRO.md#在-shotcut-里编辑片尾) 提供 Shotcut 分轨工程、原画面源码和署名编辑方法。
+- [表情切换规则](../pipeline/performance.py) 定义逐句选表情和同类轮换，[配音时间绑定](../pipeline/production.py) 定义句中切换和句末复位。
+
+运行 `start.bat` 时会自动检查并更新受管规则与程序。安装了日更技能的助手会在使用前同步技能规则。仓库素材和剪辑工程通过 `git pull --ff-only` 获取。
+
 安装工具和模型按 `config/reuse-components.json` 中的固定版本下载。语音模型约 8.87 GB，建议预留 30 GB 以上空间。首次安装和 GPU 合成需要在接收方的 Windows 电脑上验证。
 
 ## 路径和数据

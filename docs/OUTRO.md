@@ -22,3 +22,13 @@
 固定片尾替换原有两句通用收尾，带入固定双主播告别、署名和校歌曲段。正文自动轮换 BGM 在片尾前淡出。无配乐版复用相同画面、章节和口播，尾段使用原声。播放器提供「片尾与署名」章节，字幕随实际时间线偏移。
 
 复用已有配音时加 `--audio-manifest <配音清单.json>`。旧清单中的通用收尾条目会被当期片尾替换，正文每句仍按源文件 SHA256 校验。成片记录 `outro-receipt.json` 和 `bgm-receipt.json`，归档时同步保留。
+
+## 在 Shotcut 里编辑片尾
+
+克隆仓库，在 [Shotcut](https://shotcut.org/) 中打开 [outro-edit.mlt](../assets/outro/outro-edit.mlt)。画面、两位主播的告别人声、校歌和三张署名卡各自独立，可以移动、裁切、替换或静音。工程是 1920×1080、60 帧、24.4 秒，链接使用仓库内相对路径。保留 `assets/outro` 的目录结构，避免素材掉线。
+
+署名卡是带透明背景的图层。改字或改样式时，先在素材目录的副本中修改 `source/credits.json` 或 `source/credits.html`。在已安装 Python、Playwright 和 Edge 的项目根目录运行 `python scripts/export_outro_project.py --outro <素材副本路径>`，即可更新透明署名卡和默认工程。重新生成会重置工程时间线，请先另存手工剪辑版。
+
+双主播动画在剪辑工程里使用已批准的画面底片。需要改人物位置、表情图、字幕样式或背景时，可编辑 [原画面 HTML 源码](../assets/outro/editable/visual/outro.html)。源码中的 `drawFrame(帧号)` 可预览指定帧。原画面源码、图片和音频分开保存在仓库中。
+
+日更自动渲染仍读取批准的素材目录和当期 `tasks/credits.json`。自行剪辑的工程和片尾版本可在 Shotcut 中独立导出。

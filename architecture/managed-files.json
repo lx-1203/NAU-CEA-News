@@ -85,6 +85,7 @@
     "scripts/check_current_programme.py",
     "scripts/check_updates.py",
     "scripts/cleanup_completed_task.py",
+    "scripts/export_outro_project.py",
     "scripts/freeze_release.py",
     "scripts/install_agent_skill.py",
     "scripts/install_workbench.py",

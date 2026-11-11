@@ -1,0 +1,42 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>NJAU-CEA 双主播片尾</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#000;font-family:'Microsoft YaHei',sans-serif;color:#0e493f}
+#stage{position:relative;width:1920px;height:1080px;background:#f7f4e9;overflow:hidden}
+#backdrop{position:absolute;inset:-24px;width:1968px;height:1128px;object-fit:cover;transform-origin:50% 50%;will-change:transform}
+#logo{position:absolute;left:510px;top:155px;width:900px;height:auto;object-fit:contain}
+#emblems{position:absolute;right:70px;top:64px;display:flex;gap:30px}#emblems img{width:136px;height:136px;object-fit:contain;border-radius:50%}
+#thanks{position:absolute;left:0;top:510px;width:100%;text-align:center;font-size:100px;font-weight:700;letter-spacing:16px;line-height:1.2}
+#tagline{position:absolute;left:0;top:666px;width:100%;text-align:center;font-size:43px;letter-spacing:5px;color:#547269}
+.person{position:absolute;width:510px;height:605px;object-fit:contain;bottom:160px;transform-origin:50% 90%;}
+#boy{left:7px}#girl{right:7px}
+#association{position:absolute;left:390px;top:916px;width:1140px;height:86px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:48px;font-weight:600;letter-spacing:3px;background:rgba(247,244,233,.94);border-radius:43px}
+#caption{position:absolute;left:440px;top:797px;width:1040px;text-align:center;font-size:64px;font-weight:600;line-height:1.3;white-space:nowrap}
+#curtain{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+</style>
+<div id="stage"><img id="backdrop" src="background-v1.1.0.png"><img id="logo" src="../../../branding/njau-cea-news-raster.png"><div id="emblems"><img src="../../../branding/njau-emblem-official.png"><img src="../../../branding/cea-emblem.png"></div><div id="thanks">感谢收看</div><div id="tagline">让技术有温度 · 让热爱发光</div><img class="person" id="boy" src="../../../characters/anchors/gestures-v2/xiaoxu-thumbsup.png"><img class="person" id="girl" src="../../../characters/anchors/gestures-v2/xiaohe-wave.png"><div id="caption"></div><div id="association">南京农业大学计算机爱好者协会</div><div id="curtain"></div></div>
+<script>
+const timeline={"fps": 60, "lines": [{"text": "感谢收看，我们下期再见。", "start": 0.3, "end": 2.333333}, {"text": "让技术有温度，让热爱发光。", "start": 2.533333, "end": 4.766666}]};
+const el=id=>document.getElementById(id), clamp=x=>Math.max(0,Math.min(1,x));
+const smooth=x=>{x=clamp(x);return x*x*x*(x*(x*6-15)+10)};
+const progress=(t,a,b)=>smooth((t-a)/(b-a));
+function put(id,opacity,x=0,y=0,scale=1,angle=0){const e=el(id);e.style.opacity=opacity;e.style.transform=`translate3d(${x}px,${y}px,0) scale(${scale}) rotate(${angle}deg)`;}
+window.motionState=f=>{
+ const t=f/timeline.fps, enter=progress(t,.10,1.05), bg=progress(t,0,6), fade=Math.max(1-progress(t,0,.60),progress(t,7.30,239/30));
+ const states={backdrop:{x:-10*bg,scale:1.018-.018*bg},logo:{opacity:progress(t,.10,1.05),y:22*(1-progress(t,.10,1.05))},thanks:{opacity:progress(t,.38,1.28),y:16*(1-progress(t,.38,1.28))},emblems:{opacity:progress(t,.20,1.10)},association:{opacity:progress(t,.48,1.38)},tagline:{opacity:progress(t,5.0,5.6)},curtain:{opacity:fade},people:[]};
+ for(const [index,side] of [[0,-1],[1,1]]){
+  const line=timeline.lines[index],local=t-line.start,p=clamp(local/(line.end-line.start));
+  const arc=Math.pow(Math.sin(Math.PI*p),2);
+  states.people.push({opacity:enter,x:side*34*(1-enter),y:18*(1-enter)-3*arc,angle:arc*(index===1?2.4:-1.2)});
+ }
+ let active=timeline.lines.find(x=>t>=x.start-.18&&t<x.end);
+ states.caption={text:active?active.text:'',opacity:active?progress(t,active.start-.18,active.start+.02)*(1-progress(t,active.end-.16,active.end)):0};
+ return states;
+};
+window.drawFrame=f=>{
+ const s=window.motionState(f);put('backdrop',1,s.backdrop.x,0,s.backdrop.scale);
+ for(const id of ['logo','thanks','emblems','association','tagline'])put(id,s[id].opacity,0,s[id].y||0);
+ for(const [i,id] of ['boy','girl'].entries()){const p=s.people[i];put(id,p.opacity,p.x,p.y,1,p.angle);}
+ el('caption').textContent=s.caption.text;put('caption',s.caption.opacity,0,4*(1-s.caption.opacity));
+ el('curtain').style.opacity=s.curtain.opacity;
+};window.drawFrame(180);
+</script></html>

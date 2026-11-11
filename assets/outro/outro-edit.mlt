@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mlt LC_NUMERIC="C" title="Shotcut" producer="main_bin">
+  <profile description="HD 1080p60" width="1920" height="1080" frame_rate_num="60" frame_rate_den="1" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" colorspace="709" />
+  <producer id="black" out="1463">
+    <property name="resource">0</property>
+    <property name="mlt_service">color</property>
+    <property name="length">1464</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="0" out="1463" />
+  </playlist>
+  <chain id="clip_music" out="1175">
+    <property name="resource">南京农业大学校歌-指定乐句.wav</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">南京农业大学校歌</property>
+  </chain>
+  <chain id="clip_voice_0" out="108">
+    <property name="resource">editable/audio/voice-0.wav</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">秾小序告别</property>
+  </chain>
+  <chain id="clip_voice_1" out="119">
+    <property name="resource">editable/audio/voice-1.wav</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">楠小禾告别</property>
+  </chain>
+  <chain id="clip_picture" out="1463">
+    <property name="resource">NJAU-CEA-outro-v1.3.0.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">片尾画面</property>
+  </chain>
+  <producer id="clip_credit_1" out="353">
+    <property name="resource">editable/credits/credit-1.png</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">制片人</property>
+    <property name="length">15000</property>
+    <property name="eof">pause</property>
+    <filter out="27">
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="level">1</property>
+      <property name="alpha">0=0;27=1</property>
+    </filter>
+  </producer>
+  <producer id="clip_credit_2" out="353">
+    <property name="resource">editable/credits/credit-2.png</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">参演人员</property>
+    <property name="length">15000</property>
+    <property name="eof">pause</property>
+    <filter out="27">
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="level">1</property>
+      <property name="alpha">0=0;27=1</property>
+    </filter>
+  </producer>
+  <producer id="clip_credit_3" out="386">
+    <property name="resource">editable/credits/credit-3.png</property>
+    <property name="mlt_service">qimage</property>
+    <property name="shotcut:caption">片尾音乐</property>
+    <property name="length">15000</property>
+    <property name="eof">pause</property>
+    <filter out="27">
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeInBrightness</property>
+      <property name="level">1</property>
+      <property name="alpha">0=0;27=1</property>
+    </filter>
+    <filter in="351" out="386">
+      <property name="mlt_service">brightness</property>
+      <property name="shotcut:filter">fadeOutBrightness</property>
+      <property name="level">1</property>
+      <property name="alpha">0=1;35=0</property>
+    </filter>
+  </producer>
+  <playlist id="music">
+    <property name="shotcut:name">南京农业大学校歌</property>
+    <property name="shotcut:audio">1</property>
+    <blank length="288" />
+    <entry producer="clip_music" in="0" out="1175" />
+  </playlist>
+  <playlist id="voice_0">
+    <property name="shotcut:name">秾小序告别</property>
+    <property name="shotcut:audio">1</property>
+    <blank length="18" />
+    <entry producer="clip_voice_0" in="0" out="108" />
+  </playlist>
+  <playlist id="voice_1">
+    <property name="shotcut:name">楠小禾告别</property>
+    <property name="shotcut:audio">1</property>
+    <blank length="152" />
+    <entry producer="clip_voice_1" in="0" out="119" />
+  </playlist>
+  <playlist id="picture">
+    <property name="shotcut:name">片尾画面</property>
+    <property name="shotcut:video">1</property>
+    <entry producer="clip_picture" in="0" out="1463" />
+  </playlist>
+  <playlist id="credit_1">
+    <property name="shotcut:name">制片人</property>
+    <property name="shotcut:video">1</property>
+    <blank length="297" />
+    <entry producer="clip_credit_1" in="0" out="353" />
+  </playlist>
+  <playlist id="credit_2">
+    <property name="shotcut:name">参演人员</property>
+    <property name="shotcut:video">1</property>
+    <blank length="621" />
+    <entry producer="clip_credit_2" in="0" out="353" />
+  </playlist>
+  <playlist id="credit_3">
+    <property name="shotcut:name">片尾音乐</property>
+    <property name="shotcut:video">1</property>
+    <blank length="945" />
+    <entry producer="clip_credit_3" in="0" out="386" />
+  </playlist>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="clip_music" />
+    <entry producer="clip_voice_0" />
+    <entry producer="clip_voice_1" />
+    <entry producer="clip_picture" />
+    <entry producer="clip_credit_1" />
+    <entry producer="clip_credit_2" />
+    <entry producer="clip_credit_3" />
+  </playlist>
+  <tractor id="tractor" out="1463">
+    <property name="shotcut">1</property>
+    <track producer="background" />
+    <track producer="music" hide="video" />
+    <track producer="voice_0" hide="video" />
+    <track producer="voice_1" hide="video" />
+    <track producer="picture" hide="audio" />
+    <track producer="credit_1" hide="audio" />
+    <track producer="credit_2" hide="audio" />
+    <track producer="credit_3" hide="audio" />
+    <transition>
+      <property name="mlt_service">mix</property>
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">mix</property>
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">mix</property>
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">mix</property>
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">qtblend</property>
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="disable">1</property>
+      <property name="threads">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">mix</property>
+      <property name="a_track">0</property>
+      <property name="b_track">5</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">qtblend</property>
+      <property name="a_track">4</property>
+      <property name="b_track">5</property>
+      <property name="disable">0</property>
+      <property name="threads">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">mix</property>
+      <property name="a_track">0</property>
+      <property name="b_track">6</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">qtblend</property>
+      <property name="a_track">4</property>
+      <property name="b_track">6</property>
+      <property name="disable">0</property>
+      <property name="threads">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">mix</property>
+      <property name="a_track">0</property>
+      <property name="b_track">7</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition>
+      <property name="mlt_service">qtblend</property>
+      <property name="a_track">4</property>
+      <property name="b_track">7</property>
+      <property name="disable">0</property>
+      <property name="threads">1</property>
+    </transition>
+  </tractor>
+</mlt>
