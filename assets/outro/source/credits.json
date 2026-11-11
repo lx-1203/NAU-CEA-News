@@ -1,0 +1,9 @@
+{
+  "version": "1.4.1",
+  "output": "NJAU-CEA-outro-v1.4.1.mp4",
+  "cards": [
+    {"label": "制片人", "lines": ["星迹 · Codex"], "start": 4.95, "end": 10.85},
+    {"label": "参演人员", "lines": ["楠小禾 · 秾小序"], "start": 10.35, "end": 16.25},
+    {"label": "片尾音乐", "lines": ["南京农业大学之歌"], "detail": "作词  王红谊     作曲  陶思耀", "start": 15.75, "end": 22.2}
+  ]
+}

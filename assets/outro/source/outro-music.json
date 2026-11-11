@@ -1,0 +1,18 @@
+{
+  "version": "1.3.0",
+  "enabled": true,
+  "scope": "persistent_default_for_this_outro_only",
+  "title": "南京农业大学校歌（用户指定开头乐句）",
+  "source_page": "https://www.njau.edu.cn/xg/list.htm",
+  "source": "music/njau-anthem-official.m4a",
+  "source_sha256": "5caa389a4f6200aaad729a29a7bd35f5291e4760d1c53b37ae53836426d2cc80",
+  "source_start_seconds": 13.733333,
+  "duration_seconds": 19.6,
+  "placement_seconds": 4.8,
+  "target_music_lufs": -19.5,
+  "music_true_peak_ceiling_db": -3,
+  "fade_in_seconds": 0.11,
+  "fade_out_seconds": 0.20,
+  "default_video": "NJAU-CEA-outro-v1.3.0.mp4",
+  "bgm_clip": "南京农业大学校歌-指定乐句.wav"
+}

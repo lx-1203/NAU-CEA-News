@@ -1,0 +1,62 @@
+{
+  "version": "1.4.1",
+  "profile": "persistent-anthem-outro-native-60fps",
+  "files": {
+    "CURRENT.json": {
+      "sha256": "0114ddef8415489a648693ea3f4a7c866736c7ad2aed1bb98904fe632b7ddc2c",
+      "bytes": 425
+    },
+    "NJAU-CEA-outro-v1.1.0.mp4": {
+      "sha256": "aad6f0a65b0a86f404496b13bf9ab84384da7e08df1f36a9de0da75fbdd3e7d0",
+      "bytes": 8017294
+    },
+    "NJAU-CEA-outro-v1.3.0.mp4": {
+      "sha256": "379371d3db3193dd29ecfae71766da00246cb66b3407b5985a0493844a14e63b",
+      "bytes": 11200756
+    },
+    "NJAU-CEA-outro-v1.4.1.mp4": {
+      "sha256": "5eb42d8bb54e0f8022d4fbd39a30e8f2aee6a7413f46642f82acdede5e957f1a",
+      "bytes": 12164281
+    },
+    "source/credits.html": {
+      "sha256": "5b7811c58613b5e42b57666ee5ba46971d1cc2e2792c5091891f8c2d56cdd363",
+      "bytes": 1348
+    },
+    "source/credits.json": {
+      "sha256": "4764f99f203a0649f122ab5898d7edab70b8507f4462991b4ca0e742f56c20d1",
+      "bytes": 420
+    },
+    "source/music/njau-anthem-official.m4a": {
+      "sha256": "5caa389a4f6200aaad729a29a7bd35f5291e4760d1c53b37ae53836426d2cc80",
+      "bytes": 2110355
+    },
+    "source/music/source.json": {
+      "sha256": "76cccfef72732e2df38b0640fd8e0b18eb90234933981aef25e6b160fc01b5f9",
+      "bytes": 882
+    },
+    "source/outro-music.json": {
+      "sha256": "d9b8f91b8946d32d39826d2dba21f2bc1017adaeee5e428d07a0d69ca4f55e14",
+      "bytes": 676
+    },
+    "source/outro-voice.wav": {
+      "sha256": "3c83dd2d28e48a2492174ac343eebb36c37b42a2cb25ce1eb636d7d45e0e46f5",
+      "bytes": 1536078
+    },
+    "subtitles.srt": {
+      "sha256": "d0578c2c3d28a548cfc7d51496656cf3bbea81c5d6f96a011269ca0ac766859c",
+      "bytes": 149
+    },
+    "timeline.json": {
+      "sha256": "296018216364dfb07216876f16d2ad4f410356ee273ad0b929f5c675499db31e",
+      "bytes": 2843
+    },
+    "南京农业大学校歌-官网版.mp3": {
+      "sha256": "9ac6b6db840c682b886f1b75d27690e0bbda99118657b850bcc59d39caf7deed",
+      "bytes": 3123863
+    },
+    "南京农业大学校歌-指定乐句.wav": {
+      "sha256": "e48dc29c97eb3d335a2af266b4cdc4e0491cca7e29c717882a7cf7eac29556b7",
+      "bytes": 3763278
+    }
+  }
+}

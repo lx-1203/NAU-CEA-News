@@ -1,0 +1,806 @@
+{
+  "version": 2,
+  "items": [
+    {
+      "path": "assets/characters/anchors/generated/xiaoxu-normal.png",
+      "sha256": "6bda2dddd8b597dad292df3f6ae28e8a65e2d88c8afdf61023aab3cff9a0f13a",
+      "bytes": 184664,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaoxu-normal2.png",
+      "sha256": "b794f287b4940062c26628bbc9a5d9efd50069aab5fb21b9e5b01329efdefa16",
+      "bytes": 885267,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaoxu-normal3.png",
+      "sha256": "e14e97dacd4b8e7088d8bf762fa66eab310694ad7a04a91d338c619026454130",
+      "bytes": 922652,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/generated/xiaoxu-happy.png",
+      "sha256": "9eb8dcf18c46d38f554aa6190eb96c8eb2e9ec328ce29b627c0086db8f7574bd",
+      "bytes": 968149,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaoxu-happy2.png",
+      "sha256": "5ad7b0ea7493b4e58f5775a1d228244f102efdb2a3791c9aaca34491183b4221",
+      "bytes": 959740,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaoxu-happy3.png",
+      "sha256": "a46f4ff8a743f9f32e05205d2f32c6980e807fd9d04555dd660930428385a1ff",
+      "bytes": 957237,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/gestures-v2/xiaoxu-surprised.png",
+      "sha256": "aeb054bfa19fd92f3d9c92c7f2d0c56898d252c6c8a63a33d6ca97055e716c9b",
+      "bytes": 1023533,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/gestures-v2/xiaoxu-thinking.png",
+      "sha256": "002643f5c0c033ac490c19137f05b13b9d6bedf1c4f2bf71550c8479ec963744",
+      "bytes": 918373,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaoxu-thinking2.png",
+      "sha256": "cee1215b2df29fafa82dd92cdd51320f8a89e4411bc93e40b910e9fa73dbd635",
+      "bytes": 979594,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaoxu-thinking3.png",
+      "sha256": "cf0e20bb3184e126135a717dacd5a35761764f55fbf83b98433f4eabf618d4f1",
+      "bytes": 942535,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/generated/xiaoxu-serious.png",
+      "sha256": "f3710dde76c5581b4d9268a0b76faffc6c062a90d71f81f4e3bb5fd65dc522a8",
+      "bytes": 980616,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/gestures-v2/xiaoxu-presenting.png",
+      "sha256": "122a768ac12e8ce09e03b457eab4343a70862217a7eb39714e35a4df0af6c51d",
+      "bytes": 1043663,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaoxu-presenting2.png",
+      "sha256": "50c998d647eb1fed528dc4fb34484c30bb4075bcb946003537ccdcaf8d80b040",
+      "bytes": 989870,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaoxu-presenting3.png",
+      "sha256": "b7c801fd2f937e3b5cf7d519d252e61037ffd0cc9f7b4920880186d8fe6fb59d",
+      "bytes": 1020026,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/gestures-v2/xiaoxu-thumbsup.png",
+      "sha256": "a4b8d54e9662e8e17ef90e546c8eb991c95c5d590405b36b52f1aa231d469009",
+      "bytes": 963884,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/common-v1/xiaoxu-wave.png",
+      "sha256": "d4c51f12cd97fb8bf8b08ff1f61d6cbc792b4946addb8da57fefa97c70c0f805",
+      "bytes": 987971,
+      "group": "anchor_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/generated/xiaohe-normal.png",
+      "sha256": "69aa102aab5c5ea7d8fc0ca2c4b71c2b2a30ee4d0861ed717c76e20ef87be8f1",
+      "bytes": 213803,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaohe-normal2.png",
+      "sha256": "5a49c290b2da5f50f4f0e7bb7b7eeda5410f957f2e2e07d9200533a1d7aa7c14",
+      "bytes": 1067121,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaohe-normal3.png",
+      "sha256": "374fde92be57a57e80a42cd7b1b93f30ab16feaadb8bbedcb46a563c067ff7b3",
+      "bytes": 1046317,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/generated/xiaohe-happy.png",
+      "sha256": "b1b78b5115851da86cf3775e05dca2433cf7d8380afbfb4e090ed9caf28aa272",
+      "bytes": 1157326,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaohe-happy2.png",
+      "sha256": "71c460cae9ae7a5a02c19ea9ee8861273c39dc41f24ef5fd1cf792db9796bfa3",
+      "bytes": 1101085,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaohe-happy3.png",
+      "sha256": "17d0dfd0a1b8ee315755ad4a0c680043ab3f7ac16627b762dc4c601a5f51b759",
+      "bytes": 1100658,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/common-v1/xiaohe-surprised.png",
+      "sha256": "13f34ab55f949800a99f13018f1797e84c334443488e7b5b6f8f116df7778cdb",
+      "bytes": 1116822,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/common-v1/xiaohe-thinking.png",
+      "sha256": "81d31abd7c227c53a1877bd95d90ffddefe5fa016ce93c99419dfbb128bfc673",
+      "bytes": 1084034,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaohe-thinking2.png",
+      "sha256": "397196052020628594f9af4c1d2c745885c5a69db3be79f5b307a01089153c30",
+      "bytes": 1107706,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaohe-thinking3.png",
+      "sha256": "d7bc188acf7771825f9e449b5300b41ac896d8d3aa7bc5e7a3757b6c43865414",
+      "bytes": 1095255,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/common-v1/xiaohe-serious.png",
+      "sha256": "a3a7262e60a4ca61a1caf819c0171345271bbf576e916f7d6e7dbab07a856b52",
+      "bytes": 1097077,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/common-v1/xiaohe-presenting.png",
+      "sha256": "f1fa55e6092cbc8bdd6b04088c04321460c1754290b614f99f44bf5fe8237f1f",
+      "bytes": 1168781,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaohe-presenting2.png",
+      "sha256": "b0b39b0f38fc4abdf0cf55e5a1cf7dfc097924f1f3b791777bc9e0bcb672cb11",
+      "bytes": 1161441,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/frequent-v1/xiaohe-presenting3.png",
+      "sha256": "770fafc8adcf70051581cce494c68b7d6d24547eef79743a1e1b0ab72e833aac",
+      "bytes": 1207577,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/common-v1/xiaohe-thumbsup.png",
+      "sha256": "eb487effaf39c562979d042dadbfe73ca883454cd3f321232b07be10fed7fb4e",
+      "bytes": 1111621,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/gestures-v2/xiaohe-excited.png",
+      "sha256": "6835da8d4892496f50bd5256f5693bb20ecdd27de6b92eb5e2113115a68bce2c",
+      "bytes": 1131835,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/gestures-v2/xiaohe-shy.png",
+      "sha256": "bbd0df5499103f396c2d697c1850e7b0b6363f292c9810725a634b9d78dcb8a8",
+      "bytes": 1103480,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/generated/xiaohe-wink.png",
+      "sha256": "d359d21f304deccabc428b7fac60a7d0d9b1969bbf729d749dd74cf859f6289e",
+      "bytes": 1125344,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/gestures-v2/xiaohe-wave.png",
+      "sha256": "8e0e04ed59fa9efcbd9a9a933eb2a15577d1cdf1144987f5acce307758b2cbd6",
+      "bytes": 1177391,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/characters/anchors/gestures-v2/xiaohe-encourage.png",
+      "sha256": "dfa45ba79a76f2ab9b8a5ad7ff3703d077bc40932d30c78d9ac7beeee199cff9",
+      "bytes": 1154761,
+      "group": "anchor_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/branding/njau-emblem-official.png",
+      "sha256": "9f666f3f673be603c46d701b3696cee5a6d23c5597b51316900e738394bfbde7",
+      "bytes": 169840,
+      "group": "branding",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/branding/cea-emblem.png",
+      "sha256": "a0f524073f2bbebd475be118916f3f11f54192e7082a602e4445475a7702bf58",
+      "bytes": 1745242,
+      "group": "branding",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/branding/njau-cea-news-raster.png",
+      "sha256": "e1ec39db5424a02cd0875525f9aec22a0a14a39118aeaea0f23610cfa64c0416",
+      "bytes": 939013,
+      "group": "branding",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/branding/naucea-screen-loop.mp4",
+      "sha256": "466e4770efa60ca7c9e2f7a3bc9053b48baf22aa855ba8e802cc05e554b4f199",
+      "bytes": 128806,
+      "group": "branding",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/voices/xiaoXu/reference.wav",
+      "sha256": "f95b7a143073d09ae5f261be8d2f2342853a16e19f56f2da480770f7e433e899",
+      "bytes": 471246,
+      "group": "voice_xiaoXu",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/voices/xiaoHe/reference.wav",
+      "sha256": "9d60fef25bb169cfd6f07ea74f741a1971bfd8e8c451984cb2a3c730dd125bf6",
+      "bytes": 453966,
+      "group": "voice_xiaoHe",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/opening/video.mp4",
+      "sha256": "3a54f01d209167eb8a9b3825846827bf13af59414f84ceb0cd7496841892d81a",
+      "bytes": 3990924,
+      "group": "opening",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/opening/silent_video.mp4",
+      "sha256": "30f112db4ef6d3a4b66b9a15f65035d4cf749f9da7dc89afd84fbf4384d974b7",
+      "bytes": 3786497,
+      "group": "opening",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/opening/credits_file.txt",
+      "sha256": "b81daf2278f9a7c5f439d159b86eb92fe78cf950e1270283fefb4e5a1226ffcc",
+      "bytes": 463,
+      "group": "opening",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/MANIFEST.json",
+      "sha256": "41e3bece0d9e15ef5b0e795383d94dd4d7e53e05913136a87414fcbe7f4fe704",
+      "bytes": 2203,
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/CURRENT.json",
+      "sha256": "0114ddef8415489a648693ea3f4a7c866736c7ad2aed1bb98904fe632b7ddc2c",
+      "bytes": 425,
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/source/credits.json",
+      "sha256": "4764f99f203a0649f122ab5898d7edab70b8507f4462991b4ca0e742f56c20d1",
+      "bytes": 420,
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/source/outro-music.json",
+      "sha256": "d9b8f91b8946d32d39826d2dba21f2bc1017adaeee5e428d07a0d69ca4f55e14",
+      "bytes": 676,
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/timeline.json",
+      "sha256": "296018216364dfb07216876f16d2ad4f410356ee273ad0b929f5c675499db31e",
+      "bytes": 2843,
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/NJAU-CEA-outro-v1.3.0.mp4",
+      "sha256": "379371d3db3193dd29ecfae71766da00246cb66b3407b5985a0493844a14e63b",
+      "bytes": 11200756,
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/source/outro-voice.wav",
+      "sha256": "3c83dd2d28e48a2492174ac343eebb36c37b42a2cb25ce1eb636d7d45e0e46f5",
+      "bytes": 1536078,
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/source/credits.html",
+      "sha256": "5b7811c58613b5e42b57666ee5ba46971d1cc2e2792c5091891f8c2d56cdd363",
+      "bytes": 1348,
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/01/transition-alpha.webm",
+      "sha256": "10e2f5ba8c2b92a6ad570faab034577a05f3708794f31d50e7e219f4c38dedf6",
+      "bytes": 1843873,
+      "group": "transition_webm",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/art/01.png",
+      "sha256": "2bcc526226ec002429f9d9b9d9ede3418e5fffa045e1f40cc24b5650edb1598f",
+      "bytes": 2497927,
+      "group": "transition_art",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/references/01.png",
+      "sha256": "07ddb32f3743f75b65b2055fd792f4c6679e5b2658f649164a0259655132e044",
+      "bytes": 2440983,
+      "group": "transition_reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/characters/01.png",
+      "sha256": "a0d797bb6b9c0ecbd22686864faf17be77fac350d045b68dbc7b9d44682f88e2",
+      "bytes": 1573247,
+      "group": "transition_character",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/01/preview.mp4",
+      "sha256": "eed377ab1381f0cee99d6399cb176d025eb072d0d1f5f0847e0e0a6cc5f81af5",
+      "bytes": 843463,
+      "group": "transition_preview",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/02/transition-alpha.webm",
+      "sha256": "3025d77ca9381b3daa518e35976ec08b39aefa8b615ab064c0eedae18df4a97f",
+      "bytes": 1893668,
+      "group": "transition_webm",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/art/02.png",
+      "sha256": "35ef2d9d92fcd7776c4d128e3c665e6aa97f210ea4165946c5872f3a3531f686",
+      "bytes": 2931847,
+      "group": "transition_art",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/references/02.png",
+      "sha256": "30dd7b5ad713c22e857d861def2163d179036110e9e8e327128ea6e75be9524b",
+      "bytes": 408978,
+      "group": "transition_reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/characters/02.png",
+      "sha256": "4bc116b7007a7920601292ae96d0d4b18630fad2f8d371c6539bfd4565d2b6ea",
+      "bytes": 1548153,
+      "group": "transition_character",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/02/preview.mp4",
+      "sha256": "7fff953cc5fe9572a3ef6fa939e16007ec06c95f9b53694abfd100cbf1aa2cd3",
+      "bytes": 868302,
+      "group": "transition_preview",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/03/transition-alpha.webm",
+      "sha256": "4aae7f8845a36ad4a99fa17881e61cb116b2115fb9a1abc14cd03739aff5e613",
+      "bytes": 1931404,
+      "group": "transition_webm",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/art/03.png",
+      "sha256": "4fbc7c3e868b22d543504e8c649c550d3d80cbd4568f294ee42dc6a2a273aa5d",
+      "bytes": 3220437,
+      "group": "transition_art",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/references/03.png",
+      "sha256": "c22fe5c8619b184495e8253949da810d635e17328c44ba8002838ceae97a2374",
+      "bytes": 1129129,
+      "group": "transition_reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/characters/03.png",
+      "sha256": "c25921c457e386f64c0c78395d76c30e4ae0e744b64d401517d0f877c5a872df",
+      "bytes": 1403549,
+      "group": "transition_character",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/03/preview.mp4",
+      "sha256": "2e8b8a8e8e6fe025cbba578e22586bd372e5a6fcb8a08b6095692a98cdc57fec",
+      "bytes": 888642,
+      "group": "transition_preview",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/04/transition-alpha.webm",
+      "sha256": "a802112c6769be8628021ae4292982fcf269f9f5f30d3b021b15bc9a7b666cb3",
+      "bytes": 1911441,
+      "group": "transition_webm",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/art/04.png",
+      "sha256": "ff8b0306a29a9dd1a65460f0d81674b6f7de9574e9547b85b0936041ac6756e9",
+      "bytes": 3264644,
+      "group": "transition_art",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/references/04.png",
+      "sha256": "75431e6d27177620e49653c92e4853b00c9aeb16f63c014ecd2421c7050078b3",
+      "bytes": 1127363,
+      "group": "transition_reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/characters/04.png",
+      "sha256": "cced199854e00af66ce2c41c7d500ca6b9069e4f7c6738d3cc4089c5be163eb1",
+      "bytes": 1232959,
+      "group": "transition_character",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/04/preview.mp4",
+      "sha256": "de030a6a2d8aaccdb56d247104789ef594cd1962380684e611c8700a8a356cd8",
+      "bytes": 869441,
+      "group": "transition_preview",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/05/transition-alpha.webm",
+      "sha256": "7843fe994dedb019a85883a83bac94aeb706bf616e30197484d2a97215aea04a",
+      "bytes": 1873961,
+      "group": "transition_webm",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/art/05.png",
+      "sha256": "2bcc526226ec002429f9d9b9d9ede3418e5fffa045e1f40cc24b5650edb1598f",
+      "bytes": 2497927,
+      "group": "transition_art",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/references/05.png",
+      "sha256": "07ddb32f3743f75b65b2055fd792f4c6679e5b2658f649164a0259655132e044",
+      "bytes": 2440983,
+      "group": "transition_reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/characters/05.png",
+      "sha256": "751a6fac1c5361da09b15f48910c35bd21c10232f4fe37bf174dd3b2f04d48a5",
+      "bytes": 2915783,
+      "group": "transition_character",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/05/preview.mp4",
+      "sha256": "ba31b2f37d6baa054fa319e7a2f77600ace15dedae94cad46e47fd22690987af",
+      "bytes": 840015,
+      "group": "transition_preview",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/06/transition-alpha.webm",
+      "sha256": "49d1ee063a9bbe0435396ddbb535cbde522ea4badc2aa74d4da15e5f62f0ca3b",
+      "bytes": 1940495,
+      "group": "transition_webm",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/art/06.png",
+      "sha256": "bb8978ebe36e9a79fe65432cb1ff254ebf7e542b07194a317546e10471f474a4",
+      "bytes": 3108714,
+      "group": "transition_art",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/references/06.png",
+      "sha256": "757057ee3624e01cbb14112ec0bac1d49771658fc38e7be672e02a46e2db5c7a",
+      "bytes": 1454096,
+      "group": "transition_reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/characters/06.png",
+      "sha256": "153bb5a9e03f1eb2533f20415889a4bb035c6e8aed996586beb4cd39292899df",
+      "bytes": 3091193,
+      "group": "transition_character",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/06/preview.mp4",
+      "sha256": "9f58bc8ba311c634459c8d69e1c52466fb8417d1dd2ab51a74e3c296cda237db",
+      "bytes": 878711,
+      "group": "transition_preview",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/07/transition-alpha.webm",
+      "sha256": "4bd53fcc0398e7e12daf7aef2b595c126446aba627fc0e5bdcc07b861ca2feb9",
+      "bytes": 1764032,
+      "group": "transition_webm",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/art/07.png",
+      "sha256": "effc075b0bb5fd3fc9ce7ddd0963dda5e925f92cfdc242b2677bb970495f143f",
+      "bytes": 2325033,
+      "group": "transition_art",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/references/07.png",
+      "sha256": "9d43fb23e135c861a4f600bbd5f1f7114287432ea7531bdeb6ee53578dff62f7",
+      "bytes": 578716,
+      "group": "transition_reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/characters/07.png",
+      "sha256": "f0fc5087e975225cd795d5d0da6a652f8d363d335e5eaf9fe448fcd9fd74a67f",
+      "bytes": 2750102,
+      "group": "transition_character",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/07/preview.mp4",
+      "sha256": "2f072662eef33664cec895d8c5559122f9ba749d0e92c45dbc26b7f4c3d476c8",
+      "bytes": 803822,
+      "group": "transition_preview",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/08/transition-alpha.webm",
+      "sha256": "2b2027e684aee37a2963967a5f98bead6e70ead88a537b6fcaeeba9d02f5af56",
+      "bytes": 1846111,
+      "group": "transition_webm",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/art/08.png",
+      "sha256": "6a9b1bfc47feffc9cf78747c34930d355cbdc1a55b491e45b6f2476b6a35400c",
+      "bytes": 3202655,
+      "group": "transition_art",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/references/08.png",
+      "sha256": "35e839c31654a2a999658fa9d75a4f7f998b788ff9ed5bce1c960742be26639c",
+      "bytes": 1306704,
+      "group": "transition_reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/characters/08.png",
+      "sha256": "f9ef092326bf4ed2378e3dbe0f8228b25983372921da3b86220d55eda2a15f98",
+      "bytes": 2514157,
+      "group": "transition_character",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/transitions/campus-ip-sweep-v4/renders/08/preview.mp4",
+      "sha256": "4e007368e65253a862a6184dadeb0a2a1d204191ca7c1f618f383d6d0433cd47",
+      "bytes": 820345,
+      "group": "transition_preview",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/references/mascots.png",
+      "sha256": "aa80bbaf3ad7bdc74325b454bb134f4c88f1a69f3dc434381940a372bc77b644",
+      "bytes": 2074183,
+      "group": "reference",
+      "acceptance": "current_approved_original",
+      "redistribution": "upstream/IP rights retained; local handoff is not a public license"
+    },
+    {
+      "path": "assets/outro/NJAU-CEA-outro-v1.1.0.mp4",
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "Original rights and attribution retained",
+      "sha256": "aad6f0a65b0a86f404496b13bf9ab84384da7e08df1f36a9de0da75fbdd3e7d0",
+      "bytes": 8017294
+    },
+    {
+      "path": "assets/outro/NJAU-CEA-outro-v1.4.1.mp4",
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "Original rights and attribution retained",
+      "sha256": "5eb42d8bb54e0f8022d4fbd39a30e8f2aee6a7413f46642f82acdede5e957f1a",
+      "bytes": 12164281
+    },
+    {
+      "path": "assets/outro/source/music/njau-anthem-official.m4a",
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "Original rights and attribution retained",
+      "sha256": "5caa389a4f6200aaad729a29a7bd35f5291e4760d1c53b37ae53836426d2cc80",
+      "bytes": 2110355
+    },
+    {
+      "path": "assets/outro/subtitles.srt",
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "Original rights and attribution retained",
+      "sha256": "d0578c2c3d28a548cfc7d51496656cf3bbea81c5d6f96a011269ca0ac766859c",
+      "bytes": 149
+    },
+    {
+      "path": "assets/outro/南京农业大学校歌-官网版.mp3",
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "Original rights and attribution retained",
+      "sha256": "9ac6b6db840c682b886f1b75d27690e0bbda99118657b850bcc59d39caf7deed",
+      "bytes": 3123863
+    },
+    {
+      "path": "assets/outro/南京农业大学校歌-指定乐句.wav",
+      "group": "approved_outro",
+      "acceptance": "current_approved_original",
+      "redistribution": "Original rights and attribution retained",
+      "sha256": "e48dc29c97eb3d335a2af266b4cdc4e0491cca7e29c717882a7cf7eac29556b7",
+      "bytes": 3763278
+    }
+  ],
+  "rights": "Original rights and attribution retained. See ASSET_CREDITS.md; framework code licensing does not apply to recordings, logos or image assets."
+}

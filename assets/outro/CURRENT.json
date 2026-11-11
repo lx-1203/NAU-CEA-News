@@ -1,0 +1,11 @@
+{
+  "version": "1.4.1",
+  "default_video": "NJAU-CEA-outro-v1.4.1.mp4",
+  "duration_seconds": 24.4,
+  "no_bgm_video": "NJAU-CEA-outro-v1.1.0.mp4",
+  "music_config": "source/outro-music.json",
+  "credits_config": "source/credits.json",
+  "persistent_bgm": "南京农业大学校歌-指定乐句.wav",
+  "full_song": "南京农业大学校歌-官网版.mp3",
+  "source_page": "https://www.njau.edu.cn/xg/list.htm"
+}

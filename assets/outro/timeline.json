@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "fps": 60,
+  "frames": 480,
+  "duration": 8,
+  "lines": [
+    {
+      "text": "感谢收看，我们下期再见。",
+      "anchor": "xiaoXu",
+      "audio": "voice-0.wav",
+      "start": 0.3,
+      "end": 2.333333,
+      "pacing": {
+        "spoken_units": 10,
+        "target_cpm": 295.0,
+        "preferred_cpm": 295.0,
+        "effective_cpm": 295.08196721311475,
+        "tempo": 1.5870253164556964,
+        "input_seconds": 2.972166666666667,
+        "trim_start": 0.14,
+        "trim_end": 2.86,
+        "output_seconds": 1.809,
+        "extra_gap_seconds": 0.22,
+        "slot_seconds": 2.033333333333333,
+        "source_file": "voice-0-pcm.wav",
+        "source_sha256": "8c3e8030cd296e78c81a75834c45dbc26d75d5ba4d631f3f21aa72a55eba6069",
+        "output_sha256": "60ec06c9425af87ff3a37b2edeb853c65d3e063db9a2fd3fab0b83fb27b098e5",
+        "pitch_shift_semitones": 0,
+        "engine": "FFmpeg atempo (pitch-preserving)",
+        "sensitive_sentence": false
+      },
+      "normalization": {
+        "input_lufs": -22.66,
+        "input_true_peak_db": -6.49,
+        "gain_db": 3.49,
+        "target_lufs": -18,
+        "ceiling_true_peak_db": -3,
+        "raw_file": "voice-0-raw.wav"
+      },
+      "speech_intervals": [
+        [
+          0.05,
+          0.65
+        ],
+        [
+          0.9,
+          1.75
+        ]
+      ]
+    },
+    {
+      "text": "让技术有温度，让热爱发光。",
+      "anchor": "xiaoHe",
+      "audio": "voice-1.wav",
+      "start": 2.533333,
+      "end": 4.766666,
+      "pacing": {
+        "spoken_units": 11,
+        "target_cpm": 295.0,
+        "preferred_cpm": 295.0,
+        "effective_cpm": 295.5223880597015,
+        "tempo": 1.2152581329561531,
+        "input_seconds": 2.449708333333333,
+        "trim_start": 0.09,
+        "trim_end": 2.42,
+        "output_seconds": 1.9999583333333333,
+        "extra_gap_seconds": 0.22,
+        "slot_seconds": 2.2333333333333334,
+        "source_file": "voice-1-pcm.wav",
+        "source_sha256": "3f817356ce4c6786f16ea3bb6802d97ad9de80e95e5d238e13539d3f868c0796",
+        "output_sha256": "1019c981fa481011ce377e729d1fff87ac944f84290d3cd03a3849ee29f2ea5d",
+        "pitch_shift_semitones": 0,
+        "engine": "FFmpeg atempo (pitch-preserving)",
+        "sensitive_sentence": false
+      },
+      "normalization": {
+        "input_lufs": -20.09,
+        "input_true_peak_db": -4.71,
+        "gain_db": 1.71,
+        "target_lufs": -18,
+        "ceiling_true_peak_db": -3,
+        "raw_file": "voice-1-raw.wav"
+      },
+      "speech_intervals": [
+        [
+          0.1,
+          0.95
+        ],
+        [
+          1.2,
+          1.55
+        ],
+        [
+          1.6,
+          1.9
+        ]
+      ]
+    }
+  ]
+}

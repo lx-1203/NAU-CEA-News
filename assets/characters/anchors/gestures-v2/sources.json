@@ -1,0 +1,44 @@
+{
+  "xiaoxu-surprised.png": {
+    "source": "exec-82576229-54f0-41db-bbd3-8bfb03c2b8dd.png",
+    "label": "惊讶",
+    "sha256": "aeb054bfa19fd92f3d9c92c7f2d0c56898d252c6c8a63a33d6ca97055e716c9b",
+    "rejected_source": "exec-5e6a6b4e-b7a8-4de9-a2be-6186394f97ba.png",
+    "manual_hand_review": "five digits visible per open hand"
+  },
+  "xiaoxu-thinking.png": {
+    "source": "exec-0fc56c53-09a4-4578-98c5-5b88596f5ed2.png",
+    "label": "思考",
+    "sha256": "002643f5c0c033ac490c19137f05b13b9d6bedf1c4f2bf71550c8479ec963744"
+  },
+  "xiaohe-excited.png": {
+    "source": "exec-abe931ff-c2a7-40f4-8528-27475554b6e7.png",
+    "label": "兴奋",
+    "sha256": "6835da8d4892496f50bd5256f5693bb20ecdd27de6b92eb5e2113115a68bce2c"
+  },
+  "xiaohe-shy.png": {
+    "source": "exec-b9329cb7-a940-4f07-977a-20b627b0fd75.png",
+    "label": "害羞",
+    "sha256": "bbd0df5499103f396c2d697c1850e7b0b6363f292c9810725a634b9d78dcb8a8"
+  },
+  "xiaoxu-presenting.png": {
+    "source": "exec-777a218c-3dea-42f9-a587-a6e6c4a93f67.png",
+    "label": "讲解",
+    "sha256": "122a768ac12e8ce09e03b457eab4343a70862217a7eb39714e35a4df0af6c51d"
+  },
+  "xiaoxu-thumbsup.png": {
+    "source": "exec-2eedc003-1e50-49ec-8d6b-3dad85b78b20.png",
+    "label": "点赞",
+    "sha256": "a4b8d54e9662e8e17ef90e546c8eb991c95c5d590405b36b52f1aa231d469009"
+  },
+  "xiaohe-wave.png": {
+    "source": "exec-0b4d0704-e42b-46b7-8243-92157e65c9aa.png",
+    "label": "招手",
+    "sha256": "8e0e04ed59fa9efcbd9a9a933eb2a15577d1cdf1144987f5acce307758b2cbd6"
+  },
+  "xiaohe-encourage.png": {
+    "source": "exec-be24b129-1a1b-4a6e-b6ec-48589834d6a2.png",
+    "label": "鼓劲",
+    "sha256": "dfa45ba79a76f2ab9b8a5ad7ff3703d077bc40932d30c78d9ac7beeee199cff9"
+  }
+}

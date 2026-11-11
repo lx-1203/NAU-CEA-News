@@ -1,0 +1,52 @@
+{
+  "xiaoxu-normal.png": {
+    "source": "assets/characters/anchors/xiaoxu-normal.png",
+    "sha256": "6bda2dddd8b597dad292df3f6ae28e8a65e2d88c8afdf61023aab3cff9a0f13a",
+    "kind": "approved normal base"
+  },
+  "xiaoxu-happy.png": {
+    "source": "assets/characters/anchors/repaired/raw/xiaoxu-happy.png",
+    "sha256": "9eb8dcf18c46d38f554aa6190eb96c8eb2e9ec328ce29b627c0086db8f7574bd",
+    "kind": "unmodified complete image_gen output"
+  },
+  "xiaoxu-surprised.png": {
+    "source": "assets/characters/anchors/repaired/raw/xiaoxu-surprised.png",
+    "sha256": "b22b885b30343bd7deb8aefb73ade0900c174a1614cffa9b3973dd74d05fc2b2",
+    "kind": "unmodified complete image_gen output"
+  },
+  "xiaoxu-thinking.png": {
+    "source": "assets/characters/anchors/repaired/raw/xiaoxu-thinking.png",
+    "sha256": "4aceeb8366d45085c9a4b8e9c2718b9788cf54d3de595fe1cc938b3767cc8671",
+    "kind": "unmodified complete image_gen output"
+  },
+  "xiaoxu-serious.png": {
+    "source": "assets/characters/anchors/repaired/raw/xiaoxu-serious.png",
+    "sha256": "f3710dde76c5581b4d9268a0b76faffc6c062a90d71f81f4e3bb5fd65dc522a8",
+    "kind": "unmodified complete image_gen output"
+  },
+  "xiaohe-normal.png": {
+    "source": "assets/characters/anchors/xiaohe-normal.png",
+    "sha256": "69aa102aab5c5ea7d8fc0ca2c4b71c2b2a30ee4d0861ed717c76e20ef87be8f1",
+    "kind": "approved normal base"
+  },
+  "xiaohe-happy.png": {
+    "source": "assets/characters/anchors/repaired/raw/xiaohe-happy.png",
+    "sha256": "b1b78b5115851da86cf3775e05dca2433cf7d8380afbfb4e090ed9caf28aa272",
+    "kind": "unmodified complete image_gen output"
+  },
+  "xiaohe-excited.png": {
+    "source": "assets/characters/anchors/repaired/raw/xiaohe-excited.png",
+    "sha256": "fcb95cee4d6712ad9b5851523cc838ba15bc48e87f5253e41b8e80f81a277bf5",
+    "kind": "unmodified complete image_gen output"
+  },
+  "xiaohe-shy.png": {
+    "source": "assets/characters/anchors/repaired/raw/xiaohe-shy.png",
+    "sha256": "dd2558aa9641c0c18f541fe5f7095e556902470141b1067e6ccc47104802b629",
+    "kind": "unmodified complete image_gen output"
+  },
+  "xiaohe-wink.png": {
+    "source": "assets/characters/anchors/repaired/raw/xiaohe-wink.png",
+    "sha256": "d359d21f304deccabc428b7fac60a7d0d9b1969bbf729d749dd74cf859f6289e",
+    "kind": "unmodified complete image_gen output"
+  }
+}

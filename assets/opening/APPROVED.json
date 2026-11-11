@@ -1,0 +1,22 @@
+{
+  "status": "approved_for_use",
+  "user_decision": "本聊天用户明确纠正品牌为njau-cea，随后要求NJAU和CEA均大写且包括LOGO；据此沿用已确认8秒地球开屏，只修正节目字标。",
+  "date": "2026-11-10",
+  "title": "NJAU-CEA 新闻联播开屏（图像工具版字标）",
+  "placement": "双主播演播室开场前",
+  "video": "video.mp4",
+  "video_sha256": "3a54f01d209167eb8a9b3825846827bf13af59414f84ceb0cd7496841892d81a",
+  "silent_video": "silent_video.mp4",
+  "silent_video_sha256": "30f112db4ef6d3a4b66b9a15f65035d4cf749f9da7dc89afd84fbf4384d974b7",
+  "duration_seconds": 8,
+  "size": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "music_credit": "News Theme — Kevin MacLeod (incompetech.com), CC BY 4.0; excerpted, faded and volume reduced.",
+  "music_license": "https://creativecommons.org/licenses/by/4.0/",
+  "credits_file": "credits_file.txt",
+  "integration_status": "authorized derivative ready for independent final review",
+  "authorized_revision": "按用户禁止自绘SVG替代图片要求，以图像编辑工具从原始PNG修正NJAU-CEA字标，保持既有8秒开屏视觉与时长。"
+}

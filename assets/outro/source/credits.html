@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>NJAU-CEA 片尾署名</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1000px; height: 424px; overflow: hidden; }
+  body { font-family: 'Microsoft YaHei', sans-serif; color: #fcf8eb; }
+  main { position: absolute; inset: 8px; border-radius: 26px;
+    padding: 52px 74px; background: linear-gradient(120deg, #103e36, #1e5748);
+    border: 1px solid #366757; box-shadow: 0 3px 6px #0e493f36; }
+  .label { color: #e0eda9; font-size: 34px; font-weight: 700; letter-spacing: 5px; }
+  .rule { margin: 24px 0 26px; height: 2px; width: 86px; background: #bbd476; }
+  .name { font-size: 67px; font-weight: 700; line-height: 1.24; letter-spacing: 2px; }
+  .detail { color: #eef0d8; font-size: 35px; line-height: 1.35; margin-top: 24px; white-space: pre-wrap; }
+</style>
+<main><div class="label"></div><div class="rule"></div><div class="name"></div><div class="detail"></div></main>
+<script>
+  window.showCredit = ({label, lines, detail}) => {
+    document.querySelector('.label').textContent = label;
+    document.querySelector('.name').replaceChildren(...lines.map(text => {
+      const row = document.createElement('div'); row.textContent = text; return row;
+    }));
+    document.querySelector('.detail').textContent = detail || '';
+  };
+</script>
+</html>

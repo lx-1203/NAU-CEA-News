@@ -1,0 +1,13 @@
+{
+  "title": "南京农业大学校歌",
+  "source_page": "https://www.njau.edu.cn/xg/list.htm",
+  "media_url": "https://www.njau.edu.cn/_upload/article/videos/ab/68/9b998f6744cc9d24f73e197af5f0/77d3c1a8-03da-4104-a503-55af0747d446.mp4",
+  "original_video_sha256": "30570fe0c2ef571a80be03a5e7bb502e3e442e69d7b9e0531b433daee5af0e09",
+  "original_video_bytes": 71889726,
+  "audio": "njau-anthem-official.m4a",
+  "audio_sha256": "5caa389a4f6200aaad729a29a7bd35f5291e4760d1c53b37ae53836426d2cc80",
+  "mp3": "../../南京农业大学校歌-官网版.mp3",
+  "mp3_sha256": "9ac6b6db840c682b886f1b75d27690e0bbda99118657b850bcc59d39caf7deed",
+  "method": "Official public webpage video audio extracted without AAC transcoding; MP3 is a compatibility derivative",
+  "source_rights": "Copyright remains with the university and authors. Attribution and original rights retained."
+}
