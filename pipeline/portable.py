@@ -24,6 +24,10 @@ def portable_config(source, root):
     if config.get('opening'):
         # Export includes the approved original and relative approval metadata.
         config['opening']=dict(enabled=source['opening'].get('enabled',False),approval=str(root/'assets/opening/APPROVED.json'))
+    if config.get('outro'):
+        config['outro'] = dict(enabled=source['outro'].get('enabled', False), package='assets/outro')
+    if config.get('transitions'):
+        config['transitions'] = dict(library='assets/transitions/campus-ip-sweep-v4/library.json')
     return config
 
 

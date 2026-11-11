@@ -55,7 +55,12 @@ def build(output,include_issues=None):
             name=field+path.suffix
             copy(path,'assets/opening/'+name,'opening');approval[field]=name
         write_json(output/'assets/opening/APPROVED.json',approval)
-    library=ROOT/'assets/transitions/campus-ip-sweep-v4/library.json';data=read_json(library)
+    from pipeline.outro import approved_outro
+    outro = approved_outro(source, ROOT)
+    if outro:
+        for path in outro['dependencies']:
+            copy(path, Path('assets/outro') / path.relative_to(outro['package']), 'approved_outro')
+    library=ROOT/source.get('transitions',{}).get('library','assets/transitions/campus-ip-sweep-v4/library.json');data=read_json(library)
     for item in data['items']:
         for field,key in [('webm','sha256'),('art','art_sha256'),('reference','reference_sha256'),('character','character_sha256'),('preview',None)]:
             if not item.get(field):continue

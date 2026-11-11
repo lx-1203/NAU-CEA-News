@@ -47,7 +47,8 @@ class SessionTests(unittest.TestCase):
                      'anullsrc=r=48000:cl=stereo','-t','4','-c:v','libx264','-threads','1','-c:a','aac',source])
             with patch('pipeline.bgm_source.refresh_catalog',return_value=catalog),patch('pipeline.bgm_source.download_track',side_effect=download):
                 with BgmSession(root,'2026-11-11') as session:
-                    session.mix(source,target,dict(opening=dict(start=0,end=.5),interludes=[dict(start=2,end=3)]))
+                    session.mix(source,target,dict(opening=dict(start=0,end=.5),interludes=[dict(start=2,end=3)],
+                                                   outro=dict(start=3.5,end=4)))
                     _ffmpeg(['-xerror','-i',target,'-f','null','-'])
                     receipt=session.commit(target)
             self.assertEqual(receipt['status'],'committed')
@@ -60,6 +61,7 @@ class SessionTests(unittest.TestCase):
                 return max(map(abs,samples))
             self.assertLess(peak(.1,.4),10)
             self.assertLess(peak(2.05,2.95),10)
+            self.assertLess(peak(3.55,3.95),10)
             self.assertGreater(peak(1.5,1.8),20)
             state=json.loads((root/'data/music/history.json').read_text())
             self.assertEqual(len(state['used']),1)

@@ -292,6 +292,11 @@ class BgmSession:
         opening=max(opening,float(timeline.get('opening_offset_seconds',0)))
         muted=[(0,opening)] if opening else []
         muted.extend((float(item['start']),float(item['end'])) for item in timeline.get('interludes',[]))
+        music_end = duration
+        if timeline.get('outro'):
+            tail = timeline['outro']
+            music_end = float(tail['start'])
+            muted.append((music_end, float(tail['end'])))
         for a,b in muted:
             if not 0<=a<b<=duration+.05:raise ValueError('Invalid BGM exclusion interval')
         expressions=[f'gte(t,{a:.6f})*lt(t,{b:.6f})' for a,b in muted]
@@ -299,7 +304,7 @@ class BgmSession:
         graph=(f'[0:a:0]asplit=2[voice][side];'
             f'[1:a:0]aformat=sample_rates=48000:channel_layouts=stereo,'
             f'loudnorm=I=-28:TP=-9:LRA=7,atrim=duration={duration:.6f},asetpts=PTS-STARTPTS,'
-            f'afade=t=in:st={opening:.6f}:d=1.2,afade=t=out:st={max(opening,duration-2):.6f}:d=2[bed];'
+            f'afade=t=in:st={opening:.6f}:d=1.2,afade=t=out:st={max(opening,music_end-2):.6f}:d=2[bed];'
             '[bed][side]sidechaincompress=threshold=0.02:ratio=4:attack=25:release=500[ducked];'
             f"[ducked]aeval=exprs='val(0)*{mask}|val(1)*{mask}':channel_layout=stereo[gated];"
             '[voice][gated]amix=inputs=2:duration=first:normalize=0,'

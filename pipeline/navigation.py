@@ -54,6 +54,14 @@ def build_navigation(edition, timeline):
     if not chapters or any(i not in seen for i in range(len(stories))):
         raise ValueError('时间线遗漏新闻，不能生成完整进度条')
     if used_interludes!=set(interludes):raise ValueError('存在未匹配的独立栏目转场')
+    outro = timeline.get('outro')
+    if outro:
+        if (-2 in seen or abs(outro['start']-previous_end) > .0001
+                or not math.isfinite(outro['end']) or outro['end'] <= previous_end):
+            raise ValueError('固定片尾章节与正文不衔接')
+        chapters.append(dict(scene=-2, id='outro', title=outro['title'], section=None,
+                             section_title=None, start=outro['start'], end=outro['end']))
+        previous_end = outro['end']
     for chapter in chapters:chapter.pop('_group',None)
     sections = []
     for chapter in chapters:

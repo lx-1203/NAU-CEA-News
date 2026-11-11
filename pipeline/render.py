@@ -272,8 +272,11 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
         os.environ['PLAYWRIGHT_BROWSERS_PATH'] = str(ROOT/'runtime/browsers')
     fps = config['video']['fps']
     opening = load_opening(config)
-    transition_library = (load_library(DEFAULT_LIBRARY)
-                          if DEFAULT_LIBRARY.exists() and read_json(DEFAULT_LIBRARY).get('enabled') else None)
+    from .outro import load_outro
+    outro = load_outro(config, edition['date'])
+    transition_path = ROOT / config.get('transitions', {}).get('library', str(DEFAULT_LIBRARY))
+    transition_library = (load_library(transition_path)
+                          if transition_path.exists() and read_json(transition_path).get('enabled') else None)
     run_dir.mkdir(parents=True, exist_ok=False)
     write_json(run_dir/'edition.json', edition)
     write_json(run_dir/'production-plan.json', plan)
@@ -281,6 +284,8 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
     dependencies = [ROOT/'index.html', ROOT/'style.css', ROOT/'script.js', ROOT/'news-media.js', ROOT/'talking.js', ROOT/'voice-demo.js', ROOT/'config/pipeline.json', anchor_library_manifest_path(), *sorted((ROOT/'pipeline').glob('*.py')), ROOT/'pipeline/speak.ps1', *sorted((ROOT/'assets/branding').glob('*.png')), *sorted({path for states in expression_assets().values() for path in states.values() if path.is_file()})]
     if transition_library: dependencies.extend(library_dependencies(transition_library))
     dependencies.extend(opening_dependencies(opening))
+    if outro:
+        dependencies.extend(outro['dependencies'])
     # Shared branding can add a stylesheet and background video to index.html.
     dependencies.extend(p for p in ROOT.glob('*.css') if p not in dependencies)
     dependencies.extend(sorted((ROOT/'assets/branding').glob('*.mp4')))
@@ -322,10 +327,16 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
     write_json(run_dir/'media-sources.json', list(media_cache.values()))
     write_report(report_edition, run_dir)
     lines = edition_lines(edition)
+    full_line_count = len(lines)
+    if outro:
+        lines = [line for line in lines if line['scene'] != -2]
     provider = config.get('speech', {}).get('provider', 'system')
     if supplied_audio:
         # Existing edition contract: WAV paths are relative to edition.json.
-        audio_manifest = validate_audio_entries(lines, read_json(supplied_audio), edition_path.parent)
+        entries = read_json(supplied_audio)
+        if outro and set(entries) == {str(i) for i in range(full_line_count)}:
+            entries = {str(i): entries[str(i)] for i in range(len(lines))}
+        audio_manifest = validate_audio_entries(lines, entries, edition_path.parent)
         provider = 'external'
         write_json(run_dir/'audio-reuse.json',dict(manifest=str(supplied_audio),sha256=sha256(supplied_audio),note='复用已生成的完整配音清单；文本与WAV哈希逐句验证，默认每日仍按配置使用工作台'))
     elif provider == 'indextts2':
@@ -349,6 +360,7 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
         freeze_date(page, edition['date'])
         page.evaluate("document.body.classList.add('broadcast-mode')")
         page.add_style_tag(content='*{animation:none!important;transition:none!important}.ticker span{animation:none!important}.subtitle-text{font-size:64px!important}.news-scene h1{font-size:48px!important}.news-material-caption{font-size:26px!important}.news-board{display:none!important}.screen-content{padding-top:.2cqw!important}.screen-eyebrow{display:none}.screen-content>strong{font-size:2.2cqw!important;transform:none!important;line-height:1.15!important}.screen-tag{font-size:.8cqw!important}')
+        page.add_style_tag(content='.is-news .news-material-caption,.is-news .news-material-caption .material-kind{font-size:40px!important;line-height:1.2!important}.is-news .news-media-window{top:30%!important;height:50.5%!important}')
         page.evaluate('''date=>{
           document.querySelector('.live-badge').textContent='DAILY';
           document.querySelector('.screen-corner').textContent='DAILY NEWS';
@@ -571,7 +583,26 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
             target.writeframes(b'\0'*(round(opening['duration_seconds']*source.getframerate())*source.getnchannels()*source.getsampwidth()))
             target.writeframes(source.readframes(source.getnframes()))
         shutil.copy2(opening['credits_file'],run_dir/'CREDITS.txt')
-    # Chapter timestamps come from final measured speech, never equal story slices.
+    timeline = read_json(run_dir/'timeline.json')
+    no_bgm_video = run_dir/'news-no-bgm.mp4'
+    if (bgm or outro) and not no_bgm_video.exists():
+        shutil.copy2(video, no_bgm_video)
+    if bgm:
+        bgm.mix(video, run_dir/'news-with-bgm.mp4', timeline)
+        (run_dir/'news-with-bgm.mp4').replace(video)
+    outro_artifacts = []
+    outro_receipt = None
+    final_end = cues[-1]['end']
+    if outro:
+        from .outro import attach_outro
+        outro_receipt, outro_artifacts = attach_outro(outro, timeline, run_dir, fps,
+                                                       config.get('browser_channel', 'msedge'))
+        final_end = outro_receipt['end']
+        write_json(run_dir/'timeline.json', timeline)
+        write_json(run_dir/'outro-receipt.json', outro_receipt)
+        captions = [*cues, *outro_receipt['lines']]
+        (run_dir/'subtitles.srt').write_text('\n\n'.join(f'{i+1}\n{timestamp(c["start"])} --> {timestamp(c["end"])}\n{c["text"]}' for i,c in enumerate(captions))+'\n', encoding='utf-8-sig')
+    # Chapter timestamps come from the complete final timeline.
     if config.get('navigation', {}).get('enabled', True):
         export_navigation(edition, read_json(run_dir/'timeline.json'), run_dir)
         if config.get('navigation', {}).get('embed_mp4_chapters', True):
@@ -581,22 +612,24 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
                      '-c','copy','-movflags','+faststart',chaptered])
             video.rename(run_dir/'news-before-chapters.mp4')
             chaptered.rename(video)
-            if opening:
+            if no_bgm_video.is_file():
                 command([FFMPEG,'-v','error','-y','-i',run_dir/'news-no-bgm.mp4','-i',run_dir/'chapters.ffmetadata',
                          '-map','0:v','-map','0:a?','-map_metadata','0','-map_chapters','1','-c','copy',run_dir/'news-no-bgm-with-chapters.mp4'])
                 (run_dir/'news-no-bgm-with-chapters.mp4').replace(run_dir/'news-no-bgm.mp4')
-    if bgm:
-        # This remix input stays usable after disposable downloaded music is gone.
-        if not (run_dir/'news-no-bgm.mp4').exists():shutil.copy2(video,run_dir/'news-no-bgm.mp4')
-        bgm.mix(video,run_dir/'news-with-bgm.mp4',read_json(run_dir/'timeline.json'))
-        (run_dir/'news-with-bgm.mp4').replace(video)
     # A complete decode is required before advancing the latest pointer.
-    command([FFMPEG,'-v','error','-i',video,'-f','null','-'])
+    command([FFMPEG,'-v','error','-xerror','-i',video,'-f','null','-'])
+    if outro:
+        from .bgm import true_peak
+        command([FFMPEG,'-v','error','-xerror','-i',no_bgm_video,'-f','null','-'])
+        outro_receipt['final_true_peaks_db'] = {path.name: true_peak(path) for path in (video,no_bgm_video)}
+        if max(outro_receipt['final_true_peaks_db'].values()) > -3:
+            raise ValueError('接入片尾后的最终音轨真峰值高于 -3 dBTP')
+        write_json(run_dir/'outro-receipt.json', outro_receipt)
     info = imageio_ffmpeg.read_frames(str(video))
     metadata = next(info)
     info.close()
     if tuple(metadata['size']) != (1920,1080) or abs(metadata['fps']-fps)>0.01: raise ValueError('成片尺寸或帧率不符')
-    if abs(metadata['duration']-cues[-1]['end']) > 0.35: raise ValueError('成片与字幕时长不一致')
+    if abs(metadata['duration']-final_end) > 0.35: raise ValueError('成片与时间线时长不一致')
     volume = command([FFMPEG,'-hide_banner','-i',video,'-vn','-af','volumedetect','-f','null','-']).stderr.decode('utf-8', errors='replace')
     (run_dir/'audio-analysis.txt').write_text(volume, encoding='utf-8')
     match = re.search(r'max_volume: ([-\w.]+) dB', volume)
@@ -604,8 +637,10 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
     if not -45 < peak < 0: raise ValueError(f'音频峰值异常: {peak}')
     # Contact sheet is generated from actual output, not source PNGs.
     frames = []
-    for i, scene in enumerate([-1, *range(len(edition['stories'])), -2]):
+    for scene in [-1, *range(len(edition['stories'])), -2]:
         candidates = [s for s in shots if s['scene']==scene]
+        if scene == -2 and outro_receipt:
+            candidates = [outro_receipt]
         for sample in [candidates[0]['start']+0.1, (candidates[0]['start']+candidates[-1]['end'])/2, candidates[-1]['end']-0.15]:
             frame = run_dir/f'qa-{len(frames):02d}.png'
             command([FFMPEG,'-v','error','-y','-ss',str(max(0,sample)),'-i',video,'-frames:v','1',frame])
@@ -617,6 +652,7 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
     from .task_finish import register_intermediates
     disposable=[*clips,*[item['path'] for item in assembly],*[run_dir/f'cue-{i:03d}-padded.wav' for i in range(len(lines))]]
     disposable.extend(run_dir/name for name in ['news-before-transitions.mp4','news-before-ticker.mp4','news-body.mp4'])
+    disposable.extend([*outro_artifacts, run_dir/'news-before-chapters.mp4'])
     # These working copies remain usable until finalization has copied and
     # verified current; only that later lifecycle step may retire them.
     disposable.extend(run_dir/name for name in ['news.mp4','watch.html','daily.html'])
@@ -634,9 +670,12 @@ def _render_edition(edition_path, run_dir, audio_manifest_path=None, bgm=None):
         manifest['transitions'] = dict(count=len(transition_receipt['plan']['transitions']),
                                        seed=transition_receipt['plan']['seed'],
                                        plan='transition-plan.json', audio_packets_unchanged=not independent_transitions,
-                                       library_sha256=sha256(DEFAULT_LIBRARY))
+                                       library_sha256=sha256(transition_path))
     if opening_receipt:
         manifest['opening'] = opening_receipt
+    manifest['total_seconds'] = final_end
+    if outro_receipt:
+        manifest['outro'] = outro_receipt
     if bgm:
         manifest['bgm']=dict(receipt='bgm-receipt.json',sha256=bgm.selection['track']['sha256'],
                              cycle=bgm.selection['cycle'],catalog_version=bgm.selection['catalog_version'])

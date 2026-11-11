@@ -2,12 +2,12 @@
 name: nau-cea-daily-video
 description: Use when producing or revising NJAU-CEA 校园科技每日新闻、双主播配音视频，或维护该项目每日生产接口、素材和表演规范。
 metadata:
-  version: "1.4.2"
+  version: "1.5.0"
 ---
 
 # NJAU-CEA 每日新闻视频
 
-当前skill版本：**1.4.2**。版本权威及逐文件哈希见项目 `architecture/release.json`。
+当前skill版本：**1.5.0**。版本权威及逐文件哈希见项目 `architecture/release.json`。
 
 2026-11-10最新用户纠正：开场第一句必须说“这里是南京农业大学计算机爱好者协会。”，随后欢迎收看NJAU-CEA新闻联播。品牌及节目LOGO统一为大写 **NJAU-CEA**（保留连字符），取代NAUCEA/NAU CEA；中文社团全称不变。
 
@@ -25,6 +25,12 @@ metadata:
 - 按当前用户要求执行纯净日期：原文首发与事件/具体新增事实都在昨天，转载、更新、HN发帖、HF入榜、搜索收录时间不能代替。国外时间先换算北京时间；时区不明、仅有外国日期的稿件暂缓。旧项目的新版本只讲昨天新增部分，回顾和教程不补新闻数量。读取项目docs/EDITORIAL_POLICY.md的日期证据契约；每条保存原文date_evidence，plan/render前验证，复用latest也重验原文实际哈希。历史补制必须明确标示刊期、edition.archive_production=true并显式render --archive；今日版禁止用历史例外。
 - 若已有当期 latest：实际重算 manifest 的源码、参考音频、素材、配音输入和产物哈希，核对最新用户要求及未关闭审查问题；全有效才跳过。只有视频文件存在不能作为复用依据。
 - 两位声音已授权选择并固定，不重复询问。**小序使用之前的自然男童声boy-v2，小禾使用自然女童声方向girl-v2，固定男童+女童。未经用户新的明确要求不自行换音色；若用户再次纠正，及时更新配置、技能和每日任务，不能沿用较早的相反偏好。** 配置是生产参数权威，快照见 [voice-profile.json](references/voice-profile.json)。
+
+## 每期固定片尾和署名
+
+正式渲染从 config/pipeline.json 的 outro 配置读取批准的固定片尾。启用后使用新版双主播表情库渲染正文，接入双主播告别、校歌与署名，并生成对应字幕、章节和无配乐版。按 项目 docs/OUTRO.md 配置现有素材目录。
+
+具体刊期先核对 tasks/credits.json 的 edition_date、producer、confirmed_by_user。尚无本期确认时询问用户一次，同时继续正文准备。制片人默认先列星迹、Codex，再追加当期制作人并去重。用户明确指定单独署名时记录 producer_only=true；参演人员按楠小禾、秾小序排列。正式片抽帧核对实际署名和校歌落点。
 
 ## 架构与技能使用前更新（每次调用都执行）
 

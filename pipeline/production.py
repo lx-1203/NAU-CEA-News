@@ -132,7 +132,13 @@ def production_plan(edition_path, require_media=None):
         if require_media and not media[i]: raise ValueError(f'{story["id"]} 缺少已回源的新闻素材')
     positions, shots = {}, []
     lines = edition_lines(edition)
-    performances = plan_performances(lines, edition['stories'], edition.get('performance'))
+    overrides = edition.get('performance')
+    if config.get('outro', {}).get('enabled'):
+        dropped = {str(i) for i, line in enumerate(lines) if line['scene'] == -2}
+        lines = [line for line in lines if line['scene'] != -2]
+        if isinstance(overrides, dict):
+            overrides = {key: value for key, value in overrides.items() if key not in dropped}
+    performances = plan_performances(lines, edition['stories'], overrides)
     for index, line in enumerate(lines):
         scene = line['scene']
         position = positions.get(scene,0)

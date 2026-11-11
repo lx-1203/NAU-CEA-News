@@ -15,6 +15,8 @@ from pipeline.navigation import build_navigation
 run=Path(sys.argv[1]).resolve();out=run/'delivery-qa';out.mkdir(exist_ok=True)
 e=read_json(run/'edition.json');t=read_json(run/'timeline.json');m=read_json(run/'manifest.json')
 shots=t['shots'];gaps=t['interludes'];cards=section_cards(e);lines=edition_lines(e)
+if t.get('outro'):
+ lines=[line for line in lines if line['scene'] != -2]
 validate_anchor_library()
 plan=read_json(run/'production-plan.json')
 assert len(plan['shots'])==len(shots)
@@ -33,8 +35,9 @@ for i,(s,line) in enumerate(zip(shots,lines)):
  assert s['performance_events'][0]['expression']==s['performance_events'][-1]['expression']
  assert s['speech_intervals'][0][0]<s['performance_events'][1]['at']<s['speech_intervals'][-1][1]
 blocks=(run/'subtitles.srt').read_text('utf-8-sig').strip().split('\n\n')
-assert len(blocks)==len(shots)
-for b,s in zip(blocks,shots):
+captions=[*shots,*t.get('outro',{}).get('lines',[])]
+assert len(blocks)==len(captions)
+for b,s in zip(blocks,captions):
  assert b.splitlines()[1]==f'{timestamp(s["start"])} --> {timestamp(s["end"])}'
  assert b.splitlines()[2]==s['text']
 overviews=[s for s in shots if s.get('kind')=='overview']
@@ -78,5 +81,5 @@ for page in range(math.ceil(len(frames)/12)):
   with Image.open(frame) as im:sheet.paste(im,(x,y))
   d.text((x+5,y+361),f'frame {indices[n]} / {indices[n]/30:.3f}s',fill='black')
  sheet.save(out/f'contact-{page:02d}.jpg',quality=90)
-write_json(out/'programme-qa.json',dict(status='passed',stories=len(e['stories']),cues=len(shots),overview_screens=len(cards),interludes=len(gaps),chapters=len(read_json(run/'chapters.json')['chapters']),duration=shots[-1]['end'],video_sha256=sha256(run/'news.mp4'),source_and_output_hashes=True,voice_lineage=True,speech_pose_events=True,subtitles=True,silent_pcm_interludes=True,decoded_interlude_peak_db=levels,decoded_audio=peaks,full_decode_both_versions=True,actual_frames=len(frames),manual_full_listening=False))
+write_json(out/'programme-qa.json',dict(status='passed',stories=len(e['stories']),cues=len(captions),overview_screens=len(cards),interludes=len(gaps),chapters=len(read_json(run/'chapters.json')['chapters']),duration=build_navigation(e,t)['duration'],video_sha256=sha256(run/'news.mp4'),source_and_output_hashes=True,voice_lineage=True,speech_pose_events=True,subtitles=True,silent_pcm_interludes=True,decoded_interlude_peak_db=levels,decoded_audio=peaks,full_decode_both_versions=True,actual_frames=len(frames),manual_full_listening=False))
 print('PASSED: actual delivery lineage, decoded audio, subtitles, navigation and',len(frames),'sample frames',flush=True)

@@ -289,5 +289,9 @@
   },
   "browser_channel": null,
   "portable_profile": true,
-  "asset_setup": "Supply your legally authorized shared assets before full production. Public framework does not redistribute image/music/voice assets."
+  "asset_setup": "Supply your legally authorized shared assets before full production. Public framework does not redistribute image/music/voice assets.",
+  "outro": {
+    "enabled": false,
+    "package": "assets/outro"
+  }
 }

@@ -217,7 +217,7 @@ def _export(pointer, day, run, inputs, edition, root, asset_namespace=None):
         if (run/filename).is_file():
             put(run/filename, originals/filename, False)
     for filename in ('subtitles.srt', 'subtitles.vtt', 'chapters.json', 'chapters.vtt',
-                     'chapters.ffmetadata', 'timeline.json', 'bgm-receipt.json'):
+                     'chapters.ffmetadata', 'timeline.json', 'bgm-receipt.json', 'outro-receipt.json', 'CREDITS.txt'):
         explicit = pointer.get(filename)
         if filename in {'chapters.json', 'timeline.json'}:
             explicit = explicit or pointer.get(filename.removesuffix('.json'))
